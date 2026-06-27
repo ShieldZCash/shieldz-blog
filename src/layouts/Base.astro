@@ -1,0 +1,80 @@
+---
+import "../styles/global.css";
+const {
+  title,
+  description,
+  type = "website",
+  pubDate,
+  author = "Deniz Yanbollu",
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = "https://shieldz.cash/assets/brand/og-card.png";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const articleLd =
+  type === "article"
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        description,
+        datePublished: pubDate ? new Date(pubDate).toISOString() : undefined,
+        author: { "@type": "Person", name: author },
+        publisher: { "@type": "Organization", name: "Shieldz", url: "https://shieldz.cash" },
+        mainEntityOfPage: canonical,
+        image: ogImage,
+      }
+    : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Shieldz" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="icon" type="image/png" href="https://shieldz.cash/assets/brand/favicon.png" />
+    {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PV99TH7BG"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1PV99TH7BG');
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a class="brand" href={base}>shield<span class="z">z</span> blog</a>
+        <nav>
+          <a href="https://shieldz.cash/">Home</a>
+          <a href="https://shieldz.cash/docs">Docs</a>
+          <a href="https://shieldz.cash/sdks">SDKs</a>
+        </nav>
+      </header>
+      <slot />
+      <footer class="site">
+        <p>
+          <a href="https://shieldz.cash/">Shieldz</a> is non-custodial crypto payments with $0 platform fees.
+          <a href="https://shieldz.cash/introducing-shieldz">Learn more</a> &middot;
+          <a href={base + "/rss.xml"}>RSS</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

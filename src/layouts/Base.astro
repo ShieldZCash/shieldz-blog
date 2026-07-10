@@ -6,10 +6,18 @@ const {
   type = "website",
   pubDate,
   author = "Deniz Yanbollu",
+  image,
 } = Astro.props;
 
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = "https://shieldz.cash/assets/brand/og-card.png";
+// Canonicalize to the no-trailing-slash form (what the main site, sitemap, and
+// cross-post canonicals all link to), so /blog/x and /blog/x/ do not split.
+// Exception: the blog index is served at /blog/ (the base root) and /blog
+// 301-redirects to it, so keep the trailing slash there or the canonical would
+// point at a redirect.
+const stripped = Astro.url.pathname.replace(/(.+)\/$/, "$1");
+const canonical = new URL(stripped === "/blog" ? "/blog/" : stripped, Astro.site).href;
+// Per-post OG image when set in frontmatter, else the site default card.
+const ogImage = image || "https://shieldz.cash/assets/brand/og-card.png";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const articleLd =
@@ -43,10 +51,15 @@ const articleLd =
     <meta property="og:site_name" content="Shieldz" />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shieldzcash" />
+    <meta name="twitter:creator" content="@dnzynbl" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" type="image/png" href="https://shieldz.cash/assets/brand/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PV99TH7BG"></script>
@@ -60,11 +73,14 @@ const articleLd =
   <body>
     <div class="wrap">
       <header class="site">
-        <a class="brand" href={base}>shield<span class="z">z</span> blog</a>
+        <a class="brand" href={base}>
+          <img src="https://shieldz.cash/assets/brand/logo-sz-white.png?v=2" alt="" aria-hidden="true" />
+          shield<span class="z">z</span> blog
+        </a>
         <nav>
           <a href="https://shieldz.cash/">Home</a>
+          <a href="https://shieldz.cash/agents">Agents</a>
           <a href="https://shieldz.cash/docs">Docs</a>
-          <a href="https://shieldz.cash/sdks">SDKs</a>
         </nav>
       </header>
       <slot />

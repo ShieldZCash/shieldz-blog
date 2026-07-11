@@ -1,6 +1,6 @@
 ---
 title: "How to accept crypto payments (a practical 2026 guide)"
-description: "A step-by-step guide to accepting crypto payments as a business: the options, what to watch for, and how to take USDC, USDT, Bitcoin and Zcash directly to your own wallet with $0 fees."
+description: "How to accept crypto payments as a business: your options and how to take USDC, USDT, Bitcoin and Zcash straight to your own wallet at $0 fees."
 pubDate: 2026-06-30
 author: "Deniz Yanbollu"
 tags: ["guide", "payments", "crypto", "merchants"]
@@ -47,6 +47,10 @@ Start with what people actually pay in: **USDC and USDT** (stable, no volatility
 - **Chargebacks.** They do not exist on crypto. A confirmed payment is final, which removes a whole category of fraud for digital goods.
 - **Privacy and KYC.** Decide up front whether you want to route customers through identity checks. Shieldz does not gate signup behind paperwork.
 
+## On WordPress?
+
+If your store runs on WordPress, you can skip the code entirely with one free plugin that covers three platforms: [accept crypto on WooCommerce](/blog/accept-crypto-payments-woocommerce), [take crypto donations with GiveWP](/blog/accept-crypto-donations-givewp), or [sell digital downloads for crypto with EDD](/blog/sell-digital-downloads-for-crypto-edd). Paste a wallet address and you are live.
+
 ## The one-line summary
 
-To accept crypto payments well: take the coins **directly to your own wallet**, settle to a stablecoin if you want predictability, and use signed webhooks to automate fulfilment. That is exactly what Shieldz is built to do, for $0. [Start free](https://merchant.shieldz.cash/signup) or [read the API docs](/docs).
+To accept crypto payments well: take the coins **directly to your own wallet**, [settle to a stablecoin](/blog/accept-stablecoin-payments) if you want predictability, and use signed webhooks to automate fulfilment. That is exactly what Shieldz is built to do, for $0. [Start free](https://merchant.shieldz.cash/signup) or [read the API docs](/docs).

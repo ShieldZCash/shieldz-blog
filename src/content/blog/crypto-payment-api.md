@@ -1,6 +1,6 @@
 ---
 title: "Crypto payment API: a 10-minute quickstart"
-description: "How to accept crypto with a REST crypto payment API: create an invoice, send the customer to a hosted checkout, and verify a signed webhook. Non-custodial, $0 fees, with copy-paste code."
+description: "Accept crypto with a REST payment API: create an invoice, redirect to a hosted checkout, verify a signed webhook. Non-custodial, $0 fees, code included."
 pubDate: 2026-06-29
 author: "Deniz Yanbollu"
 tags: ["api", "developers", "webhooks", "crypto"]
@@ -73,5 +73,7 @@ A custodial API quietly makes you responsible for someone else holding your cust
 ## SDKs
 
 If you would rather not hand-roll HTTP, there are official SDKs for [Node, Python, Rust and PHP](/sdks), plus an [MCP server](/agents) so AI agents can create payment links with no API key at all.
+
+Prefer no client at all? You can [accept crypto payments with one URL](/blog/accept-crypto-payments-one-url): a single keyless GET mints a link or tip jar, no key or SDK.
 
 Ready? [Read the full API reference](/docs) or [start free](https://merchant.shieldz.cash/signup). For the non-technical version, see [how to accept crypto payments](/blog/how-to-accept-crypto-payments).

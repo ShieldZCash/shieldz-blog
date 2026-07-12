@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" width="920" height="500" role="img" aria-label="Time to your first payment link (illustrative): BTCPay self-host about 46 minutes, Stripe about 23 minutes, a custodial crypto API about 14 minutes, and Shieldz about 1 second with one URL and no signup.">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#57d497"/><stop offset="1" stop-color="#2fb573"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="919" height="499" rx="16" fill="#161616" stroke="#262626"/>
+  <rect x="0" y="0" width="920" height="5" fill="url(#g)"/>
+  <text x="34" y="40" font-size="21" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">Time to your first payment link</text>
+  <text x="34" y="62" font-size="13" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">Signup and verification, then creating the link. Shieldz is keyless: one URL, no signup.</text>
+  <g font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" fill="#9c9c9c">
+    <rect x="34" y="72" width="12" height="12" rx="2" fill="#3a3a3a"/><text x="52" y="82">Signup + verify</text>
+    <rect x="152" y="72" width="12" height="12" rx="2" fill="#555"/><text x="170" y="82">Create link</text>
+  </g>
+  <text x="890" y="40" text-anchor="end" font-size="12" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">minutes</text>
+  <line x1="34" y1="96.0" x2="890" y2="96.0" stroke="#242424"/><text x="896" y="100.0" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">50m</text>
+  <line x1="34" y1="157.6" x2="890" y2="157.6" stroke="#242424"/><text x="896" y="161.6" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">40m</text>
+  <line x1="34" y1="219.2" x2="890" y2="219.2" stroke="#242424"/><text x="896" y="223.2" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">30m</text>
+  <line x1="34" y1="280.8" x2="890" y2="280.8" stroke="#242424"/><text x="896" y="284.8" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">20m</text>
+  <line x1="34" y1="342.4" x2="890" y2="342.4" stroke="#242424"/><text x="896" y="346.4" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">10m</text>
+  <line x1="34" y1="404.0" x2="890" y2="404.0" stroke="#242424"/><text x="896" y="408.0" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">0m</text>
+  <rect x="95.0" y="126.8" width="92" height="277.2" rx="0" fill="#3a3a3a"/><rect x="95.0" y="120.6" width="92" height="6.2" rx="5" fill="#555"/><text x="141.0" y="109.6" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">~46 min</text><text x="141.0" y="426.0" text-anchor="middle" font-size="13.5" font-weight="600" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">BTCPay (self-host)</text>
+  <rect x="309.0" y="280.8" width="92" height="123.2" rx="0" fill="#3a3a3a"/><rect x="309.0" y="262.3" width="92" height="18.5" rx="5" fill="#555"/><text x="355.0" y="251.3" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">~23 min</text><text x="355.0" y="426.0" text-anchor="middle" font-size="13.5" font-weight="600" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Stripe (cards)</text>
+  <rect x="523.0" y="330.1" width="92" height="73.9" rx="0" fill="#3a3a3a"/><rect x="523.0" y="317.8" width="92" height="12.3" rx="5" fill="#555"/><text x="569.0" y="306.8" text-anchor="middle" font-size="15.5" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">~14 min</text><text x="569.0" y="426.0" text-anchor="middle" font-size="13.5" font-weight="600" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Custodial crypto API</text>
+  <rect x="737.0" y="398.0" width="92" height="6.0" rx="5" fill="url(#g)"/><text x="783.0" y="387.0" text-anchor="middle" font-size="15.5" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">~1 sec</text><text x="783.0" y="426.0" text-anchor="middle" font-size="13.5" font-weight="600" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">Shieldz, one URL</text>
+  <text x="890" y="485" text-anchor="end" font-size="11" fill="#777" font-family="Menlo,ui-monospace,monospace">shieldz.cash · illustrative; signup/verification times vary</text>
+</svg>

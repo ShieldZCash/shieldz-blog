@@ -18,7 +18,7 @@ There are two models, and they are not close.
 
 **Non-custodial.** The gateway never holds your money. You give it a public receiving key, the customer pays an address that belongs to you, and the gateway only watches the blockchain and tells you it landed. There is no balance to skim, no payout to delay, no account to freeze, because the funds were never in the middle. This is the model [Shieldz](/) is built on, with [$0 platform fees](/pricing).
 
-If you only remember one thing about choosing a crypto payment gateway: **non-custodial removes the entire risk category**, not just the fee. You can [verify the non-custodial claim yourself](/verify).
+If you only remember one thing about choosing a crypto payment gateway: **non-custodial removes the entire risk category**, not just the fee. You can [verify the non-custodial claim yourself](/verify), and see exactly how it plays out against [AML holds and account freezes](/blog/non-custodial-crypto-payment-gateway).
 
 ## What a good gateway does for you
 

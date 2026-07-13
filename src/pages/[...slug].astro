@@ -9,6 +9,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Every post gets an auto-generated OG card at /blog/og/<slug>.png (built by
+// scripts/gen-og.mjs in the prebuild step). Frontmatter `ogImage` can override.
+const ogImage = post.data.ogImage ?? new URL(`/blog/og/${post.id}.png`, Astro.site).href;
 ---
 
 <Base
@@ -17,6 +21,8 @@ const { Content } = await render(post);
   type="article"
   pubDate={post.data.pubDate}
   author={post.data.author}
+  image={ogImage}
+  lang={post.data.lang}
 >
   <article>
     <h1>{post.data.title}</h1>

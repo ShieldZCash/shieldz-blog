@@ -9,6 +9,9 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     author: z.string().default("Deniz Yanbollu"),
     tags: z.array(z.string()).default([]),
+    ogImage: z.string().optional(),
+    eyebrow: z.string().optional(),
+    lang: z.string().default("en"),
   }),
 });
 

@@ -7,6 +7,7 @@ const {
   pubDate,
   author = "Deniz Yanbollu",
   image,
+  lang = "en",
 } = Astro.props;
 
 // Canonicalize to the no-trailing-slash form (what the main site, sitemap, and
@@ -37,7 +38,7 @@ const articleLd =
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

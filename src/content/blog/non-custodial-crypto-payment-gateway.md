@@ -55,7 +55,7 @@ On-chain payments are final, so there are no chargebacks to reserve against. Tha
 
 ## Get paid without the hold
 
-If you have ever had a payout frozen "for review," a non-custodial crypto payment gateway is the structural fix, not a workaround. Spin up a [payment link](https://shieldz.cash/tools/payment-link) or a [tip jar](https://shieldz.cash/tools/tip-jar) in seconds, read [what a crypto payment gateway actually is](/blog/what-is-a-crypto-payment-gateway), or compare the [best free crypto payment gateways of 2026](/blog/best-free-crypto-payment-gateways-2026). If you want the deeper trade-offs, see [pay any coin and the trust tradeoff](/blog/pay-any-coin-trust-tradeoff).
+If you have ever had a payout frozen "for review," a non-custodial crypto payment gateway is the structural fix, not a workaround. Spin up a [payment link](https://shieldz.cash/tools/payment-link) or a [tip jar](https://shieldz.cash/tools/tip-jar) in seconds, read [what a crypto payment gateway actually is](/blog/what-is-a-crypto-payment-gateway), or compare the [best free crypto payment gateways of 2026](/blog/best-free-crypto-payment-gateways-2026). If you want the deeper trade-offs, see [pay any coin and the trust tradeoff](/blog/pay-any-coin-trust-tradeoff), or, for the most private option, [how to accept Zcash payments online](/blog/how-to-accept-zcash-payments).
 
 <script type="application/ld+json">
 {

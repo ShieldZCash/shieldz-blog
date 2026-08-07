@@ -42,4 +42,4 @@ It is also worth comparing specific providers directly, for example [Shieldz vs 
 
 A crypto payment gateway should make accepting crypto boring in the best way: customers pay, the right token lands in *your* wallet, your app gets told, and nobody in the middle takes a cut or holds the money. If a provider cannot say "non-custodial" plainly, that is your answer.
 
-Want the practical version? Read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or [accept stablecoin payments](/blog/accept-stablecoin-payments), or [start free](https://merchant.shieldz.cash/signup).
+Want the practical version? Read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or [accept stablecoin payments](/blog/accept-stablecoin-payments), or [start free](https://merchant.shieldz.cash/signup). Still weighing it up? Here is [why to accept crypto payments, and what to watch out for](/blog/why-accept-crypto-payments).

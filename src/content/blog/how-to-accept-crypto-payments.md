@@ -38,7 +38,7 @@ That is the whole loop. The money goes from the buyer's wallet to yours. We neve
 
 ## Which coins should you accept?
 
-Start with what people actually pay in: **USDC and USDT** (stable, no volatility risk), **Bitcoin**, and **shielded Zcash** for privacy. You can read the per-coin guides for [Bitcoin](/accept-bitcoin), [USDC](/accept-usdc), [USDT](/accept-usdt) and [Zcash](/accept-zcash). If a customer pays in a coin you do not settle in, an independent swap routes it and you still receive your chosen token.
+Start with what people actually pay in: **USDC and USDT** (stable, no volatility risk), **Bitcoin**, and **shielded Zcash** for privacy. You can read the per-coin guides for [Bitcoin](/accept-bitcoin), [USDC](/accept-usdc), [USDT](/accept-usdt) and [Zcash](/accept-zcash), or the full walkthrough on [how to accept Bitcoin payments](/blog/how-to-accept-bitcoin-payments). If a customer pays in a coin you do not settle in, an independent swap routes it and you still receive your chosen token.
 
 ## What to watch for
 

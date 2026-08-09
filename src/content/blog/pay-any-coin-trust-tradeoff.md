@@ -1,6 +1,6 @@
 ---
 title: "The pay-any-coin trust tradeoff: direct settlement vs swap protocols"
-description: "When a buyer pays a different coin than you settle in, something has to convert it. Here is exactly what that means for custody, and why we kept the two paths separate and honest."
+description: "When a buyer pays a different coin than you settle in, something must convert it. What that means for custody, and why we kept the two paths separate."
 pubDate: 2026-06-27
 author: "Deniz Yanbollu"
 tags: ["non-custodial", "design"]
@@ -16,9 +16,11 @@ If a buyer pays the same token you receive, for example they send USDC on Base a
 
 ## Pay-any-coin routes through independent swap protocols
 
-If a buyer wants to pay a different coin, the conversion is performed by independent, non-custodial swap protocols (NEAR, Chainflip, Relay), and the settled token is delivered to your own wallet. This is genuinely useful, because it lets a customer pay with whatever they hold. But it is not a simple two-wallet transfer. For that one conversion leg, you are relying on those third-party protocols.
+If a buyer wants to pay a different coin, the conversion is performed by independent, non-custodial swap protocols (NEAR, Chainflip, Relay), and the settled token is delivered to your own wallet. The full mechanics, quoting, ranking by net output, route health and refund paths, are in [how swap routing really works](/blog/cross-chain-crypto-payments). This is genuinely useful, because it lets a customer pay with whatever they hold. But it is not a simple two-wallet transfer. For that one conversion leg, you are relying on those third-party protocols.
 
 What does not change between the two paths: Shieldz holds no balance and no keys at any step, and takes no fee on the swap.
+
+That same swap leg can also be run confidentially, so the buyer-to-seller link is not posted to a public order book. See [private crypto payments](/blog/private-crypto-payments) for how the confidential route works and what it does and does not hide.
 
 ## Why we did not just paper over it
 

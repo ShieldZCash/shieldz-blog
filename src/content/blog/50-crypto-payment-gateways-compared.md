@@ -86,7 +86,7 @@ Plotting all 50 on two axes, advertised fee against number of coins supported, s
   <figcaption style="font-size:13px;color:#949494;margin-top:8px">Each dot is one gateway. Coverage is cheap; the fee you pay is a business-model choice, not a cost of coins.</figcaption>
 </figure>
 
-The interesting cluster is the bottom of the chart: gateways at or near 0% with meaningful coverage. That is where self-hosted software and swap-routing designs live, where the buyer pays in any coin and a routing layer converts on the fly, so the gateway supports "everything" without holding an inventory of it. The trade-offs of that design get a full post in [pay any coin, one settlement](/blog/pay-any-coin-trust-tradeoff).
+The interesting cluster is the bottom of the chart: gateways at or near 0% with meaningful coverage. That is where self-hosted software and swap-routing designs live, where the buyer pays in any coin and a routing layer converts on the fly, so the gateway supports "everything" without holding an inventory of it. The trade-offs of that design get a full post in [pay any coin, one settlement](/blog/pay-any-coin-trust-tradeoff), and the mechanics are in [how cross-chain swap routing works](/blog/cross-chain-crypto-payments).
 
 ## The full list: all 50 gateways
 

@@ -34,11 +34,11 @@ curl https://shieldz.cash/api/v1/invoices \
   }'
 ```
 
-The response is an invoice object with a `pay_url`. Send your customer there, it is the hosted checkout with a QR code and a pay link. The customer can pay BTC, ETH, USDC, USDT, Zcash and more; you settle to the one token you chose, and the funds go straight to your wallet. Shieldz never holds them.
+The response is an invoice object with a `pay_url`. Send your customer there, it is the hosted checkout with a QR code and a pay link. Prefer to mint one by hand or from a form? See the [crypto invoice generator](/blog/crypto-invoice-generator). The customer can pay BTC, ETH, USDC, USDT, Zcash and more; you settle to the one token you chose, and the funds go straight to your wallet. Shieldz never holds them.
 
 ## 3. Verify the webhook
 
-When the payment confirms on-chain, Shieldz sends a signed `invoice.paid` webhook. **Always verify the signature** before you act on it. The header is `X-Shieldz-Signature: t=<unix>,v1=<hex>`, where the hex is `HMAC_SHA256(secret, "<t>.<rawBody>")`.
+When the payment confirms on-chain, Shieldz sends a signed `invoice.paid` webhook. **Always verify the signature** before you act on it (an unauthenticated endpoint is one of the [fake-payment tricks that hit merchants](/blog/how-to-verify-crypto-payments)). The header is `X-Shieldz-Signature: t=<unix>,v1=<hex>`, where the hex is `HMAC_SHA256(secret, "<t>.<rawBody>")`.
 
 ```js
 import crypto from "node:crypto";

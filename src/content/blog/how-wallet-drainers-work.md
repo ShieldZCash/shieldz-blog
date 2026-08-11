@@ -1,6 +1,6 @@
 ---
 title: "How crypto wallet drainers work, and why a payment processor should never ask you to connect"
-description: "Most crypto theft at checkout comes from one mechanism: token approvals. Here is how drainers exploit it, and why accepting a payment should never involve connecting your wallet."
+description: "Most crypto theft at checkout comes from token approvals. How drainers exploit them, and why accepting a payment should never mean connecting a wallet."
 pubDate: 2026-06-25
 author: "Deniz Yanbollu"
 tags: ["security", "non-custodial"]
@@ -27,3 +27,5 @@ Signing in to the dashboard does use a wallet signature (Sign-In with Ethereum),
 A payment processor should never ask for your seed phrase or private key, and a non-custodial one never needs them. Shieldz only ever holds a public key, which can derive your receive addresses but mathematically cannot spend. If any site asks for your seed phrase, close the tab.
 
 You do not have to take our word for it. The derivation code is open source, so you can confirm Shieldz only handles public keys: [shieldz.cash/verify](https://shieldz.cash/verify).
+
+Drainers are the buyer-side threat. If you sell, the scams aimed at you look different: fake payment proofs, refund tricks and forged webhooks, covered in [how to verify a crypto payment](/blog/how-to-verify-crypto-payments).

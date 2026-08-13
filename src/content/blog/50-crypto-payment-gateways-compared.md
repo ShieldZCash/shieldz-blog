@@ -49,7 +49,7 @@ The newer cohort splits into two camps. One rebuilds the custodial processor wit
 
 The median advertised fee across all 50 gateways is **1%**. Ten of the 50 advertise a 0% processing fee, but the zeros are not all equal, and this is where reading the fine print pays for itself:
 
-- **Genuinely fee-free rails**: self-hosted software (BTCPay Server, Bitcart), open protocols (Solana Pay), and non-custodial gateways with no platform fee (Shieldz, MyCryptoCheckout's paid plan model, Zaprite's flat subscription).
+- **Genuinely fee-free rails**: self-hosted software (BTCPay Server, Bitcart), open protocols (Solana Pay), and non-custodial gateways with no platform fee (Shieldz, MyCryptoCheckout's paid plan model, Zaprite's flat subscription). How a $0 fee can be sustainable is its own question; we answer it at [why Shieldz is free](https://shieldz.cash/why-free).
 - **Zero on one side, charged on the other**: Binance Pay accepts for 0% but charges 0.8% on payouts. PayKassa accepts for 0% and takes 4% on the way out. Strike processes for 0% and charges 0.49% to 1.29% when you convert to fiat. If the fee is not on the payment, look for it on the exit.
 
 <figure style="margin:28px 0">

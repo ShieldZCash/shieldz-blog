@@ -21,7 +21,7 @@ A good setup does all three without ever taking custody of your funds. A custodi
 ## Your options, briefly and honestly
 
 - **A custodial gateway** (the BitPay / Coinbase Commerce model). Easy to start, but they hold a balance, charge a percentage, and can freeze or offboard you. See the [fee comparison](/crypto-payment-fees) and [why custody is the real cost](/trust).
-- **Run your own node** (BTCPay Server and friends). Fully self-hosted and non-custodial, but you maintain servers, nodes, and uptime yourself.
+- **Run your own node** (BTCPay Server and friends). Fully self-hosted and non-custodial, but you maintain servers, nodes, and uptime yourself. The full trade-off is in our [self-hosted crypto payment gateway](/blog/self-hosted-crypto-payment-gateway) guide.
 - **A non-custodial gateway** (what Shieldz is). You give a public receiving key, customers pay that address directly, and the service only watches the chain and notifies you. No balance to hold, nothing to freeze, [$0 platform fees](/pricing).
 
 If you want the definition and the trade-offs in one place, the [crypto payment gateway explainer](/blog/what-is-a-crypto-payment-gateway) goes deeper.

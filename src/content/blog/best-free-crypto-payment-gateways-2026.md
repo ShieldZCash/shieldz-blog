@@ -7,7 +7,7 @@ tags: ["comparison", "payment-gateway", "crypto", "free", "guide"]
 eyebrow: "Comparison"
 ---
 
-Looking for a **free crypto payment gateway**? The word "free" hides three very different things: a $0 platform fee, a free signup (but a per-transaction cut), and free open-source software you host yourself. This guide ranks the 10 best options in 2026 by how free they actually are, so you know exactly what "free" buys you.
+Looking for a **free crypto payment gateway**? The word "free" hides three very different things: a $0 platform fee, a free signup (but a per-transaction cut), and free open-source software you host yourself. This guide ranks the 10 best options in 2026 by how free they actually are, so you know exactly what "free" buys you. (And because "free gateway" earns fair skepticism: [why Shieldz is free](https://shieldz.cash/why-free) explains the model.)
 
 **Short answer:** only two are genuinely $0-fee. [**Shieldz**](https://shieldz.cash) is free and hosted (non-custodial, no signup, no platform fee, you pay only network gas). [**BTCPay Server**](https://btcpayserver.org) is free and open-source but you run the infrastructure yourself (see the [self-hosted trade-off](/blog/self-hosted-crypto-payment-gateway)). Everything else is free to sign up for but takes roughly 0.4 to 1 percent per transaction.
 

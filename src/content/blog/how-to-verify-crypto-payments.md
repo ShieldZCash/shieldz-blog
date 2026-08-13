@@ -57,7 +57,7 @@ The last scam skips you and hunts your buyers: a cloned checkout page on a look-
 
 Read the list again and notice what is missing: not one of these scams attacks the blockchain. They attack the gap between what the chain says and what the merchant believes. Screenshots instead of confirmations, eyeballs instead of exact amounts, urgency instead of policy, existence instead of binding, an open endpoint instead of a signature, a look-alike instead of a canonical link.
 
-That is why the defense is not "be careful", it is automation. Let the invoice match exact amounts, let the webhook carry a signature, let refunds follow a fixed policy, and the human pressure points these scams rely on disappear. A [non-custodial setup](/blog/non-custodial-crypto-payment-gateway) helps for the same reason: with funds settling straight to your wallet and no balance sitting at a processor, there is one less account to phish, freeze or impersonate.
+That is why the defense is not "be careful", it is automation. Let the invoice match exact amounts, let the webhook carry a signature, let refunds follow a fixed policy, and the human pressure points these scams rely on disappear. A [non-custodial setup](/blog/non-custodial-crypto-payment-gateway) helps for the same reason: with funds [settling off-exchange](/blog/off-exchange-crypto-settlement) straight to your wallet and no balance sitting at a processor, there is one less account to phish, freeze or impersonate.
 
 ## FAQ
 

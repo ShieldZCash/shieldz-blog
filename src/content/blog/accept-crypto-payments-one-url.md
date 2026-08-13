@@ -49,7 +49,7 @@ For a one-time charge, hit the links endpoint instead:
 GET https://shieldz.cash/api/v1/links?to=0xYOURWALLET&amount=25&chain=BASE&asset=USDC
 ```
 
-You get back a `pay_url` (the hosted checkout), an embeddable button, and the same `manage_token` claim code. `to` and `amount` are hand-writable aliases so the URL stays short enough to type. The no-code version is the [payment link generator](/tools/payment-link).
+You get back a `pay_url` (the hosted checkout), an embeddable button, and the same `manage_token` claim code. `to` and `amount` are hand-writable aliases so the URL stays short enough to type. The no-code version is the [payment link generator](/tools/payment-link), walked through in the [crypto invoice generator](/blog/crypto-invoice-generator) guide.
 
 <figure style="margin:28px 0">
   <a href="/blog/img/hosted-checkout.png"><img src="/blog/img/hosted-checkout.png" alt="Shieldz hosted checkout page reached from a one-URL payment link: amount due, a payment address, and a QR code, with the coin and network the buyer chose." width="760" height="520" loading="lazy" style="width:100%;height:auto;border-radius:16px;border:1px solid #262626" /></a>
@@ -90,7 +90,7 @@ Swap in your wallet address and you have accepted crypto:
 https://shieldz.cash/api/v1/tip-jars?to=0xYOURWALLET&title=Tips&amounts=1,5,20
 ```
 
-No-code versions live at the [tip jar generator](/tools/tip-jar) and [payment link generator](/tools/payment-link). Building an agent? See the [agents overview](/agents) and the [HTTP reference](/agent).
+No-code versions live at the [tip jar generator](/tools/tip-jar) and [payment link generator](/tools/payment-link). Want the full picture of the no-key model? See [keyless crypto payments](/blog/keyless-crypto-payments). Building an agent? See the [agents overview](/agents) and the [HTTP reference](/agent).
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[

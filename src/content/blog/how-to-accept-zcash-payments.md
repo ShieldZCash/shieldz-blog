@@ -14,7 +14,7 @@ It is a short, practical walkthrough: why merchants accept Zcash, the difference
 
 ## Why accept Zcash
 
-Zcash is the payment coin for customers who want privacy. In a shielded (z-to-z) transaction the amount, the sender, and the receiver are encrypted on-chain. That is exactly why privacy-minded buyers reach for it: VPN and hosting customers, privacy-focused digital sellers, journalists and nonprofits taking sensitive donations, and creators offering a private tip option.
+Zcash is the payment coin for customers who want privacy. In a shielded (z-to-z) transaction the amount, the sender, and the receiver are encrypted on-chain. That is exactly why privacy-minded buyers reach for it: VPN and hosting customers, privacy-focused digital sellers, journalists and [nonprofits taking anonymous donations](/blog/how-to-accept-anonymous-crypto-donations), and creators offering a private tip option.
 
 The strategic angle for a merchant is competition. "Accept crypto" is crowded, but "accept shielded Zcash" is almost empty. Supporting it puts you in front of a small, underserved, high-intent audience that very few gateways can serve at all.
 

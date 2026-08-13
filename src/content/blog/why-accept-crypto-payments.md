@@ -44,7 +44,7 @@ A stablecoin payment confirms in seconds to minutes and the money is spendable i
 
 ## Watch out 1: custody
 
-This is the trap that matters most. Most crypto processors are custodial: the buyer's payment lands in the company's wallet first, and you receive it later, under their terms, after their identity checks. That reintroduces everything you were trying to escape: an intermediary who can freeze funds, delay payouts or close your account. A [non-custodial crypto payment gateway](/blog/non-custodial-crypto-payment-gateway) settles every payment straight to an address you control. [Shieldz](https://shieldz.cash) never holds the funds and never sees a private key, and you can [verify that yourself](https://shieldz.cash/verify).
+This is the trap that matters most. Most crypto processors are custodial: the buyer's payment lands in the company's wallet first, and you receive it later, under their terms, after their identity checks. That reintroduces everything you were trying to escape: an intermediary who can freeze funds, delay payouts or close your account. A [non-custodial crypto payment gateway](/blog/non-custodial-crypto-payment-gateway) settles every payment straight to an address you control, and a [self-hosted gateway](/blog/self-hosted-crypto-payment-gateway) removes the provider entirely. [Shieldz](https://shieldz.cash) never holds the funds and never sees a private key, and you can [verify that yourself](https://shieldz.cash/verify).
 
 ## Watch out 2: hidden fees
 

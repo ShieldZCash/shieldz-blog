@@ -8,7 +8,7 @@ tags: ["stablecoin-payments", "crypto", "payments", "usdc", "guide"]
 
 To **accept stablecoin payments** is to get paid in dollars that live on a blockchain: a customer sends you USDC or USDT, it confirms in seconds, and it is final. No 3% card fee, no chargeback window, no payout that lands next week. For a business, that is the whole pitch of crypto without the price swings, because a stablecoin is pegged one to one to the dollar (or the euro, or gold).
 
-This guide covers how to accept stablecoin payments the non-custodial way with [Shieldz](/): 20+ stablecoins across the major chains, a $0 platform fee, and settlement straight to your own wallet. It sits in the same cluster as [how to accept crypto payments](/blog/how-to-accept-crypto-payments) and [what a crypto payment gateway is](/blog/what-is-a-crypto-payment-gateway); start there if you want the wider picture first.
+This guide covers how to accept stablecoin payments the non-custodial way with [Shieldz](/): 20+ stablecoins across the major chains, a $0 platform fee, and settlement straight to your own wallet. It sits in the same cluster as [how to accept crypto payments](/blog/how-to-accept-crypto-payments) and [what a crypto payment gateway is](/blog/what-is-a-crypto-payment-gateway); start there if you want the wider picture first. If you also want to take BTC and ETH alongside stablecoins, see [pay with BTC, ETH, USDT or USDC](/blog/pay-with-btc-eth-usdt-usdc).
 
 ## Why accept stablecoin payments
 
@@ -70,7 +70,7 @@ The reason a stablecoin payment can be final, instant, and free is that no middl
 
 ## Start accepting stablecoins
 
-Point Shieldz at a wallet and you can accept stablecoin payments today, with $0 platform fees and no KYC. Create a [payment link](/tools/payment-link), read the [API quickstart](/blog/crypto-payment-api), or see the full [crypto payment gateway](/what-is-a-crypto-payment-gateway) overview. If you are weighing options, here are the [best free crypto payment gateways in 2026](/blog/best-free-crypto-payment-gateways-2026).
+Point Shieldz at a wallet and you can accept stablecoin payments today, with $0 platform fees and no KYC. Create a [payment link](/tools/payment-link), read the [API quickstart](/blog/crypto-payment-api), or see the full [crypto payment gateway](/what-is-a-crypto-payment-gateway) overview. If you are weighing options, here are the [best free crypto payment gateways in 2026](/blog/best-free-crypto-payment-gateways-2026). Just want the biggest one? See [how to accept USDT payments](/blog/how-to-accept-usdt-payments).
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[

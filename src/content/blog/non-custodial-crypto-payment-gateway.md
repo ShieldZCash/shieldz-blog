@@ -37,7 +37,7 @@ A non-custodial crypto payment gateway never touches the funds. The customer pay
 
 Compliance still exists, it just changes shape. Sanctioned-address screening runs on the counterparty, not on your payout. Shieldz, for example, screens paying addresses against the OFAC list, but it does that without ever holding your money in a reviewable balance. The screen looks at who is paying, not at whether to release what is already yours.
 
-Shieldz works exactly this way. You give a wallet address, you get a payment link or a hosted checkout, and funds land in your wallet at settlement, with no signup and a 0% platform fee. BTCPay Server is non-custodial too, if you are willing to run your own server. The usual trade is control for convenience, and a hosted non-custodial gateway is the rare case that gives you both.
+Shieldz works exactly this way. You give a wallet address, you get a payment link or a hosted checkout, and funds land in your wallet at settlement, with no signup and a 0% platform fee. BTCPay Server is non-custodial too, if you are willing to run your own server; we compare that route in the [self-hosted crypto payment gateway](/blog/self-hosted-crypto-payment-gateway) guide. The usual trade is control for convenience, and a hosted non-custodial gateway is the rare case that gives you both.
 
 ## FAQ
 
@@ -55,7 +55,7 @@ On-chain payments are final, so there are no chargebacks to reserve against. Tha
 
 ## Get paid without the hold
 
-If you have ever had a payout frozen "for review," a non-custodial crypto payment gateway is the structural fix, not a workaround. Spin up a [payment link](https://shieldz.cash/tools/payment-link) or a [tip jar](https://shieldz.cash/tools/tip-jar) in seconds, read [what a crypto payment gateway actually is](/blog/what-is-a-crypto-payment-gateway), or compare the [best free crypto payment gateways of 2026](/blog/best-free-crypto-payment-gateways-2026). If you want the deeper trade-offs, see [pay any coin and the trust tradeoff](/blog/pay-any-coin-trust-tradeoff), or, for the most private option, [how to accept Zcash payments online](/blog/how-to-accept-zcash-payments).
+If you have ever had a payout frozen "for review," a non-custodial crypto payment gateway is the structural fix, not a workaround. Spin up a [payment link](https://shieldz.cash/tools/payment-link) or a [tip jar](https://shieldz.cash/tools/tip-jar) in seconds, read [what a crypto payment gateway actually is](/blog/what-is-a-crypto-payment-gateway), see how to [accept crypto without KYC](/blog/accept-crypto-payments-without-kyc), or compare the [best free crypto payment gateways of 2026](/blog/best-free-crypto-payment-gateways-2026). If you want the deeper trade-offs, see [pay any coin and the trust tradeoff](/blog/pay-any-coin-trust-tradeoff), how payments settle [off-exchange straight to your wallet](/blog/off-exchange-crypto-settlement), or, for the most private option, [how to accept Zcash payments online](/blog/how-to-accept-zcash-payments).
 
 <script type="application/ld+json">
 {

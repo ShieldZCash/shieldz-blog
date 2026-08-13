@@ -36,7 +36,7 @@ If you only remember one thing about choosing a crypto payment gateway: **non-cu
 - **Developer experience:** real [docs](/docs), signed webhooks, and SDKs.
 - **Chargebacks:** on crypto they do not exist; a confirmed payment is final.
 
-It is also worth comparing specific providers directly, for example [Shieldz vs Coinbase Commerce](/vs-coinbase-commerce), [vs BitPay](/vs-bitpay) and [vs BTCPay Server](/vs-btcpay).
+It is also worth comparing specific providers directly, for example [Shieldz vs Coinbase Commerce](/vs-coinbase-commerce), [vs BitPay](/vs-bitpay) and [vs BTCPay Server](/vs-btcpay). And if you would rather run the software yourself, start with the [self-hosted crypto payment gateway](/blog/self-hosted-crypto-payment-gateway) guide.
 
 ## The bottom line
 

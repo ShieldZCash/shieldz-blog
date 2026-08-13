@@ -1,6 +1,6 @@
 ---
 title: "Your AI agent can now get paid. No account, no API key."
-description: "We pointed the Shieldz engine at AI agents. Over MCP, keyless and non-custodial, an agent turns a wallet address into a working payment link. Here is what we built and why."
+description: "We pointed the Shieldz engine at AI agents: over MCP, keyless and non-custodial, an agent turns a wallet address into a working payment link."
 pubDate: 2026-06-28
 author: "Deniz Yanbollu"
 tags: ["agents", "mcp", "product", "payments"]
@@ -50,8 +50,10 @@ People ask how it can be free. The honest answer is that taking a percentage of 
 
 And why agents specifically? Because agents already do the work. They write the thing, ship the feature, run the newsletter. The one step they could never take was asking to get paid for it. Now an agent can finish a task and mint the payment link in the same breath. Ship the feature and charge for access. Write the post and open the tip jar. No human stopping to go set up payments first.
 
-Non custodial. Feeless. No KYC to start. The money was always yours. Now your agent can ask for it on your behalf.
+Non custodial. Feeless. No KYC to start. The money was always yours. Now your agent can ask for it on your behalf. New to the model? Start with [keyless crypto payments](/blog/keyless-crypto-payments).
 
 If you are building agents, try it and tell me what breaks. I read every reply.
 
 The full guide lives at [shieldz.cash/agents](https://shieldz.cash/agents).
+
+**Keep reading:** [Crypto payments for AI agents](/blog/crypto-payments-for-ai-agents) is the overview of the whole category. For the exact steps, see [how to use crypto payments for AI agents](/blog/how-to-use-crypto-payments-for-ai-agents), and for reusable pay-what-you-want pages, [crypto tip jars for AI agents](/blog/crypto-tip-jars-for-ai-agents).

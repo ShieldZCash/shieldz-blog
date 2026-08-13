@@ -159,7 +159,7 @@ Fifty options is not a decision, so here is how we would actually shortlist, by 
 
 **Maximum coin coverage.** NOWPayments advertises 350+ currencies at 0.5%. DePay claims the widest sweep by converting any token on the fly. B2BinPay and Whitepay both clear 200. Remember the scatter chart: you do not have to pay more for coverage.
 
-**Stablecoins on rails you already use.** Stripe's Pay with Crypto settles USDC into your existing Stripe balance at 1.5%, and Coinbase Payments brings USDC on Base to Shopify at no gateway fee. Both are custodial and KYC-gated, but they are the shortest path if you are already on those platforms. For the direct route, see [accept stablecoin payments](/blog/accept-stablecoin-payments).
+**Stablecoins on rails you already use.** Stripe's Pay with Crypto settles USDC into your existing Stripe balance at 1.5%, and Coinbase Payments brings USDC on Base to Shopify at no gateway fee. Both are custodial and KYC-gated, but they are the shortest path if you are already on those platforms. If you are leaving one of them instead, we shortlisted the [Coinbase Commerce alternatives](/blog/coinbase-commerce-alternatives) separately. For the direct route, see [accept stablecoin payments](/blog/accept-stablecoin-payments).
 
 **Subscriptions and invoicing.** Loop Crypto and BoomFi do on-chain autopay, Radom adds EU VASP compliance, Request Finance covers invoicing and payroll end to end. For simple one-off invoices without a platform in the middle, a [crypto invoice generator](/blog/crypto-invoice-generator) is enough.
 

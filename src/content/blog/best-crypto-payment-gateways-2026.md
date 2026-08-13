@@ -26,7 +26,7 @@ Sort the 2026 field by that first, then look at fees.
 | NOWPayments | Processor-custody | ~0.5%+ | Varies | 300+ coins |
 | CryptAPI | Non-custodial router | ~1% per tx | No | Many |
 
-(Honest note: BTCPay Server is excellent and genuinely non-custodial, but you run the servers, nodes, and uptime yourself. Shieldz is the hosted, $0-fee, non-custodial option for people who do not want to operate infrastructure.)
+(Honest note: BTCPay Server is excellent and genuinely non-custodial, but you run the servers, nodes, and uptime yourself. Shieldz is the hosted, $0-fee, non-custodial option for people who do not want to operate infrastructure. Coming from the biggest name on the list? The [Coinbase Commerce alternatives](/blog/coinbase-commerce-alternatives) shortlist goes deeper.)
 
 ## How to read it
 

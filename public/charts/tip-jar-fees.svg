@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="What you keep from a $5 tip. Amount left after platform + processing fees">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#57d497"/><stop offset="1" stop-color="#2fb573"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="759" height="419" rx="16" fill="#161616" stroke="#262626"/>
+  <text x="30" y="38" font-size="20" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">What you keep from a $5 tip</text>
+  <text x="30" y="60" font-size="13" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">Amount left after platform + processing fees</text>
+  <text x="734" y="38" text-anchor="end" font-size="12" font-weight="600" fill="#2fb573" font-family="ui-sans-serif,system-ui,sans-serif">USD kept</text>
+  <line x1="30" y1="82.0" x2="734.0" y2="82.0" stroke="#242424"/>
+  <line x1="30" y1="150.5" x2="734.0" y2="150.5" stroke="#242424"/>
+  <line x1="30" y1="219.0" x2="734.0" y2="219.0" stroke="#242424"/>
+  <line x1="30" y1="287.5" x2="734.0" y2="287.5" stroke="#242424"/>
+  <line x1="30" y1="356.0" x2="734.0" y2="356.0" stroke="#242424"/>
+  <rect x="79.0" y="155.2" width="78.0" height="200.8" rx="7" fill="#3a3a3a"/>
+    <text x="118.0" y="144.2" text-anchor="middle" font-size="16" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$4.25</text>
+    <text x="118.0" y="382.0" text-anchor="middle" font-size="13" font-weight="400" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Patreon</text><rect x="255.0" y="140.6" width="78.0" height="215.4" rx="7" fill="#3a3a3a"/>
+    <text x="294.0" y="129.6" text-anchor="middle" font-size="16" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$4.56</text>
+    <text x="294.0" y="382.0" text-anchor="middle" font-size="13" font-weight="400" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Ko-fi</text><rect x="431.0" y="131.6" width="78.0" height="224.4" rx="7" fill="#3a3a3a"/>
+    <text x="470.0" y="120.6" text-anchor="middle" font-size="16" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$4.75</text>
+    <text x="470.0" y="382.0" text-anchor="middle" font-size="13" font-weight="400" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Buy Me a Coffee</text><rect x="607.0" y="119.8" width="78.0" height="236.2" rx="7" fill="url(#g)"/>
+    <text x="646.0" y="108.8" text-anchor="middle" font-size="16" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">$5.00</text>
+    <text x="646.0" y="382.0" text-anchor="middle" font-size="13" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">Shieldz</text>
+  <text x="30" y="404" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">Published platform fees: Patreon 8%, Buy Me a Coffee 5%, Ko-fi 0% + Stripe 2.9%+30¢. Shieldz: 0% platform fee.</text>
+  <text x="734" y="404" text-anchor="end" font-size="11" fill="#777" font-family="ui-sans-serif,system-ui,sans-serif">shieldz.cash</text></svg>

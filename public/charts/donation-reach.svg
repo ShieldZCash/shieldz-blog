@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="How much of a $100 donation reaches your cause. Amount left after processing fees">
+  <defs>
+    <linearGradient id="gGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#57d497"/>
+      <stop offset="1" stop-color="#2fb573"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="759" height="419" rx="16" fill="#161616" stroke="#262626"/>
+  <text x="30" y="38" font-size="20" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">How much of a $100 donation reaches your cause</text>
+  <text x="30" y="60" font-size="13" fill="#777777" font-family="ui-sans-serif,system-ui,sans-serif">Amount left after processing fees</text>
+  <text x="734" y="38" text-anchor="end" font-size="12" font-weight="600" fill="#2fb573" font-family="ui-sans-serif,system-ui,sans-serif">USD to the cause</text>
+  <line x1="30" y1="82.0" x2="734.0" y2="82.0" stroke="#242424" stroke-width="1"/>
+  <line x1="30" y1="150.5" x2="734.0" y2="150.5" stroke="#242424" stroke-width="1"/>
+  <line x1="30" y1="219.0" x2="734.0" y2="219.0" stroke="#242424" stroke-width="1"/>
+  <line x1="30" y1="287.5" x2="734.0" y2="287.5" stroke="#242424" stroke-width="1"/>
+  <line x1="30" y1="356.0" x2="734.0" y2="356.0" stroke="#242424" stroke-width="1"/>
+  
+    <rect x="108.3" y="125.7" width="78.0" height="230.3" rx="7" fill="#3a3a3a"/>
+    <text x="147.3" y="114.7" text-anchor="middle" font-size="16" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$97.50</text>
+    <text x="147.3" y="382.0" text-anchor="middle" font-size="13" font-weight="400" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">Credit card</text>
+    <rect x="343.0" y="124.5" width="78.0" height="231.5" rx="7" fill="#3a3a3a"/>
+    <text x="382.0" y="113.5" text-anchor="middle" font-size="16" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$98.01</text>
+    <text x="382.0" y="382.0" text-anchor="middle" font-size="13" font-weight="400" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">PayPal</text>
+    <rect x="577.7" y="119.8" width="78.0" height="236.2" rx="7" fill="url(#gGrad)"/>
+    <text x="616.7" y="108.8" text-anchor="middle" font-size="16" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">$100.00</text>
+    <text x="616.7" y="382.0" text-anchor="middle" font-size="13" font-weight="700" fill="#57d497" font-family="ui-sans-serif,system-ui,sans-serif">Shieldz</text>
+  <text x="30" y="404" font-size="11" fill="#777777" font-family="ui-sans-serif,system-ui,sans-serif">Nonprofit rates: cards ~2.2%+30¢, PayPal Giving Fund 1.99%. Shieldz: 0% platform fee.</text>
+  <text x="734" y="404" text-anchor="end" font-size="11" fill="#777777" font-family="ui-sans-serif,system-ui,sans-serif">shieldz.cash</text>
+</svg>

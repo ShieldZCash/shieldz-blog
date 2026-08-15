@@ -1,6 +1,6 @@
 ---
 title: "Coinbase Commerce Alternatives: 7 Gateways Compared (2026)"
-description: "The best Coinbase Commerce alternatives in 2026, compared on fees, custody and KYC: from $0 non-custodial gateways to self-hosted and enterprise options."
+description: "Coinbase Commerce shut down March 31, 2026. The 7 best alternatives compared on fees, custody and KYC, from $0 non-custodial to self-hosted options."
 pubDate: 2026-08-13
 author: "Deniz Yanbollu"
 tags: ["coinbase commerce alternatives", "comparison", "crypto", "payments", "gateways"]
@@ -8,17 +8,19 @@ eyebrow: "Comparison"
 image: "https://shieldz.cash/blog/og/coinbase-commerce-alternatives.png"
 ---
 
-People search for Coinbase Commerce alternatives for four concrete reasons: the 1% fee on every transaction, the account and business verification required to start, a checkout that has narrowed to a USDC-first, roughly ten-coin lineup, and the fact that the money flows through a hosted balance rather than straight to a wallet you control. If none of those bother you, Coinbase Commerce is a fine product with a strong brand. If any of them do, this post is the shortlist.
+The search for Coinbase Commerce alternatives stopped being optional on March 31, 2026: Coinbase shut the Commerce platform down. Merchants outside the United States and Singapore were left without a successor, and the replacement for those two markets, Coinbase Business, is a different product entirely: custodial, full KYB verification, funds held by Coinbase. If you built on Commerce for its self-custodial model, the replacement is the opposite of what you chose.
+
+So this is now a migration question, and this post is the shortlist.
 
 We maintain a dataset of [50 crypto payment gateways](/blog/50-crypto-payment-gateways-compared), and these seven are the alternatives we would actually consider, each for a different reason. Disclosure, as always: Shieldz is our product, and the numbers below come from published pricing pages as of August 2026.
 
 ## The fee picture first
 
-Coinbase Commerce charges 1% per transaction, which is exactly the market median in our dataset. The alternatives run from double that down to zero.
+Coinbase Commerce charged 1% per transaction (its final published rate before the shutdown), which is exactly the market median in our dataset. The alternatives run from double that down to zero.
 
 <figure style="margin:28px 0">
   <a href="/blog/charts/cc-alternatives-fees.svg"><img src="/blog/charts/cc-alternatives-fees.svg" alt="Published fee of Coinbase Commerce at 1% against seven alternatives in 2026: BitPay 2%, Cryptomus 2%, Stripe crypto 1.5%, CoinGate 1%, NOWPayments 0.5%, BTCPay Server 0% and Shieldz 0%." width="760" height="388" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Standard advertised rates, August 2026. Two alternatives charge nothing at all.</figcaption>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Standard advertised rates, August 2026; Coinbase Commerce shown at its final published rate. Two alternatives charge nothing at all.</figcaption>
 </figure>
 
 ## 1. Shieldz: non-custodial, $0 fee, no signup
@@ -67,7 +69,7 @@ If your business already runs on Stripe, its crypto option accepts USDC and sett
 
 | Gateway | Fee | Custody | KYC to start | Coins | Fiat payout |
 |---|---|---|---|---|---|
-| Coinbase Commerce | 1% | Hybrid (hosted balance) | Required | ~10 | Yes |
+| Coinbase Commerce | 1% | Hybrid (hosted balance) | Required | ~10 | Yes (shut down 3/2026) |
 | [Shieldz](https://shieldz.cash) | 0% | Non-custodial | None | 20 | No |
 | BTCPay Server | 0% | Self-hosted | None | 1+ | No |
 | NOWPayments | 0.5% | Non-custodial | Optional | 350 | Yes |
@@ -91,8 +93,8 @@ Yes, two models: self-hosted software like BTCPay Server (0%, you run it) and no
 **Can I accept crypto without KYC, unlike Coinbase Commerce?**
 Yes. Providers that never hold your funds have nothing to gate: Shieldz and BTCPay Server require no verification to start. The trade-offs are covered in [accepting crypto without KYC](/blog/accept-crypto-payments-without-kyc).
 
-**Does Coinbase Commerce hold my funds?**
-Payments flow through the Coinbase platform and your merchant account rather than settling directly to an external wallet you control, and using it requires a verified Coinbase Commerce account. Non-custodial alternatives settle each payment straight to your own address.
+**What happened to Coinbase Commerce?**
+Coinbase shut it down on March 31, 2026. The replacement, Coinbase Business, is custodial, requires full KYB verification, and is available only in the United States and Singapore. Merchants elsewhere need one of the alternatives above.
 
 ## Try the $0 alternative in one minute
 
@@ -106,7 +108,7 @@ The fastest way to compare is to feel the difference: create a checkout with the
     { "@type": "Question", "name": "What is the best Coinbase Commerce alternative?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the complaint. For the fee and custody, a non-custodial $0 gateway like Shieldz. For sovereignty, self-hosted BTCPay Server. For coin coverage, NOWPayments. For enterprise compliance, BitPay." } },
     { "@type": "Question", "name": "Is there a free alternative to Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, two models: self-hosted software like BTCPay Server, where you run the gateway yourself for 0%, and non-custodial gateways like Shieldz with a $0 platform fee where the buyer pays only network gas." } },
     { "@type": "Question", "name": "Can I accept crypto without KYC, unlike Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Providers that never hold your funds have nothing to gate: Shieldz and BTCPay Server require no verification to start accepting payments." } },
-    { "@type": "Question", "name": "Does Coinbase Commerce hold my funds?", "acceptedAnswer": { "@type": "Answer", "text": "Payments flow through the Coinbase platform and your verified merchant account rather than settling directly to an external wallet you control. Non-custodial alternatives settle each payment straight to your own address." } }
+    { "@type": "Question", "name": "What happened to Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Coinbase shut it down on March 31, 2026. The replacement, Coinbase Business, is custodial, requires full KYB verification, and is available only in the United States and Singapore." } }
   ]
 }
 </script>

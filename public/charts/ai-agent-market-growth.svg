@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="The AI agent market is going vertical. Global AI agents market size, ~45% CAGR">
+  <defs>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9e8c"/>
+      <stop offset="1" stop-color="#f5361c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="759" height="399" rx="16" fill="#161616" stroke="#262626"/>
+  <text x="30" y="36" font-size="20" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">The AI agent market is going vertical</text>
+  <text x="30" y="58" font-size="13" fill="#777777" font-family="ui-sans-serif,system-ui,sans-serif">Global AI agents market size, ~45% CAGR</text>
+  <text x="736" y="36" text-anchor="end" font-size="12" font-weight="600" fill="#f5361c" font-family="ui-sans-serif,system-ui,sans-serif">USD billions</text>
+  <line x1="30" y1="78.0" x2="736.0" y2="78.0" stroke="#222222" stroke-width="1"/>
+  <line x1="30" y1="144.5" x2="736.0" y2="144.5" stroke="#222222" stroke-width="1"/>
+  <line x1="30" y1="211.0" x2="736.0" y2="211.0" stroke="#222222" stroke-width="1"/>
+  <line x1="30" y1="277.5" x2="736.0" y2="277.5" stroke="#222222" stroke-width="1"/>
+  <line x1="30" y1="344.0" x2="736.0" y2="344.0" stroke="#222222" stroke-width="1"/>
+  
+    <rect x="52.2" y="318.3" width="56.5" height="25.7" rx="6" fill="url(#barGrad)"/>
+    <text x="80.4" y="308.3" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$5.1B</text>
+    <text x="80.4" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2024</text>
+    <rect x="153.0" y="306.7" width="56.5" height="37.3" rx="6" fill="url(#barGrad)"/>
+    <text x="181.3" y="296.7" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$7.4B</text>
+    <text x="181.3" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2025</text>
+    <rect x="253.9" y="290.0" width="56.5" height="54.0" rx="6" fill="url(#barGrad)"/>
+    <text x="282.1" y="280.0" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$10.7B</text>
+    <text x="282.1" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2026</text>
+    <rect x="354.8" y="265.8" width="56.5" height="78.2" rx="6" fill="url(#barGrad)"/>
+    <text x="383.0" y="255.8" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$15.5B</text>
+    <text x="383.0" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2027</text>
+    <rect x="455.6" y="230.5" width="56.5" height="113.5" rx="6" fill="url(#barGrad)"/>
+    <text x="483.9" y="220.5" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$22.5B</text>
+    <text x="483.9" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2028</text>
+    <rect x="556.5" y="180.1" width="56.5" height="163.9" rx="6" fill="url(#barGrad)"/>
+    <text x="584.7" y="170.1" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$32.5B</text>
+    <text x="584.7" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2029</text>
+    <rect x="657.3" y="106.5" width="56.5" height="237.5" rx="6" fill="url(#barGrad)"/>
+    <text x="685.6" y="96.5" text-anchor="middle" font-size="15" font-weight="700" fill="#fafafa" font-family="ui-sans-serif,system-ui,sans-serif">$47.1B</text>
+    <text x="685.6" y="370.0" text-anchor="middle" font-size="13" fill="#9c9c9c" font-family="ui-sans-serif,system-ui,sans-serif">2030</text>
+  <text x="736" y="386" text-anchor="end" font-size="11" fill="#777777" font-family="ui-sans-serif,system-ui,sans-serif">shieldz.cash</text>
+</svg>

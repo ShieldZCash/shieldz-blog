@@ -125,7 +125,7 @@ Sorted by advertised fee, then alphabetically. An asterisk marks fees we could n
 | [BlockBee](https://blockbee.io) | 1% | Non-custodial | None | 70 | No | Formerly CryptAPI; payment forwarding to your wallet |
 | [Blockonomics](https://www.blockonomics.co) | 1% | Non-custodial | None | 3 | No | Direct-to-wallet Bitcoin payments with no KYC |
 | [BoomFi](https://www.boomfi.xyz) | 1% | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
-| [Coinbase Commerce](https://www.coinbase.com/commerce) | 1% | Hybrid | Required | 10 | Yes | USDC-first checkout on Base; Shopify and Stripe partnerships |
+| [Coinbase Commerce](https://www.coinbase.com/commerce) | 1% | Hybrid | Required | 10 | Yes | Shut down March 2026; successor Coinbase Business is custodial, US/SG only |
 | [CoinGate](https://coingate.com) | 1% | Custodial | Required | 70 | Yes | EU-based gateway; Lightning enabled by default |
 | [Flexa](https://flexa.co) | 1% | Custodial | Required | 99 | Yes | In-store crypto acceptance network across 13 chains |
 | [HoodPay](https://hoodpay.io) | 1% | Hybrid | None | 20 | No | No-KYC checkout favored by digital-goods sellers |

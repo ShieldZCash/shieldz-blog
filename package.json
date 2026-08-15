@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "og": "node scripts/gen-og.mjs",
+    "prebuild": "node scripts/gen-og.mjs",
     "build": "astro build",
     "preview": "astro preview"
   },

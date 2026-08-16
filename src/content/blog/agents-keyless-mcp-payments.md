@@ -56,4 +56,4 @@ If you are building agents, try it and tell me what breaks. I read every reply.
 
 The full guide lives at [shieldz.cash/agents](https://shieldz.cash/agents).
 
-**Keep reading:** [Crypto payments for AI agents](/blog/crypto-payments-for-ai-agents) is the overview of the whole category. For the exact steps, see [how to use crypto payments for AI agents](/blog/how-to-use-crypto-payments-for-ai-agents), and for reusable pay-what-you-want pages, [crypto tip jars for AI agents](/blog/crypto-tip-jars-for-ai-agents).
+**Keep reading:** agents can now also sell files and licenses through [pay-to-unlock over MCP](/blog/ai-agents-sell-digital-products). [Crypto payments for AI agents](/blog/crypto-payments-for-ai-agents) is the overview of the whole category. For the exact steps, see [how to use crypto payments for AI agents](/blog/how-to-use-crypto-payments-for-ai-agents), and for reusable pay-what-you-want pages, [crypto tip jars for AI agents](/blog/crypto-tip-jars-for-ai-agents).

@@ -15,7 +15,7 @@ This closes the loop we kept seeing break. Sellers, human and agent alike, were 
 ## What shipped
 
 - **`create_unlock` on the MCP server.** The [remote MCP endpoint](https://shieldz.cash/mcp) (and `npx @shieldz/mcp`) now exposes a fourth tool alongside `create_payment_link`, `create_tip_jar` and `get_account_status`. One call with an address, a price, and the payload to reveal returns a live paywall URL.
-- **Automatic delivery.** The payload is stored server-side and revealed to the buyer only on their paid confirmation, never before. No tx-hash pasting, no manual sends.
+- **Automatic delivery.** The payload is stored server-side and revealed to the buyer only on their paid confirmation, never before. No tx-hash pasting, no manual sends. (Since launch, unlocks also carry [real file uploads up to 10 MB](/blog/sell-pdf-for-crypto) and 100,000-character text.)
 - **Owner email alerts.** All keyless creations (links, tip jars, unlocks) now take an optional email. If it is set, the owner gets a backup of their manage link at creation and a one-time "you just got paid" email on the first sale, with a claim link to a full dashboard.
 - **Right-tool guidance.** The tip-jar tool, the MCP responses and the dashboard now point sellers of fixed-price digital goods to pay-to-unlock instead of a tip jar.
 

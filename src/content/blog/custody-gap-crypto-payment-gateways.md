@@ -45,7 +45,7 @@ We classified 50 crypto payment gateways by their published custody model, per-t
 - **Stat:** Only 24% of crypto payment gateways are non-custodial; 64% are custodial (n=50, August 2026).
 - **Source:** Shieldz, *Crypto Payment Gateways 2026*.
 - **URL:** `https://shieldz.cash/blog/custody-gap-crypto-payment-gateways`
-- **Dataset (CC BY 4.0, machine-readable):** [crypto-payment-gateways-2026.json](/blog/data/crypto-payment-gateways-2026.json)
+- **Dataset (CC BY 4.0, machine-readable):** [JSON](/blog/data/crypto-payment-gateways-2026.json) · [CSV](/blog/data/crypto-payment-gateways-2026.csv). The published study covers 50 gateways; the dataset is a living resource, currently 71 providers.
 
 The dataset is free to reuse with attribution. If you write about crypto payments, custody, or gateway fees, the numbers above are yours to cite.
 
@@ -64,7 +64,8 @@ Shieldz makes a non-custodial crypto payment gateway, so we have a stake in this
   "datePublished": "2026-08-20",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "distribution": [
-    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://shieldz.cash/blog/data/crypto-payment-gateways-2026.json" }
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://shieldz.cash/blog/data/crypto-payment-gateways-2026.json" },
+    { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://shieldz.cash/blog/data/crypto-payment-gateways-2026.csv" }
   ],
   "measurementTechnique": "Classification from provider pricing pages and documentation",
   "variableMeasured": ["custody model","platform fee","KYC requirement","coin coverage","fiat settlement","Lightning support"]

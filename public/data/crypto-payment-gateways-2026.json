@@ -1,28 +1,74 @@
 {
   "dataset": "Crypto Payment Gateways 2026",
+  "version": "1.1.0",
   "publisher": "Shieldz",
   "publisher_url": "https://shieldz.cash",
   "canonical": "https://shieldz.cash/blog/custody-gap-crypto-payment-gateways",
   "published": "2026-08-20",
+  "updated": "2026-08-20",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
-  "methodology": "Classification of 50 crypto payment gateways by published custody model, per-transaction fee, KYC requirement, coin coverage, fiat settlement and Lightning support, from provider pricing pages and docs as of August 2026. 7 fees marked verified:false could not be confirmed on an official page. Custody is an editorial classification based on each provider docs.",
+  "methodology": "Classification of crypto payment gateways by published custody model, per-transaction fee, KYC requirement, coin coverage, fiat settlement and Lightning support, from provider pricing pages and docs as of August 2026. The published study (study_cohort=true) covers 50 gateways; this is a living dataset that also lists additional verified gateways (study_cohort=false). Rows with verified=false could not have their fee confirmed on an official page. Custody is an editorial classification based on each provider docs.",
+  "field_dictionary": {
+    "name": "Provider name",
+    "url": "Official website",
+    "fee_pct": "Standard advertised platform/processing fee, percent per transaction",
+    "fee_note": "Human-readable fee detail",
+    "custody": "custodial = provider wallet receives first; non-custodial = settles to a wallet the merchant controls; self-hosted = merchant runs the software; hybrid = depends on configuration",
+    "kyc": "Merchant KYC to start accepting: none | optional | required",
+    "coins": "Approximate count of supported cryptocurrencies",
+    "settlement_fiat": "Whether the merchant can settle or withdraw to fiat currency",
+    "lightning": "Bitcoin Lightning Network support",
+    "founded": "Year the product/company launched",
+    "notable": "Short editorial note on what the provider is known for",
+    "verified": "true = fee confirmed on an official page or reputable source",
+    "source_url": "Page used for the fee/classification",
+    "study_cohort": "true = part of the published 50-gateway August 2026 study; false = additional gateway in the living dataset"
+  },
+  "counts": {
+    "total": 71,
+    "study_cohort": 50,
+    "additional": 21
+  },
   "summary": {
-    "total": 50,
-    "custodial": 32,
-    "non_custodial": 12,
-    "self_hosted": 2,
-    "hybrid": 4,
-    "pct_custodial": 64,
-    "pct_non_custodial": 24,
-    "kyc_required": 29,
-    "kyc_optional": 6,
-    "kyc_none": 15,
-    "pct_kyc_required": 58,
-    "median_fee_pct": 1,
-    "zero_platform_fee": 10,
-    "fiat_settlement": 33,
-    "lightning": 12
+    "study_cohort": {
+      "n": 50,
+      "custodial": 32,
+      "non_custodial": 12,
+      "self_hosted": 2,
+      "hybrid": 4,
+      "pct_custodial": 64,
+      "pct_non_custodial": 24,
+      "kyc_required": 29,
+      "kyc_optional": 6,
+      "kyc_none": 15,
+      "pct_kyc_required": 58,
+      "median_fee_pct": 1,
+      "zero_platform_fee": 10,
+      "fiat_settlement": 33,
+      "pct_fiat_settlement": 66,
+      "lightning": 12,
+      "verified": 43
+    },
+    "full_dataset": {
+      "n": 71,
+      "custodial": 42,
+      "non_custodial": 20,
+      "self_hosted": 4,
+      "hybrid": 5,
+      "pct_custodial": 59,
+      "pct_non_custodial": 28,
+      "kyc_required": 41,
+      "kyc_optional": 7,
+      "kyc_none": 23,
+      "pct_kyc_required": 58,
+      "median_fee_pct": 1,
+      "zero_platform_fee": 14,
+      "fiat_settlement": 45,
+      "pct_fiat_settlement": 63,
+      "lightning": 15,
+      "verified": 55
+    }
   },
   "gateways": [
     {
@@ -38,7 +84,8 @@
       "founded": 2026,
       "notable": "Non-custodial, $0 fee, no KYC; pay any coin, settle in one",
       "verified": true,
-      "source_url": "https://shieldz.cash/pricing"
+      "source_url": "https://shieldz.cash/pricing",
+      "study_cohort": true
     },
     {
       "name": "BitPay",
@@ -53,7 +100,8 @@
       "founded": 2011,
       "notable": "Oldest major crypto processor; daily fiat bank settlements",
       "verified": true,
-      "source_url": "https://bitpay.com/pricing"
+      "source_url": "https://bitpay.com/pricing",
+      "study_cohort": true
     },
     {
       "name": "Coinbase Commerce",
@@ -68,7 +116,8 @@
       "founded": 2018,
       "notable": "Shut down March 2026; successor Coinbase Business is custodial, US/SG only",
       "verified": true,
-      "source_url": "https://www.coinbase.com/commerce"
+      "source_url": "https://www.coinbase.com/commerce",
+      "study_cohort": true
     },
     {
       "name": "CoinGate",
@@ -83,7 +132,8 @@
       "founded": 2014,
       "notable": "EU-based gateway; Lightning enabled by default",
       "verified": true,
-      "source_url": "https://www.coingate.com/pricing"
+      "source_url": "https://www.coingate.com/pricing",
+      "study_cohort": true
     },
     {
       "name": "NOWPayments",
@@ -98,7 +148,8 @@
       "founded": 2019,
       "notable": "Auto-forwarding with 350+ supported currencies",
       "verified": true,
-      "source_url": "https://nowpayments.io/pricing"
+      "source_url": "https://nowpayments.io/pricing",
+      "study_cohort": true
     },
     {
       "name": "CoinPayments",
@@ -113,7 +164,8 @@
       "founded": 2013,
       "notable": "Veteran multi-coin processor operating since 2013",
       "verified": true,
-      "source_url": "https://www.coinpayments.net/help-fees"
+      "source_url": "https://www.coinpayments.net/help-fees",
+      "study_cohort": true
     },
     {
       "name": "OpenNode",
@@ -128,7 +180,8 @@
       "founded": 2018,
       "notable": "Bitcoin-only, Lightning-first processor",
       "verified": true,
-      "source_url": "https://opennode.com/pricing/"
+      "source_url": "https://opennode.com/pricing/",
+      "study_cohort": true
     },
     {
       "name": "BTCPay Server",
@@ -143,7 +196,8 @@
       "founded": 2017,
       "notable": "Free open-source self-hosted processor; altcoins via plugins",
       "verified": true,
-      "source_url": "https://btcpayserver.org/"
+      "source_url": "https://btcpayserver.org/",
+      "study_cohort": true
     },
     {
       "name": "Blockonomics",
@@ -158,7 +212,8 @@
       "founded": 2015,
       "notable": "Direct-to-wallet Bitcoin payments with no KYC",
       "verified": true,
-      "source_url": "https://www.blockonomics.co"
+      "source_url": "https://www.blockonomics.co",
+      "study_cohort": true
     },
     {
       "name": "CoinsPaid",
@@ -173,7 +228,8 @@
       "founded": 2014,
       "notable": "High-volume processor favored by iGaming merchants",
       "verified": false,
-      "source_url": "https://coinspaid.com"
+      "source_url": "https://coinspaid.com",
+      "study_cohort": true
     },
     {
       "name": "Confirmo",
@@ -188,7 +244,8 @@
       "founded": 2014,
       "notable": "MiCA-licensed stablecoin-first EU gateway",
       "verified": true,
-      "source_url": "https://confirmo.com"
+      "source_url": "https://confirmo.com",
+      "study_cohort": true
     },
     {
       "name": "Plisio",
@@ -203,7 +260,8 @@
       "founded": 2018,
       "notable": "No-KYC signup with a single flat 0.5% fee",
       "verified": true,
-      "source_url": "https://plisio.net/pricing"
+      "source_url": "https://plisio.net/pricing",
+      "study_cohort": true
     },
     {
       "name": "Cryptomus",
@@ -218,7 +276,8 @@
       "founded": 2022,
       "notable": "Negotiable fees; popular with high-risk and SaaS merchants",
       "verified": true,
-      "source_url": "https://cryptomus.com/fees/payment"
+      "source_url": "https://cryptomus.com/fees/payment",
+      "study_cohort": true
     },
     {
       "name": "Binance Pay",
@@ -233,7 +292,8 @@
       "founded": 2021,
       "notable": "Zero-fee payments inside the Binance ecosystem",
       "verified": true,
-      "source_url": "https://pay.binance.com"
+      "source_url": "https://pay.binance.com",
+      "study_cohort": true
     },
     {
       "name": "TripleA",
@@ -248,7 +308,8 @@
       "founded": 2017,
       "notable": "First MAS-licensed crypto payments firm; bank-grade settlement",
       "verified": true,
-      "source_url": "https://www.triple-a.io"
+      "source_url": "https://www.triple-a.io",
+      "study_cohort": true
     },
     {
       "name": "Alchemy Pay",
@@ -263,7 +324,8 @@
       "founded": 2017,
       "notable": "Hybrid fiat-crypto ramp network across 173 countries",
       "verified": false,
-      "source_url": "https://alchemypay.org"
+      "source_url": "https://alchemypay.org",
+      "study_cohort": true
     },
     {
       "name": "xMoney",
@@ -278,7 +340,8 @@
       "founded": 2017,
       "notable": "Formerly Utrust; MiCA-aligned EU crypto payments",
       "verified": true,
-      "source_url": "https://www.xmoney.com"
+      "source_url": "https://www.xmoney.com",
+      "study_cohort": true
     },
     {
       "name": "B2BinPay",
@@ -293,7 +356,8 @@
       "founded": 2017,
       "notable": "Enterprise processor for brokers, exchanges, iGaming",
       "verified": true,
-      "source_url": "https://b2binpay.com"
+      "source_url": "https://b2binpay.com",
+      "study_cohort": true
     },
     {
       "name": "Mercuryo",
@@ -308,7 +372,8 @@
       "founded": 2018,
       "notable": "On/off-ramp infrastructure embedded in major web3 wallets",
       "verified": false,
-      "source_url": "https://mercuryo.io"
+      "source_url": "https://mercuryo.io",
+      "study_cohort": true
     },
     {
       "name": "Whitepay",
@@ -323,7 +388,8 @@
       "founded": 2020,
       "notable": "WhiteBIT-powered POS; known for Ukraine crypto donations",
       "verified": true,
-      "source_url": "https://whitepay.com/product/crypto-acquiring"
+      "source_url": "https://whitepay.com/product/crypto-acquiring",
+      "study_cohort": true
     },
     {
       "name": "SpectroCoin",
@@ -338,7 +404,8 @@
       "founded": 2013,
       "notable": "Lithuanian exchange-wallet combo with merchant tools",
       "verified": true,
-      "source_url": "https://docs.spectrocoin.com/docs/fees"
+      "source_url": "https://docs.spectrocoin.com/docs/fees",
+      "study_cohort": true
     },
     {
       "name": "ALFAcoins",
@@ -353,7 +420,8 @@
       "founded": 2013,
       "notable": "Veteran processor; fiat-pegged settlements paid in crypto",
       "verified": true,
-      "source_url": "https://www.alfacoins.com/merchant"
+      "source_url": "https://www.alfacoins.com/merchant",
+      "study_cohort": true
     },
     {
       "name": "CoinRemitter",
@@ -368,7 +436,8 @@
       "founded": 2018,
       "notable": "No-KYC gateway with a 0.23% headline fee",
       "verified": true,
-      "source_url": "https://coinremitter.com/fees"
+      "source_url": "https://coinremitter.com/fees",
+      "study_cohort": true
     },
     {
       "name": "MyCryptoCheckout",
@@ -383,7 +452,8 @@
       "founded": 2017,
       "notable": "WordPress plugin, direct wallet-to-wallet payments",
       "verified": true,
-      "source_url": "https://mycryptocheckout.com"
+      "source_url": "https://mycryptocheckout.com",
+      "study_cohort": true
     },
     {
       "name": "Whalestack",
@@ -398,7 +468,8 @@
       "founded": 2019,
       "notable": "Formerly COINQVEST; EU-licensed, Stellar settlements",
       "verified": true,
-      "source_url": "https://www.whalestack.com/en/pricing"
+      "source_url": "https://www.whalestack.com/en/pricing",
+      "study_cohort": true
     },
     {
       "name": "Bitpace",
@@ -413,7 +484,8 @@
       "founded": 2016,
       "notable": "EU/UK-licensed gateway popular in iGaming",
       "verified": false,
-      "source_url": "https://www.bitpace.com"
+      "source_url": "https://www.bitpace.com",
+      "study_cohort": true
     },
     {
       "name": "Radom",
@@ -428,7 +500,8 @@
       "founded": 2022,
       "notable": "Regulated EU VASP; subscriptions and invoicing",
       "verified": true,
-      "source_url": "https://radom.com/pricing"
+      "source_url": "https://radom.com/pricing",
+      "study_cohort": true
     },
     {
       "name": "BoomFi",
@@ -443,7 +516,8 @@
       "founded": 2022,
       "notable": "Non-custodial gateway with subscriptions and off-ramp",
       "verified": true,
-      "source_url": "https://docs.boomfi.xyz/docs/pricing-and-fees"
+      "source_url": "https://docs.boomfi.xyz/docs/pricing-and-fees",
+      "study_cohort": true
     },
     {
       "name": "Loop Crypto",
@@ -458,7 +532,8 @@
       "founded": 2021,
       "notable": "Crypto autopay subscriptions with Stripe integration",
       "verified": true,
-      "source_url": "https://www.loopcrypto.xyz"
+      "source_url": "https://www.loopcrypto.xyz",
+      "study_cohort": true
     },
     {
       "name": "Copperx",
@@ -473,7 +548,8 @@
       "founded": 2022,
       "notable": "Stablecoin-first; settles to 50+ fiat currencies",
       "verified": true,
-      "source_url": "https://copperx.io/pricing"
+      "source_url": "https://copperx.io/pricing",
+      "study_cohort": true
     },
     {
       "name": "Request Finance",
@@ -488,7 +564,8 @@
       "founded": 2020,
       "notable": "Crypto invoicing, payroll and AP/AR suite",
       "verified": true,
-      "source_url": "https://www.request.finance"
+      "source_url": "https://www.request.finance",
+      "study_cohort": true
     },
     {
       "name": "DePay",
@@ -503,7 +580,8 @@
       "founded": 2020,
       "notable": "Web3 payments with on-the-fly token conversion",
       "verified": true,
-      "source_url": "https://depay.com/pricing"
+      "source_url": "https://depay.com/pricing",
+      "study_cohort": true
     },
     {
       "name": "Sphere",
@@ -518,7 +596,8 @@
       "founded": 2022,
       "notable": "Solana-born stablecoin ramps with ACH/SEPA/PIX rails",
       "verified": true,
-      "source_url": "https://spherepay.co"
+      "source_url": "https://spherepay.co",
+      "study_cohort": true
     },
     {
       "name": "Helio (MoonPay)",
@@ -533,7 +612,8 @@
       "founded": 2022,
       "notable": "Solana checkout leader; acquired by MoonPay",
       "verified": true,
-      "source_url": "https://www.hel.io/pricing"
+      "source_url": "https://www.hel.io/pricing",
+      "study_cohort": true
     },
     {
       "name": "Zaprite",
@@ -548,7 +628,8 @@
       "founded": 2018,
       "notable": "Bitcoin invoicing that connects your own wallets",
       "verified": true,
-      "source_url": "https://zaprite.com/pricing"
+      "source_url": "https://zaprite.com/pricing",
+      "study_cohort": true
     },
     {
       "name": "Strike Business",
@@ -563,7 +644,8 @@
       "founded": 2020,
       "notable": "Lightning payments pioneer",
       "verified": true,
-      "source_url": "https://strike.me/business/"
+      "source_url": "https://strike.me/business/",
+      "study_cohort": true
     },
     {
       "name": "Speed",
@@ -578,7 +660,8 @@
       "founded": 2022,
       "notable": "Lightning plus USDT/USDC with instant autoswap",
       "verified": true,
-      "source_url": "https://www.tryspeed.com/pricing/"
+      "source_url": "https://www.tryspeed.com/pricing/",
+      "study_cohort": true
     },
     {
       "name": "OxaPay",
@@ -593,7 +676,8 @@
       "founded": 2022,
       "notable": "No-KYC email signup; Telegram-friendly",
       "verified": true,
-      "source_url": "https://oxapay.com/"
+      "source_url": "https://oxapay.com/",
+      "study_cohort": true
     },
     {
       "name": "Trybit (ex-CryptoCloud)",
@@ -608,7 +692,8 @@
       "founded": 2021,
       "notable": "Rebranded to Trybit in 2026; auto-convert to USDT",
       "verified": true,
-      "source_url": "https://trybit.com/"
+      "source_url": "https://trybit.com/",
+      "study_cohort": true
     },
     {
       "name": "Stripe (Pay with Crypto)",
@@ -623,7 +708,8 @@
       "founded": 2024,
       "notable": "Stablecoin checkout settling into the Stripe balance",
       "verified": true,
-      "source_url": "https://docs.stripe.com/crypto/pay-with-crypto"
+      "source_url": "https://docs.stripe.com/crypto/pay-with-crypto",
+      "study_cohort": true
     },
     {
       "name": "Solana Pay",
@@ -638,7 +724,8 @@
       "founded": 2022,
       "notable": "Open-source direct merchant payment protocol",
       "verified": true,
-      "source_url": "https://solanapay.com/"
+      "source_url": "https://solanapay.com/",
+      "study_cohort": true
     },
     {
       "name": "Flexa",
@@ -653,7 +740,8 @@
       "founded": 2019,
       "notable": "In-store crypto acceptance network across 13 chains",
       "verified": true,
-      "source_url": "https://flexa.co/payments"
+      "source_url": "https://flexa.co/payments",
+      "study_cohort": true
     },
     {
       "name": "IVPAY (ex-ivendPay)",
@@ -668,7 +756,8 @@
       "founded": 2018,
       "notable": "Crypto POS and vending-machine payments",
       "verified": false,
-      "source_url": "https://ivpay.io/"
+      "source_url": "https://ivpay.io/",
+      "study_cohort": true
     },
     {
       "name": "0xProcessing",
@@ -683,7 +772,8 @@
       "founded": 2021,
       "notable": "85+ coins on 18 chains; volatility protection",
       "verified": false,
-      "source_url": "https://0xprocessing.com"
+      "source_url": "https://0xprocessing.com",
+      "study_cohort": true
     },
     {
       "name": "PayKassa",
@@ -698,7 +788,8 @@
       "founded": 2019,
       "notable": "Email-only signup aggregator popular in CIS markets",
       "verified": true,
-      "source_url": "https://paykassa.pro/en/accept/"
+      "source_url": "https://paykassa.pro/en/accept/",
+      "study_cohort": true
     },
     {
       "name": "HoodPay",
@@ -713,7 +804,8 @@
       "founded": 2022,
       "notable": "No-KYC checkout favored by digital-goods sellers",
       "verified": true,
-      "source_url": "https://hoodpay.io"
+      "source_url": "https://hoodpay.io",
+      "study_cohort": true
     },
     {
       "name": "Sellix",
@@ -728,7 +820,8 @@
       "founded": 2020,
       "notable": "Digital-goods storefront platform with crypto checkout",
       "verified": false,
-      "source_url": "https://sellix.io"
+      "source_url": "https://sellix.io",
+      "study_cohort": true
     },
     {
       "name": "Bitcart",
@@ -743,7 +836,8 @@
       "founded": 2019,
       "notable": "Open-source BTCPay alternative; 50+ coins incl. Monero",
       "verified": true,
-      "source_url": "https://bitcart.ai/"
+      "source_url": "https://bitcart.ai/",
+      "study_cohort": true
     },
     {
       "name": "Coinbase Payments",
@@ -758,7 +852,8 @@
       "founded": 2025,
       "notable": "Onchain USDC for Shopify merchants; distinct from Commerce",
       "verified": true,
-      "source_url": "https://www.coinbase.com/payments"
+      "source_url": "https://www.coinbase.com/payments",
+      "study_cohort": true
     },
     {
       "name": "BlockBee",
@@ -773,7 +868,344 @@
       "founded": 2018,
       "notable": "Formerly CryptAPI; payment forwarding to your wallet",
       "verified": true,
-      "source_url": "https://blockbee.io/fees/"
+      "source_url": "https://blockbee.io/fees/",
+      "study_cohort": true
+    },
+    {
+      "name": "Aurpay",
+      "url": "https://aurpay.net",
+      "fee_pct": 0.8,
+      "fee_note": "0.8% per transaction, to 0.5% at volume",
+      "custody": "non-custodial",
+      "kyc": "optional",
+      "coins": 8,
+      "settlement_fiat": false,
+      "lightning": true,
+      "founded": 2021,
+      "notable": "Non-custodial, stablecoin settlement, Lightning support",
+      "verified": true,
+      "source_url": "https://aurpay.net/aurspace/crypto-payment-gateway-fees-compared-2026/",
+      "study_cohort": false
+    },
+    {
+      "name": "Paymento",
+      "url": "https://paymento.io",
+      "fee_pct": 0.5,
+      "fee_note": "Free up to $20k volume, then 0.5%",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 15,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2024,
+      "notable": "XPUB-based, funds direct to merchant wallet",
+      "verified": true,
+      "source_url": "https://paymento.io/fees-and-pricing/",
+      "study_cohort": false
+    },
+    {
+      "name": "PayRam",
+      "url": "https://www.payram.com",
+      "fee_pct": 0,
+      "fee_note": "0% processing; optional orchestration up to 2.5%",
+      "custody": "self-hosted",
+      "kyc": "none",
+      "coins": 20,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2023,
+      "notable": "Self-hosted non-custodial gateway, iGaming-popular",
+      "verified": true,
+      "source_url": "https://www.payram.com/white-label",
+      "study_cohort": false
+    },
+    {
+      "name": "XAIGATE",
+      "url": "https://www.xaigate.com",
+      "fee_pct": 0.2,
+      "fee_note": "First 500 tx/mo free, then 0.2%",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 50,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2023,
+      "notable": "Very low fee; WooCommerce/PrestaShop plugins",
+      "verified": true,
+      "source_url": "https://www.xaigate.com/low-fee-crypto-payment-gateway/",
+      "study_cohort": false
+    },
+    {
+      "name": "PassimPay",
+      "url": "https://passimpay.io",
+      "fee_pct": 0.5,
+      "fee_note": "From 0.5% per tx; +0.2% auto-conversion",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 74,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2022,
+      "notable": "74+ coins, 18+ chains, SEPA EUR settlement",
+      "verified": true,
+      "source_url": "https://passimpay.io/en",
+      "study_cohort": false
+    },
+    {
+      "name": "PayGate.to",
+      "url": "https://paygate.to",
+      "fee_pct": 1.5,
+      "fee_note": "1.5% flat + blockchain fees",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 50,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2022,
+      "notable": "No signup, instant forwarding to merchant wallet",
+      "verified": true,
+      "source_url": "https://paygate.to/crypto-payment-gateway-no-kyc-instant-payouts/",
+      "study_cohort": false
+    },
+    {
+      "name": "MaxelPay",
+      "url": "https://www.maxelpay.com",
+      "fee_pct": 0.4,
+      "fee_note": "0.4% per transaction, no monthly fee",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 300,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2023,
+      "notable": "No-KYC, own payout wallet, white-label",
+      "verified": true,
+      "source_url": "https://www.maxelpay.com/",
+      "study_cohort": false
+    },
+    {
+      "name": "EukaPay",
+      "url": "https://eukapay.com",
+      "fee_pct": 1,
+      "fee_note": "Custom pricing at onboarding; ~1% typical",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 20,
+      "settlement_fiat": true,
+      "lightning": true,
+      "founded": 2021,
+      "notable": "Canadian FINTRAC MSB, multi-fiat settlement, Lightning",
+      "verified": false,
+      "source_url": "https://eukapay.com/products/crypto-payment-gateway",
+      "study_cohort": false
+    },
+    {
+      "name": "DV.net",
+      "url": "https://dv.net",
+      "fee_pct": 0,
+      "fee_note": "0% commission; on-chain network fees only",
+      "custody": "self-hosted",
+      "kyc": "none",
+      "coins": 50,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2023,
+      "notable": "Open-source self-hosted, merchant owns wallets and seed",
+      "verified": true,
+      "source_url": "https://github.com/dv-net/dv-merchant",
+      "study_cohort": false
+    },
+    {
+      "name": "ATLOS",
+      "url": "https://atlos.io",
+      "fee_pct": 0,
+      "fee_note": "0% transaction fees; on-chain network costs only",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 11,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2023,
+      "notable": "Permissionless no-KYC gateway, direct to Web3 wallet, 11 chains incl. Monero",
+      "verified": false,
+      "source_url": "https://atlos.io/",
+      "study_cohort": false
+    },
+    {
+      "name": "Cryptadium",
+      "url": "https://cryptadium.com",
+      "fee_pct": 0.9,
+      "fee_note": "Below 0.9%, down to 0.7% for high volume",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 50,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2022,
+      "notable": "Enterprise e-commerce focus, volume discounts",
+      "verified": false,
+      "source_url": "https://cryptadium.com/blog/1091",
+      "study_cohort": false
+    },
+    {
+      "name": "Oobit",
+      "url": "https://www.oobit.com",
+      "fee_pct": 1,
+      "fee_note": "1% per tap, $0.25 min, +~0.5% spread",
+      "custody": "non-custodial",
+      "kyc": "required",
+      "coins": 6,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2019,
+      "notable": "Tap-to-pay crypto at Visa terminals, fiat settlement",
+      "verified": true,
+      "source_url": "https://www.cryptocards.so/en/card/oobit-tap-pay",
+      "study_cohort": false
+    },
+    {
+      "name": "CoinsBuy",
+      "url": "https://coinsbuy.com",
+      "fee_pct": 1,
+      "fee_note": "From ~1% per transaction; enterprise volume pricing",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 40,
+      "settlement_fiat": true,
+      "lightning": true,
+      "founded": 2019,
+      "notable": "Panama-based enterprise processor, USDT on 9 chains",
+      "verified": false,
+      "source_url": "https://www.crunchbase.com/organization/coinsbuy",
+      "study_cohort": false
+    },
+    {
+      "name": "Coinify",
+      "url": "https://www.coinify.com",
+      "fee_pct": 0,
+      "fee_note": "No merchant processing fee; margin on customer rate",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 20,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2014,
+      "notable": "Danish processor, weekly EUR/BTC payouts",
+      "verified": true,
+      "source_url": "https://help.coinify.com/hc/en-us/articles/360014078380-Merchant-fees",
+      "study_cohort": false
+    },
+    {
+      "name": "Cryptopay Business",
+      "url": "https://cryptopay.me/business",
+      "fee_pct": 1,
+      "fee_note": "Per-transaction fee quoted on signup",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 19,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2013,
+      "notable": "London-based, next-day bank settlement",
+      "verified": false,
+      "source_url": "https://cryptopay.me/business/",
+      "study_cohort": false
+    },
+    {
+      "name": "Bit2Me Commerce",
+      "url": "https://bit2me.com/suite/commerce",
+      "fee_pct": 1.95,
+      "fee_note": "1.95% per transaction; custom at volume",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 50,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2014,
+      "notable": "Spanish exchange gateway, auto EUR to bank",
+      "verified": true,
+      "source_url": "https://support.bit2me.com/en/support/solutions/articles/35000201787",
+      "study_cohort": false
+    },
+    {
+      "name": "Bitnovo Pay",
+      "url": "https://www.bitnovo.com/en/pay",
+      "fee_pct": 1,
+      "fee_note": "Below 1% per transaction",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 6,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2015,
+      "notable": "Valencia-based, price locked at transaction, EUR settlement",
+      "verified": false,
+      "source_url": "https://www.bitnovo.com/en/pay",
+      "study_cohort": false
+    },
+    {
+      "name": "GoUrl",
+      "url": "https://gourl.io",
+      "fee_pct": 1.5,
+      "fee_note": "1.5% on website payments",
+      "custody": "non-custodial",
+      "kyc": "none",
+      "coins": 10,
+      "settlement_fiat": false,
+      "lightning": false,
+      "founded": 2014,
+      "notable": "Open-source, direct-to-wallet, WordPress plugin",
+      "verified": true,
+      "source_url": "https://gourl.io/",
+      "study_cohort": false
+    },
+    {
+      "name": "RocketFuel",
+      "url": "https://rocketfuel.inc",
+      "fee_pct": 1,
+      "fee_note": "As low as 1%, next-day fiat settlement",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 160,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2018,
+      "notable": "US-listed (RKFL), one-click checkout, 160+ coins",
+      "verified": false,
+      "source_url": "https://rocketfuel.inc/crypto-payments/",
+      "study_cohort": false
+    },
+    {
+      "name": "Salamantex",
+      "url": "https://salamantex.com",
+      "fee_pct": 1,
+      "fee_note": "1% to 1.95% by volume and settlement choice",
+      "custody": "hybrid",
+      "kyc": "required",
+      "coins": 8,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2017,
+      "notable": "Austrian POS terminals, crypto or EUR at checkout",
+      "verified": false,
+      "source_url": "https://salamantex.com/en/salamantex-crypto-payment-service",
+      "study_cohort": false
+    },
+    {
+      "name": "Finrax",
+      "url": "https://finrax.com",
+      "fee_pct": 1,
+      "fee_note": "Low processing fee, mid-market rates",
+      "custody": "custodial",
+      "kyc": "required",
+      "coins": 50,
+      "settlement_fiat": true,
+      "lightning": false,
+      "founded": 2018,
+      "notable": "Estonia-licensed B2B gateway, hosted checkout + API",
+      "verified": false,
+      "source_url": "https://finrax.com/",
+      "study_cohort": false
     }
   ]
 }

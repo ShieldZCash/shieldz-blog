@@ -14,6 +14,12 @@ If you want the shortlists instead, we keep those too: the [best crypto payment 
 
 **Disclosure up front:** Shieldz is our product, and it appears in the data like everyone else. Every number in this post comes from published pricing pages or provider docs, and where we could not verify a figure we say so.
 
+## Update, August 2026: the dataset now covers 86 gateways
+
+This comparison is a dated study of **50 gateways** (the August 2026 snapshot below). Since publishing, we have kept the underlying data as a living resource, now **86 crypto payment gateways** and growing. The headline finding held as it grew: **only about 24% are non-custodial** at both n=50 and n=86. Read the [custody gap report](/blog/custody-gap-crypto-payment-gateways) for that one, or download the full open dataset (CC BY 4.0): [JSON](/blog/data/crypto-payment-gateways-2026.json) and [CSV](/blog/data/crypto-payment-gateways-2026.csv).
+
+**What is new since the study.** The biggest 2026 shift is the *exchange-Pay wave*: Kraken Pay, Bybit Pay, KuCoin Pay, Bitget Pay, Gate Pay and WhiteBIT Pay all brought exchange-backed merchant acceptance, mostly custodial and KYC-gated, often at a 0% headline fee that settles inside their own ecosystem. Crypto.com Pay pushed deeper into Shopify, and stablecoin infrastructure firm BVNK was acquired by Mastercard, a sign the incumbents now treat crypto acceptance as core rails. The custody story did not change: the new entrants are overwhelmingly custodial, which is why the non-custodial share stayed near a quarter even as the list grew.
+
 ## Methodology
 
 For each of the 50 gateways we recorded seven facts:
@@ -29,12 +35,12 @@ Seven of the 50 fees could not be confirmed on an official page and are marked a
 
 Six numbers from this dataset, each with its own breakdown (or read the headline report: [the custody gap](/blog/custody-gap-crypto-payment-gateways)):
 
-- [Are crypto payment gateways custodial?](/blog/are-crypto-payment-gateways-custodial) — **64% are** (32 of 50).
-- [How many crypto payment gateways are non-custodial?](/blog/how-many-non-custodial-crypto-payment-gateways) — **only 12 of 50** (24%).
-- [The median crypto payment gateway fee](/blog/average-crypto-payment-gateway-fee) — **1% per transaction**.
-- [How many crypto payment gateways are free?](/blog/how-many-free-crypto-payment-gateways) — **10 of 50** charge a $0 platform fee.
-- [Do crypto payment gateways require KYC?](/blog/do-crypto-payment-gateways-require-kyc) — **58% do** (29 of 50).
-- [How many crypto payment gateways settle to fiat?](/blog/crypto-payment-gateways-fiat-settlement) — **66%** (33 of 50).
+- [Are crypto payment gateways custodial?](/blog/are-crypto-payment-gateways-custodial): **64% are** (32 of 50).
+- [How many crypto payment gateways are non-custodial?](/blog/how-many-non-custodial-crypto-payment-gateways): **only 12 of 50** (24%).
+- [The median crypto payment gateway fee](/blog/average-crypto-payment-gateway-fee): **1% per transaction**.
+- [How many crypto payment gateways are free?](/blog/how-many-free-crypto-payment-gateways): **10 of 50** charge a $0 platform fee.
+- [Do crypto payment gateways require KYC?](/blog/do-crypto-payment-gateways-require-kyc): **58% do** (29 of 50).
+- [How many crypto payment gateways settle to fiat?](/blog/crypto-payment-gateways-fiat-settlement): **66%** (33 of 50).
 
 ## The market at a glance: custody is still the norm
 

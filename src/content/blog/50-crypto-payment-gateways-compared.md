@@ -27,7 +27,7 @@ Seven of the 50 fees could not be confirmed on an official page and are marked a
 
 ## Key findings, one page each
 
-Six numbers from this dataset, each with its own breakdown:
+Six numbers from this dataset, each with its own breakdown (or read the headline report: [the custody gap](/blog/custody-gap-crypto-payment-gateways)):
 
 - [Are crypto payment gateways custodial?](/blog/are-crypto-payment-gateways-custodial) — **64% are** (32 of 50).
 - [How many crypto payment gateways are non-custodial?](/blog/how-many-non-custodial-crypto-payment-gateways) — **only 12 of 50** (24%).

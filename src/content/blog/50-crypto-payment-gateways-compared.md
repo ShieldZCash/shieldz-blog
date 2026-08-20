@@ -25,6 +25,17 @@ For each of the 50 gateways we recorded seven facts:
 
 Seven of the 50 fees could not be confirmed on an official page and are marked accordingly. Nothing here is a recommendation of any provider's compliance posture; several of the no-KYC providers serve markets where that carries real regulatory weight. Now, the data.
 
+## Key findings, one page each
+
+Six numbers from this dataset, each with its own breakdown:
+
+- [Are crypto payment gateways custodial?](/blog/are-crypto-payment-gateways-custodial) — **64% are** (32 of 50).
+- [How many crypto payment gateways are non-custodial?](/blog/how-many-non-custodial-crypto-payment-gateways) — **only 12 of 50** (24%).
+- [The median crypto payment gateway fee](/blog/average-crypto-payment-gateway-fee) — **1% per transaction**.
+- [How many crypto payment gateways are free?](/blog/how-many-free-crypto-payment-gateways) — **10 of 50** charge a $0 platform fee.
+- [Do crypto payment gateways require KYC?](/blog/do-crypto-payment-gateways-require-kyc) — **58% do** (29 of 50).
+- [How many crypto payment gateways settle to fiat?](/blog/crypto-payment-gateways-fiat-settlement) — **66%** (33 of 50).
+
 ## The market at a glance: custody is still the norm
 
 The single most consequential fact about this market: **32 of the 50 gateways are custodial**. When a buyer pays, the money lands in the provider's wallet first, and you get it later, on their schedule. Only 12 of 50 are non-custodial, 2 are self-hosted software, and 4 are hybrid models that depend on how you configure them.

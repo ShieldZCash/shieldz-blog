@@ -1,6 +1,6 @@
 ---
-title: "Self-Hosted Crypto Payment Gateway: The 2026 Trade-Off"
-description: "Why people want a self-hosted crypto payment gateway, what BTCPay costs to run, and how to get the same $0-fee non-custodial result with no server."
+title: "Self-Hosted Crypto Payment Gateway: 4 Free Options Compared (2026)"
+description: "The 4 self-hosted crypto payment gateways compared: BTCPay, Bitcart, PayRam, DV.net. All $0-fee and non-custodial. Plus a no-server alternative."
 pubDate: 2026-07-23
 author: "Deniz Yanbollu"
 tags: ["self-hosted", "crypto payment gateway", "btcpay", "non-custodial", "comparison"]
@@ -12,6 +12,8 @@ When people search for a self-hosted crypto payment gateway, they are almost nev
 
 This guide is honest about the trade-off. [BTCPay Server](https://btcpayserver.org) is the reference self-hosted option and it genuinely delivers those three things. But it asks you to run and maintain infrastructure. [Shieldz](https://shieldz.cash) delivers the same $0-fee, non-custodial outcome as a hosted service, so you skip the server without giving up custody. Both are valid. The right pick depends on how much you want to operate yourself.
 
+**Updated August 2026:** added a side-by-side of the four self-hosted options and a note on open-source, no-server alternatives, from our open [dataset of 86 crypto payment gateways](/blog/custody-gap-crypto-payment-gateways).
+
 ## Why "self-hosted" is really a proxy for three wants
 
 Break the search intent down and the server is the least important part:
@@ -21,6 +23,23 @@ Break the search intent down and the server is the least important part:
 - **Control.** You want the checkout to be yours, not a rented widget that can change terms.
 
 Self-hosting gets you all three, but so does a [non-custodial](/blog/non-custodial-crypto-payment-gateway) hosted gateway. The distinction that actually matters is custody, not where the software runs. A hosted app that never touches your funds gives you the custody guarantee without the ops burden.
+
+## The self-hosted options, compared
+
+Only **4 of the 86 crypto payment gateways** in [our open dataset](/blog/custody-gap-crypto-payment-gateways) are genuinely self-hosted software you run yourself. All four are open-source, non-custodial, and charge a **$0 platform fee**; they differ mostly in coin coverage and how much you have to operate.
+
+| Gateway | Fee | Coins | Lightning | Since | Known for |
+|---|---|---|---|---|---|
+| [BTCPay Server](https://btcpayserver.org) | $0 | BTC + altcoins via plugins | Yes | 2017 | The reference: largest community, most integrations |
+| [Bitcart](https://bitcart.ai) | $0 | 50+ (incl. Monero) | Yes | 2019 | BTCPay alternative, wider coin coverage out of the box |
+| [PayRam](https://www.payram.com) | $0 | ~20 | No | 2023 | Self-hosted, popular with iGaming; orchestration add-ons |
+| [DV.net](https://dv.net) | $0 | ~50 | No | 2023 | Open-source, the merchant owns the wallets and seed |
+
+**How to read it.** BTCPay is the safe default: the biggest ecosystem, the most plugins and documentation, and Lightning built in, at the cost of being Bitcoin-first (altcoins need plugins). Bitcart is the pick if you want more coins, including Monero, without plugin wrangling. PayRam and DV.net are newer and multi-coin, aimed at merchants who want a self-hosted stack without BTCPay's full-node footprint. All four keep custody with you and charge nothing but network fees.
+
+## The middle ground: open-source, but no server
+
+Not every "run it yourself" option is a full server. Some are open-source plugins or protocols that keep funds non-custodial without a VPS: [GoUrl](https://gourl.io) and MyCryptoCheckout are WordPress plugins that pay direct to your wallet, and [Solana Pay](/blog/50-crypto-payment-gateways-compared) is an open protocol for direct merchant payments. They are lighter than a self-hosted node but still put the software, and the responsibility, on you.
 
 ## What self-hosting actually costs you
 
@@ -65,6 +84,12 @@ It can be. Non-custodial means funds settle to your own wallet and the gateway n
 **Do either charge a platform fee?**
 Neither BTCPay nor Shieldz charges a platform fee. You pay only the blockchain network fee.
 
+**What are the alternatives to BTCPay Server?**
+The main self-hosted alternatives are Bitcart (open-source, 50+ coins including Monero, Lightning), PayRam and DV.net (both newer, multi-coin, self-hosted). Lighter open-source options that need no server include the GoUrl and MyCryptoCheckout WordPress plugins.
+
+**Which self-hosted crypto payment gateway supports the most coins?**
+Among the self-hosted options, Bitcart and DV.net support roughly 50 coins each, more than BTCPay's Bitcoin-first default (which adds altcoins via plugins). All are $0-fee and non-custodial.
+
 ## Get paid without the server
 
 You do not have to run infrastructure to keep custody of your money. Create a non-custodial checkout in seconds with the [payment link generator](https://shieldz.cash/tools/payment-link), read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) for the full setup, or compare the field in the [best free crypto payment gateways](/blog/best-free-crypto-payment-gateways-2026) guide.
@@ -78,7 +103,9 @@ You do not have to run infrastructure to keep custody of your money. Create a no
     { "@type": "Question", "name": "What is the best self-hosted crypto payment gateway?", "acceptedAnswer": { "@type": "Answer", "text": "BTCPay Server is the leading self-hosted, open-source, non-custodial option. It is free software but you provide and maintain the infrastructure." } },
     { "@type": "Question", "name": "Do I need to run a full node?", "acceptedAnswer": { "@type": "Answer", "text": "With BTCPay, typically yes for the best experience. With a hosted non-custodial gateway like Shieldz, no. You only need a wallet address." } },
     { "@type": "Question", "name": "Is a hosted gateway still non-custodial?", "acceptedAnswer": { "@type": "Answer", "text": "It can be. Non-custodial means funds settle to your own wallet and the gateway never holds them. That is a property of the design, not of where the software runs." } },
-    { "@type": "Question", "name": "Do either charge a platform fee?", "acceptedAnswer": { "@type": "Answer", "text": "Neither BTCPay nor Shieldz charges a platform fee. You pay only the blockchain network fee." } }
+    { "@type": "Question", "name": "Do either charge a platform fee?", "acceptedAnswer": { "@type": "Answer", "text": "Neither BTCPay nor Shieldz charges a platform fee. You pay only the blockchain network fee." } },
+    { "@type": "Question", "name": "What are the alternatives to BTCPay Server?", "acceptedAnswer": { "@type": "Answer", "text": "The main self-hosted alternatives are Bitcart (open-source, 50+ coins incl. Monero, Lightning), PayRam and DV.net (newer, multi-coin, self-hosted). Lighter no-server options include the GoUrl and MyCryptoCheckout WordPress plugins." } },
+    { "@type": "Question", "name": "Which self-hosted crypto payment gateway supports the most coins?", "acceptedAnswer": { "@type": "Answer", "text": "Among self-hosted options, Bitcart and DV.net support roughly 50 coins each, more than BTCPay's Bitcoin-first default. All are $0-fee and non-custodial." } }
   ]
 }
 </script>

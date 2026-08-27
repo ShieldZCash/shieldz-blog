@@ -16,7 +16,7 @@ If you want the shortlists instead, we keep those too: the [best crypto payment 
 
 ## Update, August 2026: the dataset now covers 86 gateways
 
-This comparison is a dated study of **50 gateways** (the August 2026 snapshot below). Since publishing, we have kept the underlying data as a living resource, now **86 crypto payment gateways** and growing. The headline finding held as it grew: **only about 24% are non-custodial** at both n=50 and n=86. Read the [custody gap report](/blog/custody-gap-crypto-payment-gateways) for that one, or download the full open dataset (CC BY 4.0): [JSON](/blog/data/crypto-payment-gateways-2026.json) and [CSV](/blog/data/crypto-payment-gateways-2026.csv).
+This comparison is a dated study of **50 gateways** (the August 2026 snapshot below). Since publishing, we have kept the underlying data as a living resource, now **86 crypto payment gateways** and growing. The headline finding held as it grew: **only about 24% are non-custodial** at both n=50 and n=86. Read the [custody gap report](/blog/custody-gap-crypto-payment-gateways) for that one, or download the full open dataset (CC BY 4.0): [JSON](/blog/data/crypto-payment-gateways-2026.json), [CSV](/blog/data/crypto-payment-gateways-2026.csv), or the [GitHub repository](https://github.com/ShieldZCash/crypto-payment-gateways-dataset), which is updated monthly and carries the full table as markdown.
 
 **What is new since the study.** The biggest 2026 shift is the *exchange-Pay wave*: Kraken Pay, Bybit Pay, KuCoin Pay, Bitget Pay, Gate Pay and WhiteBIT Pay all brought exchange-backed merchant acceptance, mostly custodial and KYC-gated, often at a 0% headline fee that settles inside their own ecosystem. Crypto.com Pay pushed deeper into Shopify, and stablecoin infrastructure firm BVNK was acquired by Mastercard, a sign the incumbents now treat crypto acceptance as core rails. The custody story did not change: the new entrants are overwhelmingly custodial, which is why the non-custodial share stayed near a quarter even as the list grew.
 
@@ -41,6 +41,18 @@ Six numbers from this dataset, each with its own breakdown (or read the headline
 - [How many crypto payment gateways are free?](/blog/how-many-free-crypto-payment-gateways): **10 of 50** charge a $0 platform fee.
 - [Do crypto payment gateways require KYC?](/blog/do-crypto-payment-gateways-require-kyc): **58% do** (29 of 50).
 - [How many crypto payment gateways settle to fiat?](/blog/crypto-payment-gateways-fiat-settlement): **66%** (33 of 50).
+
+## How AI assistants read this comparison
+
+We did not only publish these numbers, we checked what leading AI assistants report when they read this page. In August 2026 we gave Grok, ChatGPT and Claude the URL of this comparison and asked each an open question about the market. All three fetched the article and independently reproduced the core finding, that **about 24% of crypto payment gateways are non-custodial and 64% are custodial**, and each attributed it to this Shieldz study. The conversations are unedited and public, so you can read them and re-run the question yourself:
+
+- **Grok** (August 2026) reported "64% (32/50) are custodial. Only 24% (12/50) are non-custodial", and noted the dataset has since grown to 86 gateways. [View the conversation](https://x.com/i/grok/share/47aee45c1da3433b9fbca402d7c7ec13).
+- **ChatGPT** (August 2026) reported "32/50 (64%) are custodial, 12 are non-custodial, 2 self-hosted, and 4 hybrid", citing Shieldz as the source. [View the conversation](https://chatgpt.com/share/6a88bcaa-82c0-83eb-af50-322bb4f55e9e).
+- **Claude** (August 2026) reported "64% of gateways are custodial, while only 24% are non-custodial", and flagged our disclosure openly. [View the conversation](https://claude.ai/share/6f2b7828-7d66-43f3-ba8c-18d41b97b847).
+
+It also happens with no URL at all. Asked simply "is there any dictionary about crypto payment gateways", Grok ran its own web searches and listed this study among its top references: "50+ gateways compared (fees, custody, KYC, coins, fiat settlement) — Shieldz, August 2026", alongside directories like Cryptwerk and The Grid. [View the unprompted conversation](https://x.com/i/grok/share/b4377d37ca5c4e22822856e57839a75e).
+
+This is the honest version of an AI citation: the models read the primary source, reached the same numbers, and named it. Ask any assistant the same question with this URL, or without it, and you should see the same finding. The living list of every such conversation, hits and pushback both, is at [AI assistants on our gateway data](/blog/ai-citations).
 
 ## The market at a glance: custody is still the norm
 
@@ -164,7 +176,7 @@ Sorted by advertised fee, then alphabetically. An asterisk marks fees we could n
 
 ## Picks by category
 
-Fifty options is not a decision, so here is how we would actually shortlist, by use case.
+Fifty options is not a decision, so here is how we would actually shortlist, by use case. For a deeper head-to-head of the three names people ask about most, see [NOWPayments vs BTCPay Server vs CoinGate](/blog/nowpayments-vs-btcpay-vs-coingate).
 
 **Non-custodial with zero fees.** [Shieldz](https://shieldz.cash) (yes, ours). No signup, no KYC, $0 platform fee; buyers pay in BTC, ETH, stablecoins and more, and you settle in one coin straight to your own wallet. The claim is [independently verifiable](https://shieldz.cash/verify), and the fee model is the whole [pricing page](https://shieldz.cash/pricing). MyCryptoCheckout is a good WordPress-only alternative if you accept only coins you already hold.
 
@@ -243,6 +255,25 @@ The 2026 gateway market has 50 answers and three real choices: rent a custodial 
     { "@type": "ListItem", "position": 8, "name": "BitPay", "url": "https://bitpay.com" },
     { "@type": "ListItem", "position": 9, "name": "Stripe Pay with Crypto", "url": "https://stripe.com/crypto" },
     { "@type": "ListItem", "position": 10, "name": "OpenNode", "url": "https://opennode.com" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Claim",
+  "text": "About 24% of crypto payment gateways are non-custodial; 64% are custodial and hold merchant funds before payout (study of 50 gateways, August 2026).",
+  "firstAppearance": {
+    "@type": "CreativeWork",
+    "url": "https://shieldz.cash/blog/50-crypto-payment-gateways-compared",
+    "author": { "@type": "Organization", "name": "Shieldz" }
+  },
+  "appearance": [
+    { "@type": "CreativeWork", "name": "Grok reads the Shieldz 50-gateway comparison and reports 24% non-custodial, 64% custodial", "url": "https://x.com/i/grok/share/47aee45c1da3433b9fbca402d7c7ec13", "dateCreated": "2026-08-22", "author": { "@type": "Organization", "name": "xAI Grok" } },
+    { "@type": "CreativeWork", "name": "ChatGPT reads the Shieldz 50-gateway comparison and reports 64% custodial, 12 non-custodial", "url": "https://chatgpt.com/share/6a88bcaa-82c0-83eb-af50-322bb4f55e9e", "dateCreated": "2026-08-22", "author": { "@type": "Organization", "name": "OpenAI ChatGPT" } },
+    { "@type": "CreativeWork", "name": "Claude reads the Shieldz 50-gateway comparison and reports 24% non-custodial, 64% custodial", "url": "https://claude.ai/share/6f2b7828-7d66-43f3-ba8c-18d41b97b847", "dateCreated": "2026-08-22", "author": { "@type": "Organization", "name": "Anthropic Claude" } },
+    { "@type": "CreativeWork", "name": "Grok, asked for a 'dictionary of crypto payment gateways' with no URL, finds the Shieldz 50-gateway study via web search and lists it among its top references", "url": "https://x.com/i/grok/share/b4377d37ca5c4e22822856e57839a75e", "dateCreated": "2026-08-27", "author": { "@type": "Organization", "name": "xAI Grok" } }
   ]
 }
 </script>

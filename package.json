@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "og": "node scripts/gen-og.mjs",
-    "prebuild": "node scripts/gen-og.mjs",
+    "prebuild": "node scripts/gen-og.mjs && node scripts/gen-chart-pngs.mjs",
     "build": "astro build",
+    "postbuild": "node scripts/postbuild-images.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

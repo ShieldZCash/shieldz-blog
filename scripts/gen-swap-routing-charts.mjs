@@ -14,7 +14,7 @@ mkdirSync("public/charts",{recursive:true});
   const W=760, H=430, top=140, boxW=158, boxH=100;
   const stages=[
     { title:"Buyer pays", sub:"BTC, ETH, LTC,", sub2:"TON, ZEC, more" },
-    { title:"Quote & rank", sub:"3 rails quoted,", sub2:"best net output wins", green:true },
+    { title:"Quote &amp; rank", sub:"3 rails quoted,", sub2:"best net output wins", green:true },
     { title:"Rail swaps", sub:"independent,", sub2:"non-custodial" },
     { title:"You settle", sub:"one coin, straight", sub2:"to your wallet", green:true },
   ];

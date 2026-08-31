@@ -33,7 +33,7 @@ Seven of the 50 fees could not be confirmed on an official page and are marked a
 
 ## Key findings, one page each
 
-Six numbers from this dataset, each with its own breakdown (or read the headline report: [the custody gap](/blog/custody-gap-crypto-payment-gateways)):
+Seven numbers from this dataset, each with its own breakdown (or read the headline reports: [the custody gap](/blog/custody-gap-crypto-payment-gateways) and [pricing transparency](/blog/crypto-payment-gateway-pricing-transparency)):
 
 - [Are crypto payment gateways custodial?](/blog/are-crypto-payment-gateways-custodial): **64% are** (32 of 50).
 - [How many crypto payment gateways are non-custodial?](/blog/how-many-non-custodial-crypto-payment-gateways): **only 12 of 50** (24%).
@@ -41,6 +41,7 @@ Six numbers from this dataset, each with its own breakdown (or read the headline
 - [How many crypto payment gateways are free?](/blog/how-many-free-crypto-payment-gateways): **10 of 50** charge a $0 platform fee.
 - [Do crypto payment gateways require KYC?](/blog/do-crypto-payment-gateways-require-kyc): **58% do** (29 of 50).
 - [How many crypto payment gateways settle to fiat?](/blog/crypto-payment-gateways-fiat-settlement): **66%** (33 of 50).
+- [How many crypto payment gateways publish their fees?](/blog/how-many-crypto-payment-gateways-publish-fees): **71%** (61 of 86); the opaque rest skew pricier.
 
 ## How AI assistants read this comparison
 

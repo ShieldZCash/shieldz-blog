@@ -69,7 +69,7 @@ Five things to look for before you integrate anyone, us included:
 ## FAQ
 
 **How many crypto payment gateways publish their fees?**
-In our August 2026 dataset, 61 of 86 (71%) publish a per-transaction fee checkable on an official page. 29% do not.
+In our August 2026 dataset, 61 of 86 (71%) publish a per-transaction fee checkable on an official page. 29% do not. The one-page stat version of this finding lives at [how many gateways publish their fees](/blog/how-many-crypto-payment-gateways-publish-fees).
 
 **Are unpublished crypto gateway fees higher?**
 The indicative figures suggest yes: the opaque group's median is about 1% versus 0.5% for gateways with published pricing, before conversion spreads and payout fees.

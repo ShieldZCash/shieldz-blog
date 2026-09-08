@@ -89,9 +89,14 @@ const articleLd =
         <p>
           <a href="https://shieldz.cash/">Shieldz</a> is non-custodial crypto payments with $0 platform fees.
           <a href="https://shieldz.cash/introducing-shieldz">Learn more</a> &middot;
+          <a href="https://discord.gg/8AmvrMmvMp">Discord</a> &middot;
           <a href={base + "/rss.xml"}>RSS</a>
         </p>
       </footer>
     </div>
+    <!-- Simple Analytics via the same first-party proxy the landing uses
+         (/proxy.js and /simple/* are served by the apex backend, same origin). -->
+    <script is:inline data-collect-dnt="true" async src="/proxy.js"></script>
+    <noscript><img src="/simple/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>

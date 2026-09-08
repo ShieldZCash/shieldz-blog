@@ -2,6 +2,7 @@
 title: "50 Crypto Payment Gateways Compared: Fees, Custody, KYC (August 2026)"
 description: "We compared 50 crypto payment gateways on fees, custody, KYC and coin coverage for August 2026. Six charts, one big table, honest notes on the data."
 pubDate: 2026-08-08
+updatedDate: "2026-09-03"
 author: "Deniz Yanbollu"
 tags: ["crypto payment gateways", "comparison", "fees", "crypto", "payments"]
 eyebrow: "Comparison"
@@ -14,11 +15,13 @@ If you want the shortlists instead, we keep those too: the [best crypto payment 
 
 **Disclosure up front:** Shieldz is our product, and it appears in the data like everyone else. Every number in this post comes from published pricing pages or provider docs, and where we could not verify a figure we say so.
 
-## Update, August 2026: the dataset now covers 86 gateways
+## Update, September 2026: the dataset now covers 87 gateways
 
-This comparison is a dated study of **50 gateways** (the August 2026 snapshot below). Since publishing, we have kept the underlying data as a living resource, now **86 crypto payment gateways** and growing. The headline finding held as it grew: **only about 24% are non-custodial** at both n=50 and n=86. Read the [custody gap report](/blog/custody-gap-crypto-payment-gateways) for that one, or download the full open dataset (CC BY 4.0): [JSON](/blog/data/crypto-payment-gateways-2026.json), [CSV](/blog/data/crypto-payment-gateways-2026.csv), or the [GitHub repository](https://github.com/ShieldZCash/crypto-payment-gateways-dataset), which is updated monthly and carries the full table as markdown.
+This comparison is a dated study of **50 gateways** (the August 2026 snapshot below). Since publishing, we have kept the underlying data as a living resource, now **87 crypto payment gateways** and growing, with every fee re-verified against official pricing pages monthly (latest pass: v1.3.0, September 2026). The headline finding held as it grew: **only about 24% are non-custodial** at both n=50 and n=87. Read the [custody gap report](/blog/custody-gap-crypto-payment-gateways) for that one, or download the full open dataset (CC BY 4.0): [JSON](/blog/data/crypto-payment-gateways-2026.json), [CSV](/blog/data/crypto-payment-gateways-2026.csv), or the [GitHub repository](https://github.com/ShieldZCash/crypto-payment-gateways-dataset), which is updated monthly and carries the full table as markdown.
 
 **What is new since the study.** The biggest 2026 shift is the *exchange-Pay wave*: Kraken Pay, Bybit Pay, KuCoin Pay, Bitget Pay, Gate Pay and WhiteBIT Pay all brought exchange-backed merchant acceptance, mostly custodial and KYC-gated, often at a 0% headline fee that settles inside their own ecosystem. Crypto.com Pay pushed deeper into Shopify, and stablecoin infrastructure firm BVNK was acquired by Mastercard, a sign the incumbents now treat crypto acceptance as core rails. The custody story did not change: the new entrants are overwhelmingly custodial, which is why the non-custodial share stayed near a quarter even as the list grew.
+
+The September 2026 re-verification also caught the market moving under the study: NOWPayments raised its fee from 0.5% to 1%, CoinPayments now lists 3%, Coinbase Commerce shut down on March 31, 2026 (its successor Coinbase Business is custodial and US/SG-only), Helio relaunched as MoonPay Commerce, and Sellix and HoodPay went offline behind FBI seizure notices. Fee changes land in the living dataset; the frozen 50-gateway snapshot below stays as published so the study remains reproducible.
 
 ## Methodology
 
@@ -223,6 +226,10 @@ No. They are the published standard rates as of August 2026; seven providers wit
 ## The bottom line
 
 The 2026 gateway market has 50 answers and three real choices: rent a custodial processor, run your own software, or use a non-custodial layer that never touches the money. The data says custody is still the default and 1% is still the going rate, and neither has to be. If you want the version with a $0 fee, no KYC and settlement straight to your wallet, create a checkout in one minute with the [payment link generator](https://shieldz.cash/tools/payment-link), or start with the basics in [what is a crypto payment gateway](/blog/what-is-a-crypto-payment-gateway) and [how to accept crypto payments](/blog/how-to-accept-crypto-payments).
+
+## Independence statement
+
+This dataset is collected and processed independently. Every classification comes from the provider's own pricing page or documentation, every row links to its source, and rankings are generated from the data alone. **We do not accept paid placements, sponsored positions, dofollow link sales, or any exchange of money for how a gateway appears in this study.** Providers have asked; the answer is no, at any price. Shieldz is a competitor of many gateways listed here, which is exactly why the methodology, the [raw data](https://github.com/ShieldZCash/crypto-payment-gateways-dataset) and the sources are public: check us, and if a row is wrong, [open a pull request](https://github.com/ShieldZCash/crypto-payment-gateways-dataset) and we will fix it in the next monthly release.
 
 <script type="application/ld+json">
 {

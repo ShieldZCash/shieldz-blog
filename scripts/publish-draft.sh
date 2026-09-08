@@ -42,7 +42,9 @@ if ! npm run build >"$BUILD_LOG" 2>&1; then
 fi
 rm -f "$BUILD_LOG"
 
+OG="public/og/${SLUG}.png"
 git add "$DEST"
+[ -f "$OG" ] && git add "$OG" # prebuild's gen-og.mjs makes this as a side effect
 TITLE=$(grep '^title:' "$DEST" | head -1 | sed 's/^title: *//; s/^"//; s/"$//')
 git commit -m "publish: ${TITLE:-$SLUG}"
 

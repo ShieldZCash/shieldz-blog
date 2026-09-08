@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Promote a reviewed agent-drafts/<slug>.md into src/content/blog/, stamp
-# pubDate, and commit — the one manual step that turns an agent's draft into
-# something deploy.sh can ship. Never run automatically by an agent; you run
-# this yourself after reading the draft.
+# pubDate, build (as a gate, not a deploy), and only commit if the build
+# passes — a bad post never gets committed, it comes right back as a draft.
+# This is safe to call from local-mcp's prepare_publish tool (an agent can
+# trigger this) precisely BECAUSE it stops at a commit, never at deploy.sh:
+# the live site is untouched either way, that step stays manual.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -20,15 +22,30 @@ DEST="src/content/blog/${SLUG}.md"
 [ -f "$DEST" ] && { echo "refusing to overwrite existing post at $DEST" >&2; exit 1; }
 
 TODAY=$(date +%Y-%m-%d)
-sed "s/^pubDate: TODO # set on publish\$/pubDate: ${TODAY}/" "$SRC" > "$DEST"
+sed \
+  -e "s/^pubDate: TODO # set on publish\$/pubDate: ${TODAY}/" \
+  -e "/^<!-- draft via shieldz-local-mcp/d" \
+  "$SRC" > "$DEST"
 if ! grep -q "^pubDate: ${TODAY}\$" "$DEST"; then
   echo "warning: pubDate placeholder not found/replaced — check $DEST by hand" >&2
 fi
 rm "$SRC"
 
-git add "$DEST" "$SRC" 2>/dev/null || git add "$DEST"
+echo "==> build (gate before commit)"
+BUILD_LOG=$(mktemp)
+if ! npm run build >"$BUILD_LOG" 2>&1; then
+  echo "==> BUILD FAILED — rolling back, nothing committed, draft restored" >&2
+  mv "$DEST" "$SRC"
+  tail -60 "$BUILD_LOG" >&2
+  rm -f "$BUILD_LOG"
+  exit 1
+fi
+rm -f "$BUILD_LOG"
+
+git add "$DEST"
 TITLE=$(grep '^title:' "$DEST" | head -1 | sed 's/^title: *//; s/^"//; s/"$//')
 git commit -m "publish: ${TITLE:-$SLUG}"
 
-echo "==> committed. Review with: git show --stat HEAD"
-echo "==> when ready: npm run build && bash scripts/deploy.sh"
+echo "==> committed + build verified. Live site NOT touched."
+echo "==> review: git show --stat HEAD"
+echo "==> when ready: bash scripts/deploy.sh"

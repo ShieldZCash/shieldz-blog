@@ -6,6 +6,17 @@ HOST="ubuntu@51.38.141.59"
 KEY="${SHIELDZ_SSH_KEY:-$HOME/.ssh/shieldz-deploy}"
 RSH="ssh -i $KEY -o StrictHostKeyChecking=no"
 cd "$(dirname "$0")/.."
+
+# Deploy ships whatever's on disk (build reads the working tree, not git), so
+# an uncommitted post/edit can go live while the repo silently doesn't know
+# about it. Refuse by default; ALLOW_DIRTY_DEPLOY=1 to override deliberately.
+if [ -n "$(git status --porcelain)" ] && [ "${ALLOW_DIRTY_DEPLOY:-}" != "1" ]; then
+  echo "==> refusing to deploy: uncommitted changes present" >&2
+  git status --short >&2
+  echo "==> commit first, or re-run with ALLOW_DIRTY_DEPLOY=1 to deploy anyway" >&2
+  exit 1
+fi
+
 echo "==> build"
 npm run build
 echo "==> rsync dist -> /var/www/shieldz-blog/blog/"

@@ -72,7 +72,7 @@ Header: `X-Shieldz-Signature: t=<unix>,v1=<hex>`. HMAC-SHA256 over `` `${t}.${ra
 
 On-chain checkout is pull-less. For monthly SaaS you generate a new invoice each period and send the link (email, in-app banner, or [payment link](/tools/payment-link)). When the webhook fires, extend the entitlement. If it expires unpaid, keep the account in a grace state the same way you would for a failed card.
 
-Agents and keyless flows are a separate cluster: [crypto payments for AI agents](/blog/crypto-payments-for-ai-agents) and the [MCP path](/blog/agents-keyless-mcp-payments).
+Agents and keyless flows are a separate cluster: [crypto payments for AI agents](/blog/crypto-payments-for-ai-agents) and the [MCP path](/blog/agents-keyless-mcp-payments). Billing an individual contractor instead of a subscriber base? See [crypto payments for freelancers](/blog/crypto-payments-for-freelancers).
 
 ## What not to promise in your pricing page
 

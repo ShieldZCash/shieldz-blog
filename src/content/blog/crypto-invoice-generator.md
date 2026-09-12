@@ -10,7 +10,7 @@ image: "https://shieldz.cash/blog/og/crypto-invoice-generator.png"
 
 You finished the work, now you need to get paid in crypto, and you do not want to spin up an account, hand your keys to a processor, or lose 3% to fees. A crypto invoice generator solves exactly this: you type an amount and a memo, and out comes a payment link your client can open and pay. No login, no contract, no custody.
 
-This guide shows how to generate a crypto invoice in seconds with [Shieldz](https://shieldz.cash), what the buyer sees, and why a non-custodial invoice is the safer default. Funds settle straight to a wallet you control, and the only cost is network gas.
+This guide shows how to generate a crypto invoice in seconds with [Shieldz](https://shieldz.cash), what the buyer sees, and why a non-custodial invoice is the safer default. Funds settle straight to a wallet you control, and the only cost is network gas. If you bill clients abroad specifically, see [crypto payments for freelancers](/blog/crypto-payments-for-freelancers) for the PayPal/wire/Payoneer cost comparison and the milestone-invoicing workflow.
 
 ## What a crypto invoice actually is
 

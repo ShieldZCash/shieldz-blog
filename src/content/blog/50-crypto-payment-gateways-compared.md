@@ -127,55 +127,55 @@ Sorted by advertised fee, then alphabetically. An asterisk marks fees we could n
 
 | Gateway | Fee | Custody | KYC | Coins | Fiat | Known for |
 |---|---|---|---|---|---|---|
-| [Binance Pay](https://pay.binance.com) | 0% | Custodial | Required | 100 | Yes | Zero-fee payments inside the Binance ecosystem |
-| [Bitcart](https://bitcart.ai) | 0% | Self-hosted | None | 50 | No | Open-source BTCPay alternative; 50+ coins incl. Monero |
-| [BTCPay Server](https://btcpayserver.org) | 0% | Self-hosted | None | 1 | No | Free open-source self-hosted processor; altcoins via plugins |
-| [Coinbase Payments](https://www.coinbase.com/payments) | 0% | Hybrid | Required | 1 | Yes | Onchain USDC for Shopify merchants; distinct from Commerce |
-| [MyCryptoCheckout](https://mycryptocheckout.com) | 0% | Non-custodial | None | 100 | No | WordPress plugin, direct wallet-to-wallet payments |
-| [Request Finance](https://www.request.finance) | 0% | Non-custodial | Optional | 100 | Yes | Crypto invoicing, payroll and AP/AR suite |
-| [Shieldz](https://shieldz.cash) | 0% | Non-custodial | None | 20 | No | Non-custodial, $0 fee, no KYC; pay any coin, settle in one |
-| [Solana Pay](https://solanapay.com) | 0% | Non-custodial | None | 2 | No | Open-source direct merchant payment protocol |
-| [Strike Business](https://strike.me/business/) | 0% | Custodial | Required | 2 | Yes | Lightning payments pioneer |
-| [Zaprite](https://zaprite.com) | 0% | Non-custodial | None | 2 | Yes | Bitcoin invoicing that connects your own wallets |
-| [CoinRemitter](https://coinremitter.com) | 0.23% | Custodial | None | 13 | No | No-KYC gateway with a 0.23% headline fee |
-| [B2BinPay](https://b2binpay.com) | 0.4% | Custodial | Required | 300 | Yes | Enterprise processor for brokers, exchanges, iGaming |
-| [OxaPay](https://oxapay.com) | 0.4% | Custodial | None | 20 | No | No-KYC email signup; Telegram-friendly |
+| [Binance Pay](https://pay.binance.com) | [0%](https://pay.binance.com) | Custodial | Required | 100 | Yes | Zero-fee payments inside the Binance ecosystem |
+| [Bitcart](https://bitcart.ai) | [0%](https://bitcart.ai/) | Self-hosted | None | 50 | No | Open-source BTCPay alternative; 50+ coins incl. Monero |
+| [BTCPay Server](https://btcpayserver.org) | [0%](https://btcpayserver.org/) | Self-hosted | None | 1 | No | Free open-source self-hosted processor; altcoins via plugins |
+| [Coinbase Payments](https://www.coinbase.com/payments) | [0%](https://www.coinbase.com/payments) | Hybrid | Required | 1 | Yes | Onchain USDC for Shopify merchants; distinct from Commerce |
+| [MyCryptoCheckout](https://mycryptocheckout.com) | [0%](https://mycryptocheckout.com) | Non-custodial | None | 100 | No | WordPress plugin, direct wallet-to-wallet payments |
+| [Request Finance](https://www.request.finance) | [0%](https://www.request.finance) | Non-custodial | Optional | 100 | Yes | Crypto invoicing, payroll and AP/AR suite |
+| [Shieldz](https://shieldz.cash) | [0%](https://shieldz.cash/pricing) | Non-custodial | None | 20 | No | Non-custodial, $0 fee, no KYC; pay any coin, settle in one |
+| [Solana Pay](https://solanapay.com) | [0%](https://solanapay.com/) | Non-custodial | None | 2 | No | Open-source direct merchant payment protocol |
+| [Strike Business](https://strike.me/business/) | [0%](https://strike.me/business/) | Custodial | Required | 2 | Yes | Lightning payments pioneer |
+| [Zaprite](https://zaprite.com) | [0%](https://zaprite.com/pricing) | Non-custodial | None | 2 | Yes | Bitcoin invoicing that connects your own wallets |
+| [CoinRemitter](https://coinremitter.com) | [0.23%](https://coinremitter.com/fees) | Custodial | None | 13 | No | No-KYC gateway with a 0.23% headline fee |
+| [B2BinPay](https://b2binpay.com) | [0.4%](https://b2binpay.com) | Custodial | Required | 300 | Yes | Enterprise processor for brokers, exchanges, iGaming |
+| [OxaPay](https://oxapay.com) | [0.4%](https://oxapay.com/) | Custodial | None | 20 | No | No-KYC email signup; Telegram-friendly |
 | [Trybit (ex-CryptoCloud)](https://trybit.com) | 0.4% | Custodial | Required | 40 | No | Rebranded to Trybit in 2026; auto-convert to USDT |
-| [CoinPayments](https://www.coinpayments.net) | 0.5% | Custodial | Required | 100 | Yes | Veteran multi-coin processor operating since 2013 |
-| [Copperx](https://copperx.io) | 0.5% | Custodial | Required | 5 | Yes | Stablecoin-first; settles to 50+ fiat currencies |
-| [NOWPayments](https://nowpayments.io) | 0.5% | Non-custodial | Optional | 350 | Yes | Auto-forwarding with 350+ supported currencies |
-| [Plisio](https://plisio.net) | 0.5% | Custodial | None | 12 | No | No-KYC signup with a single flat 0.5% fee |
-| [Radom](https://radom.com) | 0.5% | Hybrid | Required | 12 | Yes | Regulated EU VASP; subscriptions and invoicing |
-| [Sphere](https://spherepay.co) | 0.5% | Custodial | Required | 3 | Yes | Solana-born stablecoin ramps with ACH/SEPA/PIX rails |
+| [CoinPayments](https://www.coinpayments.net) | [0.5%](https://www.coinpayments.net/help-fees) | Custodial | Required | 100 | Yes | Veteran multi-coin processor operating since 2013 |
+| [Copperx](https://copperx.io) | [0.5%](https://copperx.io/pricing) | Custodial | Required | 5 | Yes | Stablecoin-first; settles to 50+ fiat currencies |
+| [NOWPayments](https://nowpayments.io) | [0.5%](https://nowpayments.io/pricing) | Non-custodial | Optional | 350 | Yes | Auto-forwarding with 350+ supported currencies |
+| [Plisio](https://plisio.net) | [0.5%](https://plisio.net/pricing) | Custodial | None | 12 | No | No-KYC signup with a single flat 0.5% fee |
+| [Radom](https://radom.com) | [0.5%](https://radom.com/pricing) | Hybrid | Required | 12 | Yes | Regulated EU VASP; subscriptions and invoicing |
+| [Sphere](https://spherepay.co) | [0.5%](https://spherepay.co) | Custodial | Required | 3 | Yes | Solana-born stablecoin ramps with ACH/SEPA/PIX rails |
 | [Whalestack](https://www.whalestack.com) | 0.5% | Custodial | Required | 6 | Yes | Formerly COINQVEST; EU-licensed, Stellar settlements |
 | [CoinsPaid](https://coinspaid.com) | 0.8%\* | Custodial | Required | 20 | Yes | High-volume processor favored by iGaming merchants |
-| [Confirmo](https://confirmo.com) | 0.8% | Custodial | Required | 10 | Yes | MiCA-licensed stablecoin-first EU gateway |
-| [TripleA](https://www.triple-a.io) | 0.8% | Custodial | Required | 6 | Yes | First MAS-licensed crypto payments firm; bank-grade settlement |
-| [ALFAcoins](https://www.alfacoins.com) | 0.99% | Custodial | Optional | 10 | No | Veteran processor; fiat-pegged settlements paid in crypto |
+| [Confirmo](https://confirmo.com) | [0.8%](https://confirmo.com) | Custodial | Required | 10 | Yes | MiCA-licensed stablecoin-first EU gateway |
+| [TripleA](https://www.triple-a.io) | [0.8%](https://www.triple-a.io) | Custodial | Required | 6 | Yes | First MAS-licensed crypto payments firm; bank-grade settlement |
+| [ALFAcoins](https://www.alfacoins.com) | [0.99%](https://www.alfacoins.com/merchant) | Custodial | Optional | 10 | No | Veteran processor; fiat-pegged settlements paid in crypto |
 | [0xProcessing](https://0xprocessing.com) | 1%\* | Custodial | Required | 85 | Yes | 85+ coins on 18 chains; volatility protection |
 | [Alchemy Pay](https://alchemypay.org) | 1%\* | Custodial | Required | 5 | Yes | Hybrid fiat-crypto ramp network across 173 countries |
 | [Bitpace](https://www.bitpace.com) | 1%\* | Custodial | Required | 70 | Yes | EU/UK-licensed gateway popular in iGaming |
-| [BlockBee](https://blockbee.io) | 1% | Non-custodial | None | 70 | No | Formerly CryptAPI; payment forwarding to your wallet |
-| [Blockonomics](https://www.blockonomics.co) | 1% | Non-custodial | None | 3 | No | Direct-to-wallet Bitcoin payments with no KYC |
-| [BoomFi](https://www.boomfi.xyz) | 1% | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
-| [Coinbase Commerce](https://www.coinbase.com/commerce) | 1% | Hybrid | Required | 10 | Yes | Shut down March 2026; successor Coinbase Business is custodial, US/SG only |
-| [CoinGate](https://coingate.com) | 1% | Custodial | Required | 70 | Yes | EU-based gateway; Lightning enabled by default |
-| [Flexa](https://flexa.co) | 1% | Custodial | Required | 99 | Yes | In-store crypto acceptance network across 13 chains |
+| [BlockBee](https://blockbee.io) | [1%](https://blockbee.io/fees/) | Non-custodial | None | 70 | No | Formerly CryptAPI; payment forwarding to your wallet |
+| [Blockonomics](https://www.blockonomics.co) | [1%](https://www.blockonomics.co) | Non-custodial | None | 3 | No | Direct-to-wallet Bitcoin payments with no KYC |
+| [BoomFi](https://www.boomfi.xyz) | [1%](https://docs.boomfi.xyz/docs/pricing-and-fees) | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
+| [Coinbase Commerce](https://www.coinbase.com/commerce) | [1%](https://www.coinbase.com/commerce) | Hybrid | Required | 10 | Yes | Shut down March 2026; successor Coinbase Business is custodial, US/SG only |
+| [CoinGate](https://coingate.com) | [1%](https://www.coingate.com/pricing) | Custodial | Required | 70 | Yes | EU-based gateway; Lightning enabled by default |
+| [Flexa](https://flexa.co) | [1%](https://flexa.co/payments) | Custodial | Required | 99 | Yes | In-store crypto acceptance network across 13 chains |
 | [HoodPay](https://hoodpay.io) | 1% | Hybrid | None | 20 | No | No-KYC checkout favored by digital-goods sellers |
 | [IVPAY (ex-ivendPay)](https://ivpay.io) | 1%\* | Custodial | Required | 40 | Yes | Crypto POS and vending-machine payments |
 | [Loop Crypto](https://www.loopcrypto.xyz) | 1% | Non-custodial | Optional | 10 | Yes | Crypto autopay subscriptions with Stripe integration |
 | [Mercuryo](https://mercuryo.io) | 1%\* | Custodial | Required | 40 | Yes | On/off-ramp infrastructure embedded in major web3 wallets |
-| [OpenNode](https://opennode.com) | 1% | Custodial | Required | 1 | Yes | Bitcoin-only, Lightning-first processor |
-| [SpectroCoin](https://spectrocoin.com) | 1% | Custodial | Required | 30 | Yes | Lithuanian exchange-wallet combo with merchant tools |
-| [Speed](https://www.tryspeed.com) | 1% | Custodial | Optional | 3 | Yes | Lightning plus USDT/USDC with instant autoswap |
-| [Whitepay](https://whitepay.com) | 1% | Custodial | Required | 200 | Yes | WhiteBIT-powered POS; known for Ukraine crypto donations |
-| [xMoney](https://www.xmoney.com) | 1% | Custodial | Required | 10 | Yes | Formerly Utrust; MiCA-aligned EU crypto payments |
-| [DePay](https://depay.com) | 1.5% | Non-custodial | None | 1000 | No | Web3 payments with on-the-fly token conversion |
-| [Stripe (Pay with Crypto)](https://stripe.com/crypto) | 1.5% | Custodial | Required | 3 | Yes | Stablecoin checkout settling into the Stripe balance |
-| [BitPay](https://bitpay.com) | 2% | Custodial | Required | 20 | Yes | Oldest major crypto processor; daily fiat bank settlements |
-| [Cryptomus](https://cryptomus.com) | 2% | Custodial | Required | 120 | No | Negotiable fees; popular with high-risk and SaaS merchants |
+| [OpenNode](https://opennode.com) | [1%](https://opennode.com/pricing/) | Custodial | Required | 1 | Yes | Bitcoin-only, Lightning-first processor |
+| [SpectroCoin](https://spectrocoin.com) | [1%](https://docs.spectrocoin.com/docs/fees) | Custodial | Required | 30 | Yes | Lithuanian exchange-wallet combo with merchant tools |
+| [Speed](https://www.tryspeed.com) | [1%](https://www.tryspeed.com/pricing/) | Custodial | Optional | 3 | Yes | Lightning plus USDT/USDC with instant autoswap |
+| [Whitepay](https://whitepay.com) | [1%](https://whitepay.com/product/crypto-acquiring) | Custodial | Required | 200 | Yes | WhiteBIT-powered POS; known for Ukraine crypto donations |
+| [xMoney](https://www.xmoney.com) | [1%](https://www.xmoney.com) | Custodial | Required | 10 | Yes | Formerly Utrust; MiCA-aligned EU crypto payments |
+| [DePay](https://depay.com) | [1.5%](https://depay.com/pricing) | Non-custodial | None | 1000 | No | Web3 payments with on-the-fly token conversion |
+| [Stripe (Pay with Crypto)](https://stripe.com/crypto) | [1.5%](https://docs.stripe.com/crypto/pay-with-crypto) | Custodial | Required | 3 | Yes | Stablecoin checkout settling into the Stripe balance |
+| [BitPay](https://bitpay.com) | [2%](https://bitpay.com/pricing) | Custodial | Required | 20 | Yes | Oldest major crypto processor; daily fiat bank settlements |
+| [Cryptomus](https://cryptomus.com) | [2%](https://cryptomus.com/fees/payment) | Custodial | Required | 120 | No | Negotiable fees; popular with high-risk and SaaS merchants |
 | [Helio (MoonPay)](https://www.hel.io) | 2% | Non-custodial | Optional | 100 | No | Solana checkout leader; acquired by MoonPay |
-| [PayKassa](https://paykassa.pro) | 4% | Custodial | None | 16 | Yes | Email-only signup aggregator popular in CIS markets |
+| [PayKassa](https://paykassa.pro) | [4%](https://paykassa.pro/en/accept/) | Custodial | None | 16 | Yes | Email-only signup aggregator popular in CIS markets |
 | [Sellix](https://sellix.io) | 5%\* | Custodial | None | 13 | No | Digital-goods storefront platform with crypto checkout |
 
 ## Picks by category

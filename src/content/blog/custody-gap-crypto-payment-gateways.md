@@ -51,7 +51,7 @@ The dataset is free to reuse with attribution. If you write about crypto payment
 
 ## The honest disclosure
 
-Shieldz makes a non-custodial crypto payment gateway, so we have a stake in this framing. That is also why we published the raw data: you do not have to take the headline on faith. Download the [dataset](/blog/data/crypto-payment-gateways-2026.json), check the custody column against each provider's docs, and draw your own line. If you want to be in the non-custodial 24%, you can [verify our own claim](https://shieldz.cash/verify) and [start with a wallet address](https://shieldz.cash/tools/payment-link), no signup, no KYC, a $0 platform fee.
+Shieldz makes a non-custodial crypto payment gateway, so we have a stake in this framing. That is also why we published the raw data: you do not have to take the headline on faith. Download the [dataset](/blog/data/crypto-payment-gateways-2026.json), check the custody column against each provider's docs, and draw your own line. If you want to be in the non-custodial 24%, you can [verify our own claim](https://shieldz.cash/verify) and [start with a wallet address](https://shieldz.cash/tools/payment-link), no signup, no KYC, a $0 platform fee. For the full trade-off between the two models, not just the split, see [custodial vs non-custodial crypto payment gateways](/blog/custodial-vs-non-custodial-crypto-payment-gateways).
 
 <script type="application/ld+json">
 {

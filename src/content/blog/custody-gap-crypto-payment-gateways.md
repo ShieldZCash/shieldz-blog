@@ -34,7 +34,7 @@ From the same dataset of 50 crypto payment gateways (August 2026):
 - **The median platform fee is 1%** per transaction; 10 of 50 advertise a $0 platform fee.
 - **66% can settle to fiat** (33 of 50), and fiat settlement is almost always custodial and KYC-gated.
 
-Each of these has its own breakdown: [custody](/blog/are-crypto-payment-gateways-custodial), [non-custodial count](/blog/how-many-non-custodial-crypto-payment-gateways), [fees](/blog/average-crypto-payment-gateway-fee), [KYC](/blog/do-crypto-payment-gateways-require-kyc), [free gateways](/blog/how-many-free-crypto-payment-gateways), and [fiat settlement](/blog/crypto-payment-gateways-fiat-settlement). The full provider-by-provider table is in the [comparison of 50 crypto payment gateways](/blog/50-crypto-payment-gateways-compared).
+Each of these has its own breakdown: [custody](/blog/are-crypto-payment-gateways-custodial), [non-custodial count](/blog/how-many-non-custodial-crypto-payment-gateways), [fees](/blog/average-crypto-payment-gateway-fee), [KYC](/blog/do-crypto-payment-gateways-require-kyc), [free gateways](/blog/how-many-free-crypto-payment-gateways), and [fiat settlement](/blog/crypto-payment-gateways-fiat-settlement). The full provider-by-provider table is in the [comparison of 50 crypto payment gateways](/blog/50-crypto-payment-gateways-compared) (August 2026) or its update, the [comparison of 87 crypto payment gateways](/blog/87-crypto-payment-gateways-compared) (September 2026).
 
 ## Methodology
 

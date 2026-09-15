@@ -164,6 +164,8 @@ Microsoft and Mojang storefront rules still apply to those storefronts. This pos
 
 Same invoice object works on nearby dedicated-server shops (Rust, ARK, FiveM, GMod, Terraria). The grant command changes. The webhook does not. This article stays on Minecraft because that is where rank/crate/slot catalogs are most standardized.
 
+If the storefront is a Discord server rather than a webshop, skip the API entirely: [sell Discord roles for crypto](/blog/sell-discord-roles-for-crypto) with a bot that lists products and grants roles automatically.
+
 ## What not to promise on the store page
 
 - Shieldz does not hold a merchant balance and cannot pay you out in fiat. See [crypto payment gateways and fiat settlement](/blog/crypto-payment-gateways-fiat-settlement).

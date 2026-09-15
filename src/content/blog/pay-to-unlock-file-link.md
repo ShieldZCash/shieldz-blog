@@ -76,7 +76,7 @@ No. Crypto payments are final, which is part of the appeal for digital goods. Se
 
 ## Create your unlock link
 
-Sell a file for crypto without a store or a platform cut. You can now [upload the file itself, up to 10 MB](/blog/sell-pdf-for-crypto), and delivery is automatic. Open the [pay-to-unlock generator](https://shieldz.cash/tools/pay-to-unlock) to mint a paywall now (AI agents can do the same over MCP, see [agents selling digital products](/blog/ai-agents-sell-digital-products)), generate a plain [crypto invoice](/blog/crypto-invoice-generator) if you would rather bill a fixed amount, or read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) for the wider setup.
+Sell a file for crypto without a store or a platform cut. You can now [upload the file itself, up to 10 MB](/blog/sell-pdf-for-crypto), and delivery is automatic. Open the [pay-to-unlock generator](https://shieldz.cash/tools/pay-to-unlock) to mint a paywall now (AI agents can do the same over MCP, see [agents selling digital products](/blog/ai-agents-sell-digital-products)), generate a plain [crypto invoice](/blog/crypto-invoice-generator) if you would rather bill a fixed amount, or read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) for the wider setup. Selling to a Discord community instead of a public link: [sell Discord roles for crypto](/blog/sell-discord-roles-for-crypto).
 
 <script type="application/ld+json">
 {

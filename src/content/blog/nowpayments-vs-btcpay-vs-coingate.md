@@ -73,7 +73,7 @@ BTCPay Server is the reference implementation of doing it yourself: fully open s
 
 The cost is operational. You run the server, the node, the updates and the backups, and when something breaks at 2 a.m. it is your pager. For a merchant with technical staff and meaningful volume, that trade is often worth it. For a solo store owner, it usually is not.
 
-**Pick BTCPay Server if** sovereignty is the point, Bitcoin is your main rail, and you have the technical capacity to operate infrastructure.
+**Pick BTCPay Server if** sovereignty is the point, Bitcoin is your main rail, and you have the technical capacity to operate infrastructure. For a closer look at just these two, see [BTCPay Server vs CoinGate](/blog/btcpay-server-vs-coingate).
 
 ## CoinGate, the regulated option
 

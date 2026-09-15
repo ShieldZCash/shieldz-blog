@@ -47,7 +47,7 @@ Only **4 of the 86 crypto payment gateways** in [our open dataset](/blog/custody
 
 ## The four options in depth
 
-**BTCPay Server** is the reference implementation and the safest default. It is Bitcoin-first, deployed with Docker, and can run its own full node or connect to an existing one. Beyond a checkout it ships point-of-sale, crowdfunding and pull-payment apps, Lightning support, and the largest plugin and integration ecosystem of any self-hosted gateway. Altcoins are available through community plugins rather than out of the box. If you want the most documentation, the most community help, and the most battle-tested option, this is it.
+**BTCPay Server** is the reference implementation and the safest default. It is Bitcoin-first, deployed with Docker, and can run its own full node or connect to an existing one. Beyond a checkout it ships point-of-sale, crowdfunding and pull-payment apps, Lightning support, and the largest plugin and integration ecosystem of any self-hosted gateway. Altcoins are available through community plugins rather than out of the box. If you want the most documentation, the most community help, and the most battle-tested option, this is it. For how it stacks up against a hosted, regulated alternative, see [BTCPay Server vs CoinGate](/blog/btcpay-server-vs-coingate).
 
 **Bitcart** is the pragmatic multi-coin alternative. It is open-source, Docker-deployed, and supports around 50 assets including Monero straight away, without hunting for plugins. It carries Lightning too. If your customers pay in more than Bitcoin and you would rather not assemble a plugin stack, Bitcart covers more ground with less assembly.
 

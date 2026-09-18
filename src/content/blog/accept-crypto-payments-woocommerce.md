@@ -10,7 +10,7 @@ image: "https://shieldz.cash/blog/og/accept-crypto-payments-woocommerce.png"
 
 If you sell on WooCommerce, adding crypto is usually pitched as a trade-off: give a third party custody of your money, pay a monthly fee, and hope they pay out on time. It does not have to work that way. This guide shows how to accept Bitcoin, USDC, ETH and more on WooCommerce with the free [Shieldz](https://shieldz.cash) plugin, where the money settles straight to a wallet **you** control, at a $0 platform fee.
 
-It takes about five minutes and no code. This is one of three guides for the same plugin, the others cover [crypto donations with GiveWP](/blog/accept-crypto-donations-givewp) and [selling digital downloads for crypto with EDD](/blog/sell-digital-downloads-for-crypto-edd). One plugin, three platforms.
+It takes about five minutes and no code. This is one of four guides for the same plugin, the others cover [crypto donations with GiveWP](/blog/accept-crypto-donations-givewp), [selling digital downloads for crypto with EDD](/blog/sell-digital-downloads-for-crypto-edd), and [food orders with RestroPress](/blog/accept-crypto-payments-restropress). One plugin, four platforms.
 
 ## Why non-custodial matters for a store
 
@@ -78,4 +78,4 @@ Buyers pay any supported coin and you settle to a stable asset like USDC on the 
 
 ## Get started
 
-[Download the plugin](https://shieldz.cash/downloads/shieldz-crypto-payments.zip), paste your wallet address, and take your first crypto order today. Prefer to see the API instead? Read the [developer docs](https://shieldz.cash/docs). Running donations or digital products on the same site? The same plugin also powers [GiveWP donations](/blog/accept-crypto-donations-givewp) and [Easy Digital Downloads](/blog/sell-digital-downloads-for-crypto-edd).
+[Download the plugin](https://shieldz.cash/downloads/shieldz-crypto-payments.zip), paste your wallet address, and take your first crypto order today. Prefer to see the API instead? Read the [developer docs](https://shieldz.cash/docs). Running donations, digital products or online food ordering on the same site? The same plugin also powers [GiveWP donations](/blog/accept-crypto-donations-givewp), [Easy Digital Downloads](/blog/sell-digital-downloads-for-crypto-edd) and [RestroPress](/blog/accept-crypto-payments-restropress).

@@ -10,7 +10,7 @@ image: "https://shieldz.cash/blog/og/accept-crypto-donations-givewp.png"
 
 Crypto donors exist, and they give generously, but most WordPress donation forms cannot take their money. If you run fundraising on [GiveWP](https://givewp.com/), you can add Bitcoin, USDC, ETH and more with the free [Shieldz](https://shieldz.cash) plugin, keep 100% of every gift, and never hand custody of donations to a third party.
 
-This is the donations guide in a set of three for the same plugin. The others cover [WooCommerce stores](/blog/accept-crypto-payments-woocommerce) and [digital downloads with EDD](/blog/sell-digital-downloads-for-crypto-edd). Install once, and every platform on the site can take crypto.
+This is the donations guide in a set of four for the same plugin. The others cover [WooCommerce stores](/blog/accept-crypto-payments-woocommerce), [digital downloads with EDD](/blog/sell-digital-downloads-for-crypto-edd), and [food orders with RestroPress](/blog/accept-crypto-payments-restropress). Install once, and every platform on the site can take crypto.
 
 ## Why non-custodial is the right default for a cause
 
@@ -66,4 +66,4 @@ The donor lands on the hosted Shieldz checkout, pays in any supported coin, and 
 
 ## Get started
 
-[Download the plugin](https://shieldz.cash/downloads/shieldz-crypto-payments.zip), enable Shieldz in GiveWP, and start accepting crypto gifts today. Also running a store or selling digital goods? The same install powers [WooCommerce payments](/blog/accept-crypto-payments-woocommerce) and [Easy Digital Downloads](/blog/sell-digital-downloads-for-crypto-edd). New to all this? Start with [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or compare the [best free crypto payment gateways in 2026](/blog/best-free-crypto-payment-gateways-2026).
+[Download the plugin](https://shieldz.cash/downloads/shieldz-crypto-payments.zip), enable Shieldz in GiveWP, and start accepting crypto gifts today. Also running a store, selling digital goods, or taking food orders? The same install powers [WooCommerce payments](/blog/accept-crypto-payments-woocommerce), [Easy Digital Downloads](/blog/sell-digital-downloads-for-crypto-edd) and [RestroPress](/blog/accept-crypto-payments-restropress). New to all this? Start with [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or compare the [best free crypto payment gateways in 2026](/blog/best-free-crypto-payment-gateways-2026).

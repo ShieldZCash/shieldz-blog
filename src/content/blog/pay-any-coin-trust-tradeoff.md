@@ -29,3 +29,5 @@ The easy move would have been to keep saying "wallet to wallet" everywhere and h
 If you want the purest model with the smallest trust surface, accept the same coin you settle in. If you value letting customers pay in anything, the swap path is there, with an honest description of what it depends on. That choice should be yours to make with full information, not ours to hide.
 
 You can verify the non-custodial core yourself: the key-derivation code is open source at [shieldz.cash/verify](https://shieldz.cash/verify).
+
+Want to use the same routes for your own coins rather than a checkout? [Shieldz Swap](/blog/cross-chain-crypto-swap) is the non-custodial cross-chain crypto swap built on them: every protocol's quote side by side, signed from your own wallet.

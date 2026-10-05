@@ -82,6 +82,10 @@ There is a $0 platform fee. The conversion cost is the winning rail's spread plu
 **Which coins can buyers pay with?**
 BTC, ETH, BNB, AVAX, LTC, DASH, BCH, TON, ZEC and USDC/USDT across major networks, with the checkout showing only coins that have a healthy route and a refund path at that moment.
 
+## Swapping your own coins
+
+The same routing now runs as a standalone app. [Shieldz Swap](/blog/cross-chain-crypto-swap) lets anyone make a cross-chain crypto swap from their own wallet, with NEAR Intents, Chainflip, Relay and THORChain quoted side by side and a flat 0.15% service fee shown on every quote.
+
 ## Try it from the merchant side
 
 You do not configure any of this; you pick one settlement coin and the routing does the rest. Create a checkout with the [payment link generator](https://shieldz.cash/tools/payment-link), see the buyer's view in [pay with BTC, ETH, USDT or USDC](/blog/pay-with-btc-eth-usdt-usdc), or start from the basics with [how to accept crypto payments](/blog/how-to-accept-crypto-payments).

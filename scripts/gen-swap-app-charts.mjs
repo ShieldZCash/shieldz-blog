@@ -67,7 +67,7 @@ function hbars(rows, { W, top, rowH, labelW, max, min = 0 }) {
   writeFileSync("public/charts/swap-route-race.svg", frame(W, H,
     "1 ETH to USDC on Base: three protocols, three prices",
     "USDC you would receive, after every fee, as quoted by each protocol (axis starts at 2,700)",
-    "USDC out", "Measured on api.shieldz.cash, 2026-10-06. Quotes move every second; the gap is what matters.",
+    "USDC out", "Measured on swap.shieldz.cash, 2026-10-06. Quotes move every second; the gap is what matters.",
     body, "One ETH to USDC on Base, quoted by three protocols at the same moment: NEAR Intents 2,706.90 USDC, Relay 2,704.87 USDC, THORChain 2,704.13 USDC. NEAR Intents was picked."));
   console.log("wrote public/charts/swap-route-race.svg");
 }
@@ -97,7 +97,7 @@ function hbars(rows, { W, top, rowH, labelW, max, min = 0 }) {
   writeFileSync("public/charts/swap-quote-timeline.svg", frame(W, H,
     "1 ETH to BTC: quotes stream in as each protocol answers",
     "Time from request to each protocol's quote, as the swap form receives them",
-    "seconds", "Measured on api.shieldz.cash/v1/quote/stream, 2026-10-06.",
+    "seconds", "Measured on swap.shieldz.cash, 2026-10-06.",
     grid + bars + note, "One ETH to BTC: THORChain answered at 0.40 seconds with 0.031501 BTC settling in about 42 seconds, Chainflip at 0.44 seconds with 0.031574 BTC in about 8 minutes, NEAR Intents at 0.63 seconds with 0.031451 BTC in about 8 minutes. THORChain was picked for settling faster."));
   console.log("wrote public/charts/swap-quote-timeline.svg");
 }

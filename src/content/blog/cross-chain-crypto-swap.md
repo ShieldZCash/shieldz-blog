@@ -136,26 +136,6 @@ Non-custodial removes one risk entirely: there is no Shieldz balance that can be
 
 The full list is in the [risk disclosure](https://swap.shieldz.cash/risks), and what we collect (very little, and nothing that identifies you) is in the [privacy policy](https://swap.shieldz.cash/privacy).
 
-## For developers: the same router, as an API
-
-Everything the app does goes through a public API at `api.shieldz.cash`, so you can build the same cross-chain crypto swap into your own product:
-
-```bash
-# Every route for 1 ETH to USDC on Base, streamed as each protocol answers
-curl -N -X POST https://api.shieldz.cash/v1/quote/stream \
-  -H 'content-type: application/json' \
-  -d '{"origin_asset":"ETH.ETH",
-       "destination_asset":"BASE.USDC-0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
-       "amount_in":"1000000000000000000"}'
-```
-
-- `GET /v1/assets` lists every asset, its chain, decimals and the protocols that route it.
-- `POST /v1/quote` returns the best route and the alternatives in one response; `/v1/quote/stream` sends them as they arrive.
-- `POST /v1/swap` opens the deposit for a chosen route, and `GET /v1/swap/{id}` reports its status.
-- A quote can be limited to certain protocols, and `"confidentiality": "basic"` asks NEAR Intents for a confidential swap.
-
-Each quote carries its service fee and an estimate of how long it takes, so your users see the same numbers ours do. If you accept payments rather than run swaps, the [Shieldz payment API](/blog/crypto-payment-api) handles invoices, webhooks and settlement on top of the same idea.
-
 ## How it fits with Shieldz payments
 
 Shieldz started as a [non-custodial crypto payment gateway](/blog/non-custodial-crypto-payment-gateway) for merchants, with no platform fee: buyers pay, and the money lands in the merchant's own wallet. When a buyer pays in a coin the merchant does not settle in, the checkout swaps it on the way using the same kind of routes described here. Shieldz Swap takes that routing engine and puts it in your hands directly, for your own coins. Merchant checkout stays fee-free; the 0.15% applies to swaps you make in the swap app.

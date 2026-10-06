@@ -12,6 +12,8 @@ In August 2026 we published a study of 50 crypto payment gateways. The underlyin
 
 If you have not read it, the [original August 2026 study](/blog/50-crypto-payment-gateways-compared) is still live and unchanged, a frozen 50-gateway snapshot kept exactly as published so it stays reproducible. Think of this post as the next edition. If you want curated shortlists instead of the full market, we keep those too: the [best crypto payment gateways of 2026](/blog/best-crypto-payment-gateways-2026) and the [best free crypto payment gateways](/blog/best-free-crypto-payment-gateways-2026).
 
+**Update:** the [October 2026 edition (93 gateways)](/blog/93-crypto-payment-gateways-compared) is out. This September snapshot stays as published.
+
 **Disclosure up front:** Shieldz is our product, and it appears in the data like everyone else. Every number in this post comes from published pricing pages or provider docs, and where we could not verify a figure we say so with an asterisk.
 
 ## What changed since August

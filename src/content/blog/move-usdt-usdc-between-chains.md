@@ -5,6 +5,7 @@ pubDate: 2026-10-07
 author: "Deniz Yanbollu"
 tags: ["move usdt between chains", "usdt trc20 to erc20", "bridge usdc", "stablecoins", "cross-chain crypto swap", "non-custodial"]
 eyebrow: "Guide"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/move-usdt-usdc-between-chains.png"
 ---
 

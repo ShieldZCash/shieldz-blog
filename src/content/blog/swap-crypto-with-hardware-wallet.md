@@ -5,6 +5,7 @@ pubDate: 2026-10-07
 author: "Deniz Yanbollu"
 tags: ["hardware wallet swap", "ledger swap", "trezor swap", "keystone", "cross-chain crypto swap", "non-custodial"]
 eyebrow: "Guide"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/swap-crypto-with-hardware-wallet.png"
 ---
 

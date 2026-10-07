@@ -5,6 +5,7 @@ pubDate: 2026-10-06
 author: "Deniz Yanbollu"
 tags: ["cross-chain crypto swap", "crypto swap", "non-custodial", "near intents", "chainflip", "relay"]
 eyebrow: "Guide"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/cross-chain-crypto-swap.png"
 ---
 

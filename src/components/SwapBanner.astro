@@ -1,0 +1,120 @@
+---
+// Call-to-action banner for posts about Shieldz Swap. Shown by the post page
+// when frontmatter sets `swapBanner: true`. The utm tags let Simple Analytics
+// on swap.shieldz.cash attribute visits to the post that sent them.
+interface Props { slug: string }
+const { slug } = Astro.props;
+const href = `https://swap.shieldz.cash/?utm_source=blog&utm_medium=banner&utm_campaign=${encodeURIComponent(slug)}`;
+---
+
+<a class="swap-banner" href={href} aria-label="Swap now with shieldz.cash">
+  <span class="coins" aria-hidden="true">
+    <span class="coin btc">₿</span>
+    <span class="coin eth">Ξ</span>
+    <span class="coin sol">◎</span>
+    <span class="coin usdt">₮</span>
+    <span class="arrows">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v16M3 8l4-4 4 4M17 20V4M13 16l4 4 4-4"/></svg>
+    </span>
+  </span>
+  <span class="copy">
+    <span class="eyebrow">Shieldz Swap</span>
+    <span class="title">Swap now with shieldz.cash</span>
+    <span class="sub">Any coin, any chain · 0.15% fee · no account</span>
+  </span>
+  <span class="cta">Swap now <span class="arrow" aria-hidden="true">→</span></span>
+</a>
+
+<style>
+  .swap-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 4px 0 34px;
+    padding: 20px 22px 20px 20px;
+    border-radius: 18px;
+    border: 1px solid #3a1d17;
+    background:
+      radial-gradient(120% 160% at 0% 0%, rgba(245, 54, 28, 0.22), transparent 55%),
+      radial-gradient(90% 140% at 100% 100%, rgba(245, 54, 28, 0.12), transparent 60%),
+      linear-gradient(135deg, #1a1110, #121212 60%);
+    color: var(--ink);
+    text-decoration: none;
+    overflow: hidden;
+    isolation: isolate;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  /* A slow light sweep across the banner. */
+  .swap-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.06) 50%, transparent 65%);
+    transform: translateX(-100%);
+    animation: sweep 6s ease-in-out infinite;
+  }
+  @keyframes sweep {
+    0%, 55% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .swap-banner:hover { border-color: var(--accent); transform: translateY(-1px); text-decoration: none; }
+  .swap-banner:hover .arrow { transform: translateX(4px); }
+  .swap-banner:hover .arrows { transform: rotate(180deg); }
+
+  .coins { position: relative; flex: 0 0 auto; display: flex; padding-right: 10px; }
+  .coin {
+    width: 40px; height: 40px;
+    margin-left: -12px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font: 700 19px/1 var(--sans);
+    color: #fff;
+    box-shadow: 0 0 0 3px #161211;
+  }
+  .coin:first-child { margin-left: 0; }
+  .btc { background: #f7931a; }
+  .eth { background: #627eea; }
+  .sol { background: linear-gradient(135deg, #9945ff, #14f195); }
+  .usdt { background: #26a17b; }
+  .arrows {
+    position: absolute; right: -2px; bottom: -6px;
+    width: 24px; height: 24px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--accent); color: #fff;
+    box-shadow: 0 0 0 3px #161211;
+    transition: transform 0.35s ease;
+  }
+
+  .copy { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .eyebrow { font: 700 11px/1.2 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  .title { font: 800 20px/1.2 var(--sans); letter-spacing: -0.02em; color: var(--ink); }
+  .sub { font: 400 12.5px/1.4 var(--mono); color: var(--ink-2); }
+
+  .cta {
+    flex: 0 0 auto;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font: 700 14px/1 var(--mono);
+    white-space: nowrap;
+    box-shadow: 0 6px 24px rgba(245, 54, 28, 0.35);
+  }
+  .arrow { transition: transform 0.2s ease; }
+
+  @media (max-width: 600px) {
+    .swap-banner { flex-wrap: wrap; gap: 14px 16px; padding: 18px; }
+    .coin { width: 32px; height: 32px; margin-left: -10px; font-size: 15px; }
+    .arrows { width: 20px; height: 20px; }
+    .copy { flex-basis: calc(100% - 130px); }
+    .title { font-size: 17px; }
+    .cta { flex: 1 1 100%; justify-content: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .swap-banner::after { animation: none; }
+    .swap-banner, .arrow, .arrows { transition: none; }
+  }
+</style>

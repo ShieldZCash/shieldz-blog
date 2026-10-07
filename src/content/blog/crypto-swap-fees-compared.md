@@ -5,6 +5,7 @@ pubDate: 2026-10-07
 author: "Deniz Yanbollu"
 tags: ["crypto swap fees", "metamask swap fee", "phantom swap fee", "rabby", "coinbase wallet", "cross-chain crypto swap"]
 eyebrow: "Comparison"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/crypto-swap-fees-compared.png"
 ---
 

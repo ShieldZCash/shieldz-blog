@@ -5,6 +5,7 @@ pubDate: 2026-10-07
 author: "Deniz Yanbollu"
 tags: ["swap btc to eth", "btc to sol", "native bitcoin swap", "chainflip", "near intents", "cross-chain crypto swap", "non-custodial"]
 eyebrow: "Guide"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/swap-bitcoin-to-ethereum-solana.png"
 ---
 

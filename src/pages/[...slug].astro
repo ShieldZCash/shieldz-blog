@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import SwapBanner from "../components/SwapBanner.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -30,6 +31,7 @@ const ogImage = post.data.ogImage ?? new URL(`/blog/og/${post.id}.png`, Astro.si
       {post.data.author} &middot;
       {post.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
     </p>
+    {post.data.swapBanner && <SwapBanner slug={post.id} />}
     <Content />
   </article>
 </Base>

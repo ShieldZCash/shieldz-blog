@@ -1,8 +1,8 @@
 // Charts for the Shieldz Swap launch post (cross-chain-crypto-swap).
 // 1) swap-app-fees.svg: service fee on a $1,000 swap, MetaMask vs Phantom vs Shieldz Swap
-// 2) swap-route-race.svg: 1 ETH -> USDC on Base, what each protocol quoted (measured)
-// 3) swap-quote-timeline.svg: 1 ETH -> BTC, when each protocol answered (measured)
-// Measurements: live api.shieldz.cash/v1/quote/stream, 2026-10-06.
+// 2) swap-route-race.svg: 1 ETH -> USDC on Arbitrum, what each protocol quoted (measured)
+// 3) swap-quote-timeline.svg: 1 ETH -> USDC on Arbitrum, when each protocol answered (measured)
+// Measurements: live swap.shieldz.cash/v1/quote/stream, 2026-10-07 (THORChain is switched off).
 // Run: node scripts/gen-swap-app-charts.mjs
 import { mkdirSync, writeFileSync } from "node:fs";
 
@@ -54,35 +54,35 @@ function hbars(rows, { W, top, rowH, labelW, max, min = 0 }) {
   console.log("wrote public/charts/swap-app-fees.svg");
 }
 
-/* 2. 1 ETH -> USDC on Base, quote per protocol */
+/* 2. 1 ETH -> USDC on Arbitrum, quote per protocol */
 {
   const W = 860, H = 380;
   const rows = [
-    { name: "NEAR Intents", note: "settles in ~47 s · picked", val: 2706.90, label: "2,706.90 USDC", good: true },
-    { name: "Relay", note: "settles in ~2 s", val: 2704.87, label: "2,704.87 USDC" },
-    { name: "THORChain", note: "settles in ~2.6 min", val: 2704.13, label: "2,704.13 USDC" },
+    { name: "Chainflip", note: "settles in ~2.7 min · picked", val: 2594.00, label: "2,594.00 USDC", good: true },
+    { name: "NEAR Intents", note: "settles in ~46 s", val: 2588.55, label: "2,588.55 USDC" },
+    { name: "Relay", note: "settles in ~24 s", val: 2587.86, label: "2,587.86 USDC" },
   ];
-  const body = hbars(rows, { W, top: 100, rowH: 74, labelW: 230, min: 2700, max: 2708 }) +
-    `<text x="28" y="${H - 44}" font-size="12.5" fill="${T.muted}" font-family="${FONT}">Same request, same second: the best and worst route differ by $2.77. Chainflip has no Base USDC route.</text>`;
+  const body = hbars(rows, { W, top: 100, rowH: 74, labelW: 230, min: 2584, max: 2596 }) +
+    `<text x="28" y="${H - 44}" font-size="12.5" fill="${T.muted}" font-family="${FONT}">Same request, same second: the best and worst route differ by $6.14, four times the whole Shieldz fee.</text>`;
   writeFileSync("public/charts/swap-route-race.svg", frame(W, H,
-    "1 ETH to USDC on Base: three protocols, three prices",
-    "USDC you would receive, after every fee, as quoted by each protocol (axis starts at 2,700)",
-    "USDC out", "Measured on swap.shieldz.cash, 2026-10-06. Quotes move every second; the gap is what matters.",
-    body, "One ETH to USDC on Base, quoted by three protocols at the same moment: NEAR Intents 2,706.90 USDC, Relay 2,704.87 USDC, THORChain 2,704.13 USDC. NEAR Intents was picked."));
+    "1 ETH to USDC on Arbitrum: three protocols, three prices",
+    "USDC you would receive, after every fee, as quoted by each protocol (axis starts at 2,584)",
+    "USDC out", "Measured on swap.shieldz.cash, 2026-10-07. Quotes move every second; the gap is what matters.",
+    body, "One ETH to USDC on Arbitrum, quoted by three protocols at the same moment: Chainflip 2,594.00 USDC, NEAR Intents 2,588.55 USDC, Relay 2,587.86 USDC. Chainflip was picked."));
   console.log("wrote public/charts/swap-route-race.svg");
 }
 
-/* 3. 1 ETH -> BTC, when each protocol answered */
+/* 3. 1 ETH -> USDC on Arbitrum, when each protocol answered */
 {
-  const W = 860, H = 380, x0 = 200, plotW = W - x0 - 60, top = 104, rowH = 58, maxMs = 700;
+  const W = 860, H = 380, x0 = 200, plotW = W - x0 - 60, top = 104, rowH = 58, maxMs = 1000;
   const xs = (ms) => x0 + (ms / maxMs) * plotW;
   const rows = [
-    { name: "THORChain", ms: 398, note: "0.031501 BTC · ~42 s to settle", good: true },
-    { name: "Chainflip", ms: 442, note: "0.031574 BTC · ~8 min to settle" },
-    { name: "NEAR Intents", ms: 634, note: "0.031451 BTC · ~8 min to settle" },
+    { name: "Relay", ms: 670, note: "2,587.86 USDC · ~24 s to settle" },
+    { name: "NEAR Intents", ms: 789, note: "2,588.55 USDC · ~46 s to settle" },
+    { name: "Chainflip", ms: 837, note: "2,594.00 USDC · ~2.7 min to settle", good: true },
   ];
   let grid = "";
-  [0, 200, 400, 600].forEach((ms) => {
+  [0, 250, 500, 750, 1000].forEach((ms) => {
     grid += `<line x1="${xs(ms)}" y1="${top - 8}" x2="${xs(ms)}" y2="${top + rows.length * rowH + 4}" stroke="${T.grid}"/>` +
       `<text x="${xs(ms)}" y="${top + rows.length * rowH + 22}" text-anchor="middle" font-size="11" fill="${T.faint}" font-family="${FONT}">${ms / 1000}s</text>`;
   });
@@ -93,11 +93,11 @@ function hbars(rows, { W, top, rowH, labelW, max, min = 0 }) {
       `<text x="${(xs(r.ms) + 10).toFixed(1)}" y="${y + 22}" font-size="14" font-weight="700" fill="${r.good ? T.grnA : T.ink}" font-family="${FONT}">${(r.ms / 1000).toFixed(2)}s</text>` +
       `<text x="${x0}" y="${y + 46}" font-size="11.5" fill="${T.faint}" font-family="${FONT}">${r.note}</text>`;
   }).join("\n  ");
-  const note = `<text x="28" y="${H - 44}" font-size="12.5" fill="${T.muted}" font-family="${FONT}">The first route is on screen at 0.40 s. The race ends at 0.64 s; THORChain stays the pick because it settles 7 minutes sooner.</text>`;
+  const note = `<text x="28" y="${H - 44}" font-size="12.5" fill="${T.muted}" font-family="${FONT}">The first route is on screen at 0.67 s. The race ends at 0.85 s; Chainflip, last to answer, pays the most and is picked.</text>`;
   writeFileSync("public/charts/swap-quote-timeline.svg", frame(W, H,
-    "1 ETH to BTC: quotes stream in as each protocol answers",
+    "1 ETH to USDC on Arbitrum: quotes stream in as each protocol answers",
     "Time from request to each protocol's quote, as the swap form receives them",
-    "seconds", "Measured on swap.shieldz.cash, 2026-10-06.",
-    grid + bars + note, "One ETH to BTC: THORChain answered at 0.40 seconds with 0.031501 BTC settling in about 42 seconds, Chainflip at 0.44 seconds with 0.031574 BTC in about 8 minutes, NEAR Intents at 0.63 seconds with 0.031451 BTC in about 8 minutes. THORChain was picked for settling faster."));
+    "seconds", "Measured on swap.shieldz.cash, 2026-10-07.",
+    grid + bars + note, "One ETH to USDC on Arbitrum: Relay answered at 0.67 seconds with 2,587.86 USDC settling in about 24 seconds, NEAR Intents at 0.79 seconds with 2,588.55 USDC in about 46 seconds, Chainflip at 0.84 seconds with 2,594.00 USDC in about 2.7 minutes. Chainflip was picked."));
   console.log("wrote public/charts/swap-quote-timeline.svg");
 }

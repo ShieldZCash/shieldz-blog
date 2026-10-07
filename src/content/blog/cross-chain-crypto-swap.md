@@ -1,19 +1,19 @@
 ---
 title: "Cross-Chain Crypto Swap Without Custody: Meet Shieldz Swap"
-description: "A non-custodial cross-chain crypto swap that races NEAR Intents, Chainflip, Relay and THORChain, shows every route, and charges a flat 0.15% fee."
+description: "A non-custodial cross-chain crypto swap that races NEAR Intents, Chainflip and Relay, shows every route, and charges a flat 0.15% fee."
 pubDate: 2026-10-06
 author: "Deniz Yanbollu"
-tags: ["cross-chain crypto swap", "crypto swap", "non-custodial", "near intents", "chainflip", "relay", "thorchain"]
+tags: ["cross-chain crypto swap", "crypto swap", "non-custodial", "near intents", "chainflip", "relay"]
 eyebrow: "Guide"
 image: "https://shieldz.cash/blog/og/cross-chain-crypto-swap.png"
 ---
 
 A cross-chain crypto swap should be simple: you hold one coin on one network, you want another coin on another network, and you would like the best price without handing your money to anyone. In practice it rarely is. Every wallet sends you down one route, prices differ from protocol to protocol by more than the fee you are worrying about, and the easy options are custodial exchanges that hold your funds while they do it.
 
-[Shieldz Swap](https://swap.shieldz.cash) is our answer. It asks four independent cross-chain protocols for a price at the same moment, shows you every route they offer before you sign, and sends you straight from your own wallet to theirs. It never holds your funds or your keys, there is no account and no KYC, and the service fee is a flat 0.15% on every route, shown on every quote. This guide explains how it works, what it costs, what you can swap, and where the risks are. If you are a merchant, the companion post on [how cross-chain crypto payments route](/blog/cross-chain-crypto-payments) covers the checkout side.
+[Shieldz Swap](https://swap.shieldz.cash) is our answer. It asks independent cross-chain protocols for a price at the same moment, shows you every route they offer before you sign, and sends you straight from your own wallet to theirs. It never holds your funds or your keys, there is no account and no KYC, and the service fee is a flat 0.15% on every route, shown on every quote. This guide explains how it works, what it costs, what you can swap, and where the risks are. If you are a merchant, the companion post on [how cross-chain crypto payments route](/blog/cross-chain-crypto-payments) covers the checkout side.
 
 <figure style="margin:28px 0">
-  <a href="/blog/img/swap-landing.png"><img src="/blog/img/swap-landing.png" alt="The Shieldz Swap home page: 'Swap any coin, on any chain', with live counts of 268 assets, 47 chains and 4 routing protocols, and a live quote for 1 ETH to BTC showing THORChain, Chainflip and NEAR Intents routes side by side." width="1200" height="769" loading="lazy" style="width:100%;height:auto;border-radius:16px;border:1px solid #262626" /></a>
+  <a href="/blog/img/swap-landing.png"><img src="/blog/img/swap-landing.png" alt="The Shieldz Swap home page: 'Swap any coin, on any chain', with live counts of 265 assets, 45 chains and 3 routing protocols, and a live quote for 1 ETH to BTC showing the Chainflip and NEAR Intents routes side by side." width="1200" height="769" loading="lazy" style="width:100%;height:auto;border-radius:16px;border:1px solid #262626" /></a>
   <figcaption style="font-size:13px;color:#949494;margin-top:8px">swap.shieldz.cash: every route for a live 1 ETH to BTC quote, with the amount and settle time of each.</figcaption>
 </figure>
 
@@ -24,20 +24,20 @@ Shieldz Swap is a **non-custodial interface** for cross-chain swaps. It does thr
 That division matters because it decides who can lose your money. A custodial exchange takes your coins into its own wallet, swaps them on its books, and pays you out later; until it does, you are its creditor. We have written about [why custody is the real risk in crypto payments](/blog/are-crypto-payment-gateways-custodial), and the same logic applies to swaps. With Shieldz Swap there is no point where we hold anything:
 
 - **You sign every transaction in your own wallet.** MetaMask, Rabby, Coinbase Wallet, OKX, Trust, Phantom, Solflare, Backpack, TronLink, Noir and WalletConnect all work, and so do the hardware wallets: Ledger, Trezor and Keystone.
-- **Deposit addresses come from the protocols, not from us.** When a route needs a deposit, NEAR Intents, Chainflip, Relay or THORChain issues the address and controls what happens to funds sent to it.
+- **Deposit addresses come from the protocols, not from us.** When a route needs a deposit, NEAR Intents, Chainflip or Relay issues the address and controls what happens to funds sent to it.
 - **There is no account.** No email, no password, no identity documents. Your swap history lives in your browser.
 
 What it is not: an exchange, a broker, a custodian or an investment adviser. It is a routing and signing tool, and the [terms](https://swap.shieldz.cash/terms) say so in plain language.
 
 ## Why routing matters more than the fee
 
-Most people compare swap apps by their fee. The fee matters (we will get to it), but on a cross-chain swap the bigger number is usually the **route**. Different protocols are different machines: Chainflip runs its own cross-chain liquidity pools with native Bitcoin, NEAR Intents settles through a solver auction, Relay fills from market-maker inventory, and THORChain swaps through its own continuous liquidity pools. On any given pair, at any given minute, any of them can be the best.
+Most people compare swap apps by their fee. The fee matters (we will get to it), but on a cross-chain swap the bigger number is usually the **route**. Different protocols are different machines: Chainflip runs its own cross-chain liquidity pools with native Bitcoin, NEAR Intents settles through a solver auction, and Relay fills from market-maker inventory. (THORChain, which swaps through its own continuous liquidity pools, is switched off for now.) On any given pair, at any given minute, any of them can be the best.
 
-Here is a real example from the live router, all four protocols asked for the same swap at the same second:
+Here is a real example from the live router, all three protocols asked for the same swap at the same second:
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swap-route-race.svg"><img src="/blog/charts/swap-route-race.svg" alt="One ETH to USDC on Base, quoted at the same moment: NEAR Intents 2,706.90 USDC, Relay 2,704.87 USDC, THORChain 2,704.13 USDC. The spread between the best and worst route is 2.77 dollars." width="760" height="336" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">1 ETH to USDC on Base, measured 2026-10-06. The gap between routes was $2.77 on a $2,700 swap, more than the whole service fee on many apps.</figcaption>
+  <a href="/blog/charts/swap-route-race.svg"><img src="/blog/charts/swap-route-race.svg" alt="One ETH to USDC on Arbitrum, quoted at the same moment: Chainflip 2,594.00 USDC, NEAR Intents 2,588.55 USDC, Relay 2,587.86 USDC. The spread between the best and worst route is 6.14 dollars." width="760" height="336" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">1 ETH to USDC on Arbitrum, measured 2026-10-07. The gap between routes was $6.14 on a $2,600 swap, four times the whole Shieldz fee.</figcaption>
 </figure>
 
 A wallet that only knows one route would have given you one of those numbers and no way to know about the others. Shieldz Swap shows all of them and picks the best for you.
@@ -46,15 +46,15 @@ A wallet that only knows one route would have given you one of those numbers and
 
 "Best" is not simply the biggest number. Every quote is ranked on **what you receive after every fee**, discounted slightly for how long the swap takes to settle (5 basis points per minute). The reason is practical: a route that pays 0.2% more but takes eight minutes to arrive is not always better than one that lands in 40 seconds, especially when prices are moving.
 
-You can see that trade-off in the next example. For 1 ETH to BTC, Chainflip offered the most bitcoin, but THORChain was picked because it settles about seven minutes sooner for a difference of about 0.23%. Both routes stay on screen, so if you prefer the larger amount you can see exactly what you are trading for the time.
+The trade-off works in both directions. In the chart above, Chainflip takes about 2.7 minutes against Relay's 24 seconds, but pays $6 more, so it wins. For 1 ETH from Ethereum to Arbitrum, NEAR Intents offered 0.997995 ETH and Relay 0.997909 ETH, about 22 cents less; Relay was picked because it lands 20 seconds sooner. Every route stays on screen, so if you prefer the larger amount you can see exactly what you are trading for the time.
 
 ## Quotes stream in as each protocol answers
 
-Asking four protocols takes as long as the slowest one. Instead of making you wait for all of them, Shieldz Swap streams each answer to your screen the moment it arrives and re-ranks as the rest come in.
+Asking several protocols takes as long as the slowest one. Instead of making you wait for all of them, Shieldz Swap streams each answer to your screen the moment it arrives and re-ranks as the rest come in.
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swap-quote-timeline.svg"><img src="/blog/charts/swap-quote-timeline.svg" alt="One ETH to BTC: THORChain answered at 0.40 seconds with 0.031501 BTC settling in about 42 seconds, Chainflip at 0.44 seconds with 0.031574 BTC in about 8 minutes, and NEAR Intents at 0.63 seconds with 0.031451 BTC in about 8 minutes." width="760" height="336" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">The first route was on screen at 0.40 s; the full race finished at 0.64 s. You see a real price before the slowest protocol has even answered.</figcaption>
+  <a href="/blog/charts/swap-quote-timeline.svg"><img src="/blog/charts/swap-quote-timeline.svg" alt="One ETH to USDC on Arbitrum: Relay answered at 0.67 seconds with 2,587.86 USDC settling in about 24 seconds, NEAR Intents at 0.79 seconds with 2,588.55 USDC in about 46 seconds, and Chainflip at 0.84 seconds with 2,594.00 USDC in about 2.7 minutes." width="760" height="336" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">The first route was on screen at 0.67 s; the full race finished at 0.85 s. You see a real price before the slowest protocol has even answered.</figcaption>
 </figure>
 
 The ranking you see while quotes arrive uses the same rule as the final answer, so the route on screen does not jump around when the last protocol reports in. And you can only review and confirm a swap once the race is complete, so what you sign is always the router's final pick.
@@ -79,7 +79,7 @@ That is the whole flow. There is no deposit into a Shieldz balance first and no 
 
 There are three kinds of cost on any cross-chain swap, and it is worth being exact about each:
 
-- **The service fee.** This is what Shieldz charges: **0.15% on every route**, NEAR Intents, Chainflip, Relay and Jupiter alike. It is already taken out of the amount you are shown, and the form shows it as its own line with its dollar value. THORChain routes currently carry no Shieldz fee.
+- **The service fee.** This is what Shieldz charges: **0.15% on every route**, NEAR Intents, Chainflip, Relay and Jupiter alike. It is already taken out of the amount you are shown, and the form shows it as its own line with its dollar value.
 - **Protocol fees.** Each protocol charges for its own work: liquidity and outbound fees, and on NEAR Intents a 0.20% platform fee that NEAR applies to every swap. These are part of the quote you see, and they are not ours.
 - **Network fees.** The gas your wallet pays to send your transaction on the chain you pay from. The form shows an upper bound; your wallet shows the exact figure before you sign.
 
@@ -94,7 +94,7 @@ To be fair to the field: Uniswap's own interface charges no fee at all, but it s
 
 ## What you can swap
 
-The router lists **268 assets across 47 chains**, and the number moves as protocols add and pause pools. That includes the coins people actually hold:
+The router lists **265 assets across 45 chains**, and the number moves as protocols add and pause pools. That includes the coins people actually hold:
 
 - **Bitcoin and its family:** BTC, Litecoin, Bitcoin Cash and Dogecoin, plus wrapped bitcoin on EVM chains (WBTC, cbBTC).
 - **Ethereum and the EVM chains:** ETH and tokens on Ethereum, Arbitrum, Base, Optimism, Polygon, BNB Chain, Avalanche, Gnosis, Linea, Scroll, Blast, Berachain, Monad and more.
@@ -103,7 +103,7 @@ The router lists **268 assets across 47 chains**, and the number moves as protoc
 
 <figure style="margin:28px 0">
   <a href="/blog/img/swap-chains.png"><img src="/blog/img/swap-chains.png" alt="The supported chains grid on Shieldz Swap: Ethereum, BNB Chain, NEAR, Base, Solana, Aptos, Arbitrum, Gnosis, Polygon, Monad, Optimism, Tron, Avalanche, Berachain, HyperEVM, Plasma, Polkadot, Linea, Blast, Bitcoin, Scroll, Soneium, Stellar, Sui and 15 more." width="1200" height="463" loading="lazy" style="width:100%;height:auto;border-radius:16px;border:1px solid #262626" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">47 chains, each with at least one live route. A route that stops answering is hidden until it recovers.</figcaption>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">45 chains, each with at least one live route. A route that stops answering is hidden until it recovers.</figcaption>
 </figure>
 
 Not every pair has a route at every size. Each protocol sets its own minimums and supports its own set of chains (Chainflip, for example, has no route into Base USDC), so the form only offers what can actually be filled. If a pair is too small for every protocol, the form tells you the minimum instead of failing at the last step.
@@ -146,24 +146,24 @@ Shieldz started as a [non-custodial crypto payment gateway](/blog/non-custodial-
 No. You sign every transaction in your own wallet, deposit addresses are issued by the protocols, and Shieldz never holds your funds or your keys. There is no account to fund or withdraw from.
 
 **What does a cross-chain swap cost on Shieldz Swap?**
-A 0.15% service fee on every route (none on THORChain routes today), plus the protocol's own fees and the network fee to send your transaction. All of them are already included in the amount shown, and the service fee is shown in dollars on every quote.
+A 0.15% service fee on every route, plus the protocol's own fees and the network fee to send your transaction. All of them are already included in the amount shown, and the service fee is shown in dollars on every quote.
 
 **Which protocols does Shieldz Swap use?**
-NEAR Intents, Chainflip, Relay and THORChain for cross-chain swaps, and Jupiter for Solana memecoins. Each swap is quoted by all the protocols that support the pair, and you see every route before you sign.
+NEAR Intents, Chainflip and Relay for cross-chain swaps, and Jupiter for Solana memecoins. Each swap is quoted by all the protocols that support the pair, and you see every route before you sign.
 
 **What happens if a swap fails?**
 The protocol refunds the funds to the address you paid from, less any network or protocol costs already incurred. You can follow the status in Activity until it resolves.
 
 ## Try it
 
-Open [swap.shieldz.cash](https://swap.shieldz.cash), pick two coins and watch four protocols race for your swap. No account, no KYC, and a flat 0.15% you can see before you sign. If you take crypto for a business, start with [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or the [developer docs](/docs).
+Open [swap.shieldz.cash](https://swap.shieldz.cash), pick two coins and watch the protocols race for your swap. No account, no KYC, and a flat 0.15% you can see before you sign. If you take crypto for a business, start with [how to accept crypto payments](/blog/how-to-accept-crypto-payments) or the [developer docs](/docs).
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to make a cross-chain crypto swap with Shieldz Swap",
-  "description": "Swap one coin on one chain for another coin on another chain, non-custodially, comparing NEAR Intents, Chainflip, Relay and THORChain routes.",
+  "description": "Swap one coin on one chain for another coin on another chain, non-custodially, comparing NEAR Intents, Chainflip and Relay routes.",
   "totalTime": "PT2M",
   "step": [
     { "@type": "HowToStep", "name": "Pick your coins", "text": "Open swap.shieldz.cash and choose what you pay with and what you want to receive, on any supported chain." },
@@ -182,8 +182,8 @@ Open [swap.shieldz.cash](https://swap.shieldz.cash), pick two coins and watch fo
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Is Shieldz Swap custodial?", "acceptedAnswer": { "@type": "Answer", "text": "No. You sign every transaction in your own wallet, deposit addresses are issued by the protocols, and Shieldz never holds your funds or your keys. There is no account to fund or withdraw from." } },
-    { "@type": "Question", "name": "What does a cross-chain swap cost on Shieldz Swap?", "acceptedAnswer": { "@type": "Answer", "text": "A 0.15% service fee on every route (none on THORChain routes today), plus the protocol's own fees and the network fee to send your transaction. All of them are already included in the amount shown, and the service fee is shown in dollars on every quote." } },
-    { "@type": "Question", "name": "Which protocols does Shieldz Swap use?", "acceptedAnswer": { "@type": "Answer", "text": "NEAR Intents, Chainflip, Relay and THORChain for cross-chain swaps, and Jupiter for Solana memecoins. Each swap is quoted by all the protocols that support the pair, and you see every route before you sign." } },
+    { "@type": "Question", "name": "What does a cross-chain swap cost on Shieldz Swap?", "acceptedAnswer": { "@type": "Answer", "text": "A 0.15% service fee on every route, plus the protocol's own fees and the network fee to send your transaction. All of them are already included in the amount shown, and the service fee is shown in dollars on every quote." } },
+    { "@type": "Question", "name": "Which protocols does Shieldz Swap use?", "acceptedAnswer": { "@type": "Answer", "text": "NEAR Intents, Chainflip and Relay for cross-chain swaps, and Jupiter for Solana memecoins. Each swap is quoted by all the protocols that support the pair, and you see every route before you sign." } },
     { "@type": "Question", "name": "What happens if a swap fails?", "acceptedAnswer": { "@type": "Answer", "text": "The protocol refunds the funds to the address you paid from, less any network or protocol costs already incurred. You can follow the status in Activity until it resolves." } }
   ]
 }

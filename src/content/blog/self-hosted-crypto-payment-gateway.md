@@ -63,6 +63,8 @@ Not every "run it yourself" option is a full server. Some are open-source plugin
 
 ## What self-hosting actually costs you
 
+For the full picture (architecture, xpub wallets, nodes, a nine-step setup walkthrough, a hardening checklist and day-two operations), read our long-form guide to [how self-hosted crypto payment gateways work, what they cost and how to set one up](/blog/self-hosted-crypto-payment-gateways-guide).
+
 BTCPay is free software, but "free" here means no license fee, not no cost. To self-host it properly you provision a server, keep it patched, and usually sync a full node, which can take hours to days and needs ongoing disk and uptime. If the server goes down, your checkout goes down with it. That is a fair trade for maximum sovereignty, and for some merchants it is exactly right. For most, it is more operations than they signed up for.
 
 <figure style="margin:28px 0">

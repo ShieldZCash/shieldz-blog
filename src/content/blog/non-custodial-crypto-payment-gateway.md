@@ -37,7 +37,7 @@ A non-custodial crypto payment gateway never touches the funds. The customer pay
 
 Compliance still exists, it just changes shape. Sanctioned-address screening runs on the counterparty, not on your payout. Shieldz, for example, screens paying addresses against the OFAC list, but it does that without ever holding your money in a reviewable balance. The screen looks at who is paying, not at whether to release what is already yours.
 
-Shieldz works exactly this way. You give a wallet address, you get a payment link or a hosted checkout, and funds land in your wallet at settlement, with no signup and a 0% platform fee. BTCPay Server is non-custodial too, if you are willing to run your own server; we compare that route in the [self-hosted crypto payment gateway](/blog/self-hosted-crypto-payment-gateway) guide. The usual trade is control for convenience, and a hosted non-custodial gateway is the rare case that gives you both.
+Shieldz works exactly this way. You give a wallet address, you get a payment link or a hosted checkout, and funds land in your wallet at settlement, with no signup and a 0% platform fee. BTCPay Server is non-custodial too, if you are willing to run your own server; we compare that route in the [self-hosted crypto payment gateway](/blog/self-hosted-crypto-payment-gateway) guide. For how the xpub, node and webhook pieces fit together under the hood, see [how self-hosted crypto payment gateways work](/blog/self-hosted-crypto-payment-gateways-guide). The usual trade is control for convenience, and a hosted non-custodial gateway is the rare case that gives you both.
 
 ## FAQ
 

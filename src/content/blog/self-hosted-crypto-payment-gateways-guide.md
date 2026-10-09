@@ -5,6 +5,7 @@ pubDate: 2026-10-09
 author: "Deniz Yanbollu"
 tags: ["self-hosted", "crypto payment gateway", "btcpay", "non-custodial", "guide"]
 eyebrow: "Guide"
+swapBanner: true
 image: "https://shieldz.cash/blog/og/self-hosted-crypto-payment-gateways-guide.png"
 ---
 

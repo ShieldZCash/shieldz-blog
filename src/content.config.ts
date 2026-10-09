@@ -12,8 +12,8 @@ const blog = defineCollection({
     ogImage: z.string().optional(),
     eyebrow: z.string().optional(),
     lang: z.string().default("en"),
-    // Show the "Swap now" banner (src/components/SwapBanner.astro).
-    swapBanner: z.boolean().default(false),
+    // Show the "Swap now" banner (src/components/SwapBanner.astro). On by default.
+    swapBanner: z.boolean().default(true),
   }),
 });
 

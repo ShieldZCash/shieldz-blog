@@ -1,6 +1,6 @@
 ---
 title: "81 Cross-Chain Swap Apps Compared: Fees, Custody and KYC (October 2026)"
-description: "Every app that swaps a coin on one chain for a coin on another: 81 wallets, aggregators, front-ends and exchanges compared on fees, custody and KYC. 58% publish no fee you can check."
+description: "Every app that swaps a coin on one chain for a coin on another: 81 wallets, aggregators, front-ends and exchanges compared on fees, custody and KYC. 70% state no fee you can check in advance."
 pubDate: 2026-10-10
 author: "Deniz Yanbollu"
 tags: ["cross-chain swap", "crypto swap", "comparison", "fees", "dex aggregator", "non-custodial", "data"]
@@ -15,8 +15,8 @@ It is also an open dataset: [JSON](/blog/data/cross-chain-swaps-2026.json), [CSV
 
 ## Key findings at a glance
 
-- **58% of cross-chain swap apps publish no fee you can check.** Only 34 of 81 state their own fee on a current official page. The rest publish no rate, contradict themselves between pages, or cite a page more than 18 months old.
-- **Wallets are the most expensive place to swap.** The median verified wallet fee is **0.85%**, against **0.15%** for aggregators. MetaMask charges 0.875%, Phantom 0.85%, the Base app up to 1%, and Magic Eden and Bitcoin.com 2% on cross-chain swaps.
+- **70% of cross-chain swap apps state no fee you can check in advance.** Only 24 of 81 state a fixed fee of their own on a current official page. 37 publish no rate at all, 5 publish one we could not verify, and 15 claim to add "no fee", which only means the whole cost is set by the route or partner exchange, often including a commission paid back to the app.
+- **Wallets are the most expensive place to swap.** The median verified wallet fee is **0.875%**, against **0.25%** for aggregators. MetaMask charges 0.875%, Phantom 0.85%, the Base app up to 1%, and Magic Eden and Bitcoin.com 2% on cross-chain swaps.
 - **The protocol underneath costs almost nothing.** NEAR Intents takes 0.0001%, deBridge 0.04%, Relay 0.06% on major pairs, THORChain no fixed fee at all. Nearly everything you pay is the app's markup on top.
 - **30% of apps hold your coins during the swap.** 24 of 81 are custodial and 12 more are hybrid. **14 of 35 wallets** hand at least some cross-chain swaps to a custodial exchange, even though the wallet itself is self-custody.
 - **"No KYC" usually means "no KYC unless flagged".** 30 of 81 apps, including all 15 instant exchanges, can hold a swap after you send funds until you verify your identity.
@@ -39,7 +39,8 @@ Every app was loaded on 10 October 2026: by HTTP first, then in a real browser w
 
 - **Category:** aggregator (routes each swap across several protocols), front-end (an independent interface on THORChain, Maya or Chainflip), wallet (cross-chain swaps built into a wallet), instant exchange (a no-account custodial exchange), or exchange comparison site (compares instant exchanges and sends you to one).
 - **Fee:** the fixed percentage the app itself charges on a standard cross-chain swap, read from its own pricing page, help center, docs or terms. Where a wallet hands every swap to one custodial partner and says so, the partner's stated commission is the fee. Variable costs, the underlying protocol's fee and network gas are described separately.
-- **Verified:** true only when the fee is stated on an official page that is current (updated within roughly 18 months) and does not contradict the app's other pages. A "starting from" figure with no schedule behind it does not count.
+- **Verified:** true only when a fixed fee is stated on an official page that is current (updated within roughly 18 months) and does not contradict the app's other pages. A "starting from" figure with no schedule behind it does not count.
+- **"No fee of its own" is not a 0% fee.** Fifteen apps say they add nothing. That is usually true of the line item, but the route or partner exchange still charges, and comparison sites and exchange-routing wallets are paid a commission out of that charge. Their cost is real and unknown until you get a quote, so we mark them **not certain** and leave them out of every fee ranking and average.
 - **Custody:** who holds your coins while the swap is in flight. Non-custodial means they stay in contracts, vaults or your wallet throughout. Custodial means an operator's wallet receives them first. Hybrid means it depends on the route the app picks.
 - **KYC:** none, risk-based (no account, but a flagged swap can be held for identity checks), or required.
 - **Native Bitcoin and Solana**, chain coverage, and the protocols each app routes through.
@@ -49,32 +50,32 @@ This is our editorial classification from each app's own documentation. It is no
 ## Finding 1: most apps don't publish a fee you can check
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swapapps-fee-transparency.svg"><img src="/blog/charts/swapapps-fee-transparency.svg" alt="Share of cross-chain swap apps with a verifiable fee by category: instant exchanges 27% (4 of 15), wallets 31% (11 of 35), aggregators 52% (11 of 21), THORChain and Maya front-ends 67% (4 of 6), exchange comparison sites 100% (4 of 4). Overall 34 of 81." width="760" height="415" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Only 34 of 81 apps state their own fee on a current official page. Instant exchanges and wallets are the least transparent.</figcaption>
+  <a href="/blog/charts/swapapps-fee-transparency.svg"><img src="/blog/charts/swapapps-fee-transparency.svg" alt="Fee transparency by category across 81 cross-chain swap apps: exchange comparison sites 0 verified fees and 4 not certain; wallets 9 verified, 5 not certain, 21 unpublished or unverifiable; instant exchanges 4, 2 and 9; aggregators 7, 4 and 10; THORChain and Maya front-ends 4 verified and 2 unpublished. Overall 24 verified, 15 not certain, 42 unpublished or unverifiable." width="760" height="408" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Only 24 of 81 apps state a fixed fee of their own that we could verify. No exchange comparison site does: their cost is whatever the exchange charges.</figcaption>
 </figure>
 
-This was the finding we did not expect to be the headline. Of 81 live cross-chain swap apps, **47 do not publish a fee we could verify.** They fall into four groups:
+This was the finding we did not expect to be the headline. Of 81 live cross-chain swap apps, **57 do not state a fee you can check before you swap.** They fall into four groups:
 
 **No rate at all.** ChangeNOW says its fees are "included in the rate" and adjust dynamically; its own comparison article concedes that ChangeNOW "does not disclose their fees fully". SideShift describes "a small service fee" with no number. Rabby, Bitget Wallet, TokenPocket, Binance Wallet, Ledger Wallet and Trezor Suite all show a fee line in the app and publish no percentage. Ledger's developer docs even give the formula, `partner rate × (1 − ledger fee − partner fee) − withdrawal fee`, without ever saying how big the Ledger fee is.
 
 **Contradicting themselves.** Trust Wallet's swap FAQ says it charges no service fee; its own 2026 wallet comparison lists a 0.7% fee built into the rate. Zengo's help center says "up to 4%"; its product page says 0.5% plus a spread. Godex has blog posts putting its all-in cost at about 0.8% and, from its own rate data, 1.67% to 2.14% on BTC to ETH. Changee advertises commissions "as low as 0.25%" while its own blog puts the typical all-in cost at 0.5% to 1.2%.
 
-**"Zero fee", with the cost in the spread.** Exolix's terms say "Exolix does not charge any fees, since we have a fixed rate." Atomic Wallet and Coinomi say they add nothing. All three are telling the truth about the line item, and none of them is free: the margin is in the exchange rate.
+**"No fee", with the cost somewhere else.** Fifteen apps say they add nothing of their own. Exolix's terms say "Exolix does not charge any fees, since we have a fixed rate"; Atomic Wallet and Coinomi say they add nothing; Trocador, Swapzone, SwapSpace and CypherGoat add nothing on top of the exchange they send you to. All of them are telling the truth about the line item, and none of them is free. The margin is in the exchange rate, and the comparison sites are paid a referral commission out of it: Swapzone says plainly that it earns "from partner referrals". Even where the "no fee" is as clean as it gets (Uniswap dropped its interface fee to 0% on 27 December 2025; Backpack has charged 0% on swaps and bridges since 10 March 2026), the route underneath still charges a fee that varies by pair and size. There is no number to compare until you ask for a quote, so these apps are **not certain**, not "0%".
 
 **"TBD".** dZap's fee page literally lists its cross-chain fee as TBD. Bungee, Squid, OpenOcean and Skip:Go say the fee depends on the route. Rubic has described its fee as $2 flat, as nothing, and as free for token holders.
 
 None of this means these apps are expensive. Some are probably cheap. It means you cannot know before you open the app, and you cannot compare them on paper. The only number that matters is the one in the quote: **compare the amount you receive, not the advertised fee.**
 
-## Finding 2: what the 34 published fees actually are
+## Finding 2: what the 24 stated fees actually are
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swapapps-fee-ranking.svg"><img src="/blog/charts/swapapps-fee-ranking.svg" alt="The 34 verified cross-chain swap fees, lowest first: ten apps at 0% (Backpack, CypherGoat, PancakeSwap, Rango, Superbridge, SwapSpace, Swapzone, Trocador, Uniswap, Unstoppable Wallet), Coin98 and KyberSwap 0.1%, Shieldz Swap 0.15%, RocketX 0.2%, Changelly and Jumper 0.25%, ASGARDEX 0.3%, SushiSwap 0.35%, Matcha 0.4%, LeoDex 0.45%, six apps at 0.5%, Zerion 0.67%, Phantom 0.85%, MetaMask 0.875%, Base App 1%, THORWallet 1.25%, BitBox 1.5%, Bitcoin.com Wallet and Magic Eden Wallet 2%." width="760" height="949" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Verified fees range from 0% to 2%. The median is 0.33%. Five apps charge 1% or more, all of them wallets or wallet-like front-ends.</figcaption>
+  <a href="/blog/charts/swapapps-fee-ranking.svg"><img src="/blog/charts/swapapps-fee-ranking.svg" alt="The 24 verified cross-chain swap fees, lowest first: Coin98 and KyberSwap 0.1%, Shieldz Swap 0.15%, RocketX 0.2%, Changelly and Jumper 0.25%, ASGARDEX 0.3%, SushiSwap 0.35%, Matcha 0.4%, LeoDex 0.45%, six apps at 0.5% (ChangeHero, FixedFloat, Guarda, Quickex, THORSwap, Vultisig), Zerion 0.67%, Phantom 0.85%, MetaMask 0.875%, Base App 1%, THORWallet 1.25%, BitBox 1.5%, Bitcoin.com Wallet and Magic Eden Wallet 2%. Fifteen apps that claim no fee of their own are not ranked." width="760" height="728" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Stated fees range from 0.1% to 2%, with a median of 0.5%. Five apps charge 1% or more, all of them wallets or wallet-like front-ends.</figcaption>
 </figure>
 
-Across the 34 apps with a verified fee, the **median is 0.33%** and the mean 0.46%. Ten charge nothing of their own, and five charge 1% or more.
+Across the 24 apps with a verified fixed fee, the **median is 0.5%** and the mean 0.65%. The lowest are Coin98 and KyberSwap at 0.1% (Coin98's only on the tokens its bridge lists, KyberSwap's on common EVM pairs) and Shieldz Swap at 0.15%. Five charge 1% or more.
 
-Read the zeros carefully. **Uniswap** dropped its interface fee to 0% on 27 December 2025, and **Backpack** has charged 0% on swaps and bridges on every network since 10 March 2026, so on those you pay only the underlying route. **PancakeSwap**, **Rango**, **Superbridge** and **Unstoppable Wallet** also add nothing. But the four exchange comparison sites at 0% (**Trocador**, **Swapzone**, **SwapSpace**, **CypherGoat**) only mean they add nothing on top: the exchange they send you to still prices its own fee into the rate.
+The fifteen "no fee of its own" apps are not in this chart on purpose. Uniswap, Backpack, PancakeSwap, Rango, Superbridge and Unstoppable Wallet may well be among the cheapest places to swap on a given day, because they pass on only the route's cost. But that cost is not fixed and not published, so ranking them at "0%" above an app that tells you its fee would reward exactly the opacity this study measures. Compare them by quote.
 
 At the top end, **Magic Eden Wallet charges 2% on cross-chain swaps** (0.8% on same-chain), **Bitcoin.com Wallet 2%** on Verse DEX cross-chain swaps on top of exchange fees, **BitBox 1.5%** flat, **THORWallet 1.25%** unless you stake its token, and the **Base app up to 1%**.
 
@@ -83,21 +84,21 @@ Many fees also come with discounts that matter more than the headline: THORSwap 
 ## Finding 3: wallets are the most expensive place to swap
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swapapps-fee-by-category.svg"><img src="/blog/charts/swapapps-fee-by-category.svg" alt="Median verified cross-chain swap fee by category: wallets 0.85%, THORChain and Maya front-ends 0.5%, instant exchanges 0.5%, aggregators 0.15%, exchange comparison sites 0% of their own." width="760" height="415" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">The swap button inside your wallet is convenient, and you pay for the convenience: a median 0.85%, more than five times the aggregator median.</figcaption>
+  <a href="/blog/charts/swapapps-fee-by-category.svg"><img src="/blog/charts/swapapps-fee-by-category.svg" alt="Median verified cross-chain swap fee by category: wallets 0.875%, THORChain and Maya front-ends 0.5%, instant exchanges 0.5%, aggregators 0.25%. Exchange comparison sites state no fee of their own." width="760" height="364" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">The swap button inside your wallet is convenient, and you pay for the convenience: a median 0.875%, three and a half times the aggregator median.</figcaption>
 </figure>
 
-The swap built into your wallet is the most convenient option and, by a distance, the most expensive one. The median verified wallet fee is **0.85%**: MetaMask 0.875%, Phantom 0.85%, Zerion 0.67%. Aggregators, the apps whose whole job is finding the cheapest route, have a median of **0.15%**.
+The swap built into your wallet is the most convenient option and, by a distance, the most expensive one. The median verified wallet fee is **0.875%**: MetaMask 0.875%, Phantom 0.85%, Zerion 0.67%. Aggregators, the apps whose whole job is finding the cheapest route, have a median of **0.25%**.
 
-On a $10,000 swap that is the difference between $85 and $15 before the route has charged anything. The reason is not mysterious. The wallet already has you, so it does not need to win your swap on price. An aggregator does. If you swap often or in size, connecting the same wallet to an aggregator is usually the single biggest saving available.
+On a $10,000 swap that is the difference between $87.50 and $25 before the route has charged anything. The reason is not mysterious. The wallet already has you, so it does not need to win your swap on price. An aggregator does. If you swap often or in size, connecting the same wallet to an aggregator is usually the single biggest saving available.
 
-There are honest exceptions. **Backpack** and **Unstoppable Wallet** add 0%, **Uniswap**'s app adds 0%, and **Brave Wallet** says it adds nothing to bridges (in an announcement too old for us to verify).
+There are exceptions: **Backpack**, **Unstoppable Wallet** and **Brave Wallet** say they add no fee of their own, so you pay only the route's cost (which, as above, you only see in the quote).
 
 ## Finding 4: the protocol costs almost nothing, the app sets the price
 
 <figure style="margin:28px 0">
-  <a href="/blog/charts/swapapps-same-route.svg"><img src="/blog/charts/swapapps-same-route.svg" alt="Fees on top of NEAR Intents' 0.0001% protocol fee: Unstoppable Wallet 0%, KyberSwap 0.1-0.2%, Shieldz Swap 0.15%, ASGARDEX 0.3%, LeoDex 0.45%, BitBox 1.5%." width="760" height="456" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Six apps that route through the same NEAR Intents solver auction, with fees from 0% to 1.5%. The protocol's own cut is 0.0001%.</figcaption>
+  <a href="/blog/charts/swapapps-same-route.svg"><img src="/blog/charts/swapapps-same-route.svg" alt="Fees on top of NEAR Intents' 0.0001% protocol fee: Shieldz Swap 0.15%, KyberSwap 0.1-0.2%, ASGARDEX 0.3%, LeoDex 0.45%, BitBox 1.5%." width="760" height="412" loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Five apps with a stated fee that route through the same NEAR Intents solver auction, charging from 0.15% to 1.5%. The protocol's own cut is 0.0001%.</figcaption>
 </figure>
 
 Here is what the main protocols charge for their part of the swap, from their own docs:
@@ -111,7 +112,7 @@ Here is what the main protocols charge for their part of the swap, from their ow
 | THORChain, Maya | No fixed fee: a slip-based liquidity fee plus inbound and outbound gas |
 | Garden | No protocol fee; the solver's cut is in the quote |
 
-Then compare what apps add on top of the same route. **Six apps with a verified fee route through NEAR Intents**, and they charge 0% (Unstoppable), 0.1-0.2% (KyberSwap), 0.15% (Shieldz Swap), 0.3% (ASGARDEX), 0.45% (LeoDex) and 1.5% (BitBox). The solvers competing to fill the order are the same. The price runs from nothing to 1.5%.
+Then compare what apps add on top of the same route. **Five apps with a stated fee route through NEAR Intents**, and they charge 0.15% (Shieldz Swap), 0.1-0.2% (KyberSwap), 0.3% (ASGARDEX), 0.45% (LeoDex) and 1.5% (BitBox). The solvers competing to fill the order are the same. The price varies tenfold.
 
 THORChain front-ends are the same story with more room: THORChain lets an interface add an affiliate fee of up to 10% of the swap, Maya up to 5%. ASGARDEX's own code repository shows how the plumbing works: it asks NEAR Intents for 0.6% so that, after 1Click keeps its half, ASGARDEX nets the 0.3% it charges everywhere else.
 
@@ -175,7 +176,7 @@ Two of these are worth a warning. **Ctrl Wallet** (formerly XDEFI) returns a nor
 
 ## The full list: all 81 apps
 
-Each table is sorted by fee, lowest first, with unverified and unpublished fees at the bottom. Fees link to the page they were read from. A fee in italics with an asterisk was found but could not be verified (stale, contradicted or "starting from"); "not published" means we found no rate at all. The quote in the app is always the final word.
+Each table is sorted by fee, lowest first. Fees link to the page they were read from. A fee in italics with an asterisk was found but could not be verified (stale, contradicted or "starting from"); "not certain" means the app claims no fee of its own, so the cost is set by the route or partner and is only known from a quote; "not published" means we found no rate at all. The quote in the app is always the final word.
 
 ### Aggregators
 
@@ -184,10 +185,6 @@ Apps that compare several protocols and route each swap to the best one.
 <!-- table:aggregator -->
 | App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |
 |---|---|---|---|---|---|---|
-| [PancakeSwap](https://pancakeswap.finance) | [0%](https://docs.pancakeswap.finance/trade/crosschain-swaps) | No PancakeSwap fee on crosschain swaps; pool trading fees on each chain and the bridge fee (Across, Relay for Solana) apply | non-custodial | none | no | PancakeSwap pools plus Across (EVM) and Relay (Solana) |
-| [Rango Exchange](https://rango.exchange) | [0%](https://rango.exchange/) | 0% protocol fee; underlying provider, bridge and gas costs apply; apps built on Rango can add their own fee. Routes through SWFT can trigger KYC on large or flagged swaps | hybrid | none | yes | Bridges, DEXes, THORChain, Maya, some instant exchanges |
-| [Superbridge](https://superbridge.app) | [0%](https://help.superbridge.app/en/articles/9751872-across-bridge-fees-charges) | No Superbridge fee on native or fast routes; the third-party bridge fee (Across, Hyperlane, Relay and others) and gas apply. Paid by rollup teams instead | non-custodial | none | no | Native rollup bridges plus fast-bridge partners |
-| [Uniswap](https://app.uniswap.org) | [0%](https://support.uniswap.org/hc/en-us/articles/20131678274957-What-are-Uniswap-Labs-fees) | Uniswap Labs interface fee 0% since Dec 27, 2025; the Across relayer fee and pool fees apply | non-custodial | none | no | Across (cross-chain), Uniswap pools |
 | [KyberSwap](https://kyberswap.com/cross-chain) | [0.1%](https://docs.kyberswap.com/kyberswap-solutions/fee-schedule) | Cross-chain platform fee 0.05-0.25% by route and token volatility (EVM-EVM: 0.05% stables, 0.10% common, 0.15% exotic, 0.25% volatile); provider fee on top | non-custodial | none | yes | NEAR Intents, Across, Relay, XY, deBridge, LI.FI, Mayan |
 | [Shieldz Swap](https://swap.shieldz.cash) | [0.15%](https://swap.shieldz.cash/terms) | 0.15% service fee shown on every quote; 0.05% on swaps of $500k or more (Chainflip routes stay 0.15%) | non-custodial | none | yes | NEAR Intents, Chainflip, Relay (raced per quote) |
 | [RocketX](https://www.rocketx.exchange) | [0.2%](https://www.rocketx.exchange/) | Dynamic fee from $1 or 0.2% up to 0.4%, higher on some exchange routes (FAQ); RocketX blog posts also claim zero fee under $100 | hybrid | risk-based | yes | DEXes, bridges and CEX liquidity |
@@ -196,6 +193,10 @@ Apps that compare several protocols and route each swap to the best one.
 | [Matcha](https://matcha.xyz) | [0.4%](https://help.matcha.xyz/articles/1222339831-are-there-any-fees-to-make-a-trade) | 0.40% on cross-chain swaps, 0.04% between stablecoins, plus gas (same-chain: 0.25%) | non-custodial | none | no | 0x and bridge partners |
 | [LeoDex](https://leodex.io) | [0.45%](https://leodex.io) | 0.45% per swap, 0.35% above $100K, 0.15% above $1M; network fees shown in the quote | non-custodial | none | yes | THORChain, Chainflip, Maya, NEAR Intents, Relay, deBridge, 1inch, Rango, Harbor and more (19 protocols) |
 | [XY Finance](https://xy.finance) | *0.035%\** | 0.035% XY fee charged on the target chain (min $0.19-$15, max $1,000), per a 2023 fee post; no current schedule | non-custodial | none | no | Own liquidity (XY) and third-party bridges |
+| [PancakeSwap](https://pancakeswap.finance) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. No PancakeSwap fee on crosschain swaps; pool trading fees on each chain and the bridge fee (Across, Relay for Solana) apply | non-custodial | none | no | PancakeSwap pools plus Across (EVM) and Relay (Solana) |
+| [Rango Exchange](https://rango.exchange) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. 0% protocol fee; underlying provider, bridge and gas costs apply; apps built on Rango can add their own fee. Routes through SWFT can trigger KYC on large or flagged swaps | hybrid | none | yes | Bridges, DEXes, THORChain, Maya, some instant exchanges |
+| [Superbridge](https://superbridge.app) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. No Superbridge fee on native or fast routes; the third-party bridge fee (Across, Hyperlane, Relay and others) and gas apply. Paid by rollup teams instead | non-custodial | none | no | Native rollup bridges plus fast-bridge partners |
+| [Uniswap](https://app.uniswap.org) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Uniswap Labs interface fee 0% since Dec 27, 2025; the Across relayer fee and pool fees apply | non-custodial | none | no | Across (cross-chain), Uniswap pools |
 | [Bungee](https://www.bungee.exchange) | not published | No current fee schedule published; older posts say Bungee charges users nothing; integrators can add feeBps | non-custodial | none | ? | Socket: bridges and auction-based routes |
 | [CoW Swap](https://swap.cow.fi) | not published | Bridge cost set per quote by Across, Bungee or NEAR Intents; CoW protocol fees apply to the swap leg | non-custodial | none | no | CoW Protocol batch auctions plus Across, Bungee and NEAR Intents for the bridge leg |
 | [dZap](https://dzap.io) | not published | Fees page lists same-chain and cross-chain fees as TBD; the fee is shown per quote | non-custodial | none | yes | Bridges and DEXes |
@@ -214,8 +215,6 @@ Cross-chain swaps built into a wallet. Custody here means custody during the swa
 <!-- table:wallet -->
 | App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |
 |---|---|---|---|---|---|---|
-| [Backpack](https://backpack.app) | [0%](https://learn.backpack.exchange/blog/backpack-wallet-zero-fees-swaps-bridges) | 0% Backpack fee on swaps and bridges on every network since March 10, 2026; no spread markup; gas and bridge fees apply | non-custodial | none | no | Wormhole and aggregated bridge routes |
-| [Unstoppable Wallet](https://unstoppable.money) | [0%](https://unstoppable.money/faq) | Unstoppable charges no extra fee for swapping; protocol costs apply | non-custodial | none | yes | THORChain, NEAR Intents, 1inch |
 | [Coin98](https://coin98.com) | [0.1%](https://docs.coin98.com/products/coin98-super-wallet/mobile/swapx/faqs/faqs) | SpaceGate bridge: 0.1% protocol fee on C98, SAROS, GSTS and some VIC routes, 0% on others, plus fixed withdraw fees; only listed tokens bridge | non-custodial | none | ? | SpaceGate (own bridge) for listed tokens |
 | [Guarda](https://guarda.com) | [0.5%](https://guarda.com/support/getting-started/what-fees-am-i-paying-for/) | Guarda adds no fee; exchange partners take about 0.5% per swap, built into the rate | custodial | risk-based | yes | Instant-exchange partners |
 | [Zerion](https://zerion.io) | [0.67%](https://help.zerion.io/en/articles/4813752-understanding-fees-on-zerion) | 0.67% service fee on swaps and bridges (0.25% with Premium, 0% for Gold DNA holders); API docs still say 0.8% | non-custodial | none | ? | LI.FI |
@@ -225,16 +224,18 @@ Cross-chain swaps built into a wallet. Custody here means custody during the swa
 | [BitBox](https://bitbox.swiss) | [1.5%](https://support.bitbox.swiss/en_US/swap/swapkit-crypto-swap-bitboxapp) | Flat 1.5% on each swap through SwapKit, plus network and provider costs | non-custodial | none | yes | SwapKit (NEAR Intents) |
 | [Bitcoin.com Wallet](https://wallet.bitcoin.com) | [2%](https://support.bitcoin.com/en/articles/9172611-how-to-swap-across-chains-on-verse-dex) | 2% service fee on Verse DEX cross-chain swaps plus exchange and network fees (support article, mid-2025); CEX mode via SideShift and ChangeNOW | hybrid | risk-based | yes | Verse DEX, SideShift, ChangeNOW, FixedFloat and others (14 providers) |
 | [Magic Eden Wallet](https://wallet.magiceden.io) | [2%](https://help.magiceden.io/en/articles/9673665-how-to-swap-tokens-in-the-magic-eden-app) | 2% platform fee on cross-chain swaps, 0.8% same-chain, included in the quote | hybrid | none | yes | XO Swap (Exodus) |
-| [Brave Wallet](https://brave.com/wallet/) | *0%\** | Brave says it adds no fee to swaps or bridges (2024 announcement); LI.FI route fees apply | non-custodial | none | yes | LI.FI, NEAR Intents (since v1.88) |
 | [SafePal](https://www.safepal.com) | *0.2%\** | Last published swap fee 0.2% (2023 campaign post; 0.3% in 2021); bridge provider fees on top | non-custodial | none | ? | deBridge, Orbiter and other providers in SafePal Swap |
 | [Exodus](https://www.exodus.com) | *0.5%\** | No line-item fee; Exodus takes a share of the provider spread, advertised as starting at 0.5% (Jan 2025). Funds go to the third-party exchange provider during the swap | hybrid | none | yes | Third-party exchange providers and XO Swap (DEXes, bridges, market makers) |
 | [OKX Wallet](https://web3.okx.com/dex-swap) | *0.5%\** | OKX DEX interface fee 0-0.5% by token group (0.5% for listed tokens against others); not stated whether bridge mode is covered; bridge fees on top | non-custodial | none | ? | OKX DEX cross-chain aggregator |
 | [Trust Wallet](https://trustwallet.com) | *0.7%\** | Trust Wallet 2026 comparison lists a 0.7% fee built into the rate; its swap FAQ says no service fee. Providers: THORChain, 1inch, Mimic, Axelar | non-custodial | none | ? | THORChain, 1inch, Mimic, Axelar (and Harbor per its explorer) |
-| [Atomic Wallet](https://atomicwallet.io) | not published | Atomic adds no fee; the exchange partner (ChangeNOW) charges a provider fee shown before the swap; KYC can be requested on large swaps | custodial | risk-based | yes | ChangeNOW |
+| [Atomic Wallet](https://atomicwallet.io) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Atomic adds no fee; the exchange partner (ChangeNOW) charges a provider fee shown before the swap; KYC can be requested on large swaps | custodial | risk-based | yes | ChangeNOW |
+| [Backpack](https://backpack.app) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. 0% Backpack fee on swaps and bridges on every network since March 10, 2026; no spread markup; gas and bridge fees apply | non-custodial | none | no | Wormhole and aggregated bridge routes |
+| [Brave Wallet](https://brave.com/wallet/) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Brave says it adds no fee to swaps or bridges (2024 announcement); LI.FI route fees apply | non-custodial | none | yes | LI.FI, NEAR Intents (since v1.88) |
+| [Coinomi](https://www.coinomi.com) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Coinomi charges nothing; exchange partners price their fee into the rate | custodial | risk-based | yes | Changelly, n.exchange |
+| [Unstoppable Wallet](https://unstoppable.money) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Unstoppable charges no extra fee for swapping; protocol costs apply | non-custodial | none | yes | THORChain, NEAR Intents, 1inch |
 | [Binance Wallet](https://www.binance.com/en/web3wallet) | not published | TX fee shown on the confirmation screen; no percentage published | non-custodial | none | ? | Binance Bridge and third-party bridge providers |
 | [Bitget Wallet](https://web3.bitget.com) | not published | Platform fee charged as a percentage of the swap, shown in the quote; rate not published | non-custodial | none | ? | Bridges and aggregators |
 | [Cake Wallet](https://cakewallet.com) | not published | Provider fee or spread built into the quote; no Cake fee stated | hybrid | risk-based | yes | ChangeNOW, Exolix, Trocador, SideShift, SwapTrade, LetsExchange, SimpleSwap, StealthEX, XOSwap; Chainflip, NEAR Intents, Jupiter, Swaps.xyz |
-| [Coinomi](https://www.coinomi.com) | not published | Coinomi charges nothing; exchange partners price their fee into the rate | custodial | risk-based | yes | Changelly, n.exchange |
 | [Edge Wallet](https://edge.app) | not published | Best price across providers; whether Edge adds a fee is not stated | non-custodial | none | yes | THORChain, Maya, Rango, LI.FI, SwapKit, 0x |
 | [Gem Wallet](https://gemwallet.com) | not published | Provider fee shown per quote; Gem pages conflict on whether Gem adds a fee | non-custodial | none | yes | 20+ providers incl. THORChain, Chainflip, Relay, Mayan, Uniswap, Jupiter, OKX DEX |
 | [imToken](https://token.im) | not published | Fee set by the bridge used: Bridgers (SWFT) 0.4%, Tokenlon Tron bridge 0.3% (5 USDT under 2,000), cBridge 0-0.04%; no imToken fee stated | hybrid | none | ? | Bridgers (SWFT), Tokenlon, cBridge, Router |
@@ -277,12 +278,12 @@ No-account custodial exchanges: you send to a deposit address, they send the oth
 | [ChangeHero](https://changehero.io) | [0.5%](https://changehero.io/blog/crypto-exchange-with-lowest-fees/) | Up to 0.5% on best-rate swaps, up to 0.7% fixed-rate, spread and network fees on top (a ChangeHero test came to 1.3% all-in) | custodial | risk-based | yes | Exchange partners |
 | [FixedFloat](https://ff.io) | [0.5%](https://ff.io/en/faq) | 0.5% on floating-rate orders, 1% on fixed-rate, plus network fees, all built into the final rate | custodial | risk-based | yes | Own liquidity |
 | [Quickex](https://quickex.io) | [0.5%](https://quickex.io/exchange-btc-runerune) | 0.5% on floating-rate swaps, 1% fixed-rate, plus network fees | custodial | risk-based | yes | Exchange partners |
+| [Exolix](https://exolix.com) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Terms say Exolix charges no fees because rates are fixed; the margin is in the quoted rate | custodial | risk-based | yes | Exchange partners |
+| [Houdini Swap](https://houdiniswap.com) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. No direct user fee; Houdini earns rebates from partner exchanges, about 0.5% of volume per its whitepaper; private (two-exchange) swaps cost more | custodial | risk-based | yes | Two-hop exchange routing for privacy |
 | [Alfacash](https://www.alfa.cash) | not published | No standard swap fee published (merchant service 0.5-3%); registered users save up to 10% | custodial | risk-based | yes | Own liquidity |
 | [Changee](https://changee.com) | not published | Commissions as low as 0.25% (About page); Changee blog puts typical all-in cost at 0.5-1.2% | custodial | risk-based | yes | Exchange partners |
 | [ChangeNOW](https://changenow.io) | not published | Fee built into the quoted rate, no fixed percentage; its own comparison post says ChangeNOW does not disclose fees fully; partners earn a 0.4% revenue share | custodial | risk-based | yes | Own liquidity and exchange partners |
-| [Exolix](https://exolix.com) | not published | Terms say Exolix charges no fees because rates are fixed; the margin is in the quoted rate | custodial | risk-based | yes | Exchange partners |
 | [Godex](https://godex.io) | not published | Built into the rate; Godex posts give about 0.8% all-in (older) and 1.67-2.14% all-in on BTC to ETH from its own rate data (2026) | custodial | risk-based | yes | Exchange partners |
-| [Houdini Swap](https://houdiniswap.com) | not published | No direct user fee; Houdini earns rebates from partner exchanges, about 0.5% of volume per its whitepaper; private (two-exchange) swaps cost more | custodial | risk-based | yes | Two-hop exchange routing for privacy |
 | [LetsExchange](https://letsexchange.io) | not published | Own commission, provider commission and an AML fee built into the estimate; rate not published | custodial | risk-based | yes | Exchange partners |
 | [SideShift.ai](https://sideshift.ai) | not published | Small service fee built into the quoted rate, not stated as a percentage; integrators earn 0.5% of volume | custodial | risk-based | yes | Own liquidity |
 | [SimpleSwap](https://simpleswap.io) | not published | All-in rate with no separate fee; may start from 0.2% for some assets; account holders get up to 20% off | custodial | risk-based | yes | Exchange partners |
@@ -297,10 +298,10 @@ Compare instant exchanges (and sometimes protocols) and send you to the best off
 <!-- table:exchange-aggregator -->
 | App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |
 |---|---|---|---|---|---|---|
-| [CypherGoat](https://cyphergoat.com) | [0%](https://cyphergoat.com/blog/thorchain) | Adds no fee above exchange and network fees (typically 0.4-0.6% from the exchange); THORChain routes optional | hybrid | risk-based | yes | 20+ instant exchanges plus THORChain |
-| [SwapSpace](https://swapspace.co) | [0%](https://swapspace.co/about) | No SwapSpace markup; 45+ providers each with their fee in the offer and a KYC-likelihood indicator | custodial | risk-based | yes | Compares instant exchanges |
-| [Swapzone](https://swapzone.io) | [0%](https://swapzone.io/) | 0% Swapzone fee; partner exchange fee built into each offer; earns referral commissions | custodial | risk-based | yes | Compares instant exchanges |
-| [Trocador](https://trocador.app) | [0%](https://www.trocador.app/en/about/) | Trocador adds no fee; each partner exchange fee is in its quote; partners rated A-D for KYC risk; refund guarantee except on D-rated exchanges | custodial | risk-based | yes | Compares instant exchanges, rates KYC risk |
+| [CypherGoat](https://cyphergoat.com) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Adds no fee above exchange and network fees (typically 0.4-0.6% from the exchange); THORChain routes optional | hybrid | risk-based | yes | 20+ instant exchanges plus THORChain |
+| [SwapSpace](https://swapspace.co) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. No SwapSpace markup; 45+ providers each with their fee in the offer and a KYC-likelihood indicator | custodial | risk-based | yes | Compares instant exchanges |
+| [Swapzone](https://swapzone.io) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. 0% Swapzone fee; partner exchange fee built into each offer; earns referral commissions | custodial | risk-based | yes | Compares instant exchanges |
+| [Trocador](https://trocador.app) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Trocador adds no fee; each partner exchange fee is in its quote; partners rated A-D for KYC risk; refund guarantee except on D-rated exchanges | custodial | risk-based | yes | Compares instant exchanges, rates KYC risk |
 <!-- /table -->
 
 ## The protocols underneath
@@ -344,7 +345,7 @@ Not part of the comparison, listed so the "routes via" column can be read. Fees 
 
 This study is published by Shieldz, and [Shieldz Swap](https://swap.shieldz.cash) is one of the 81, so here is where it lands by the same rules as everyone else.
 
-It is an aggregator. It asks **NEAR Intents, Chainflip and Relay** for a price at the same moment, shows every route that answers with its payout and settle time, and lets you pick a different route from the one it recommends. It is **non-custodial** (you send from your own wallet to the protocol), there is **no account and no KYC** of its own, and the fee is **0.15%**, shown on every quote, falling to 0.05% on swaps of $500,000 or more (Chainflip routes stay at 0.15%). That puts it thirteenth-cheapest of the 34 verified fees, above the apps that charge nothing and below every wallet in the list.
+It is an aggregator. It asks **NEAR Intents, Chainflip and Relay** for a price at the same moment, shows every route that answers with its payout and settle time, and lets you pick a different route from the one it recommends. It is **non-custodial** (you send from your own wallet to the protocol), there is **no account and no KYC** of its own, and the fee is **0.15%**, shown on every quote, falling to 0.05% on swaps of $500,000 or more (Chainflip routes stay at 0.15%). That makes it the third-lowest of the 24 stated fees, behind Coin98 and KyberSwap at 0.1%, and below every wallet in the list.
 
 Where it is weaker: it races three protocols, where Rango, RocketX and LeoDex compare a dozen or more, and it covers 45 chains, where Squid claims 100+ and RocketX 200+. THORChain routes are switched off for now. If you need a long-tail coin or a chain we do not list, one of the wider aggregators above will have a route we do not. We measured how fast it quotes in [How fast is Shieldz Swap?](/blog/how-fast-is-shieldz-swap): a first real price in 0.39 seconds, median.
 
@@ -352,14 +353,14 @@ Where it is weaker: it races three protocols, where Rango, RocketX and LeoDex co
 
 1. **Does it publish its fee?** If not, compare the amount you receive across two or three apps for the same swap. That is the only number that cannot hide anything.
 2. **Who holds the coins in flight?** A contract or vault refunds by code; an exchange's deposit address refunds by policy. Check the provider name on the quote.
-3. **Is the wallet the cheapest option?** Usually not. Connect the same wallet to an aggregator and compare: the median wallet fee is more than five times the median aggregator fee.
+3. **Is the wallet the cheapest option?** Usually not. Connect the same wallet to an aggregator and compare: the median wallet fee is three and a half times the median aggregator fee.
 4. **How many routes does it compare?** One route is one price. Several routes mean the app has to beat itself.
 5. **What happens if the swap is flagged?** For custodial routes, read the AML policy before a large swap, not after. For non-custodial routes, there is no one to hold it.
 
 ## FAQ
 
 **Which cross-chain swap app has the lowest fees?**
-Ten of the 81 apps add no fee of their own on a verified, current page: Backpack, CypherGoat, PancakeSwap, Rango, Superbridge, SwapSpace, Swapzone, Trocador, Uniswap and Unstoppable Wallet. The underlying protocol or exchange still charges its own fee, so compare the amount you receive. Among apps that do charge, KyberSwap (0.1% on common EVM pairs) and Shieldz Swap (0.15%) are lowest.
+Of the 24 apps that state a fixed fee we could verify, the lowest are Coin98 and KyberSwap at 0.1% (Coin98 only on tokens its bridge lists, KyberSwap on common EVM pairs) and Shieldz Swap at 0.15%. Fifteen more apps, including Uniswap, Backpack and Rango, say they add no fee of their own; their cost is whatever the route charges, so compare the amount you receive in each quote.
 
 **How much does MetaMask charge for cross-chain swaps?**
 0.875% per bridge or cross-chain swap, according to MetaMask's support page, calculated on the value before other fees. Phantom charges 0.85%, Zerion 0.67% and the Base app up to 1%.
@@ -396,7 +397,7 @@ We collect and process this dataset independently. Every classification comes fr
       "name": "Which cross-chain swap app has the lowest fees?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ten of the 81 apps compared in October 2026 add no fee of their own on a verified, current page: Backpack, CypherGoat, PancakeSwap, Rango, Superbridge, SwapSpace, Swapzone, Trocador, Uniswap and Unstoppable Wallet. The underlying protocol or exchange still charges its own fee. Among apps that charge, KyberSwap (0.1% on common EVM pairs) and Shieldz Swap (0.15%) are lowest."
+        "text": "Of the 24 apps compared in October 2026 that state a fixed fee we could verify, the lowest are Coin98 and KyberSwap at 0.1% (Coin98 only on tokens its bridge lists) and Shieldz Swap at 0.15%. Fifteen more, including Uniswap, Backpack and Rango, say they add no fee of their own; their cost is whatever the route charges, so compare quotes."
       }
     },
     {

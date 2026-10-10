@@ -22,6 +22,8 @@ yn = lambda v: "?" if v is None else ("yes" if v else "no")
 
 
 def fee(a):
+    if a.get("fee_type") == "route-only":
+        return "not certain"
     if a["fee_pct"] is None:
         return "not published"
     pct = f"{a['fee_pct']:g}%"
@@ -32,7 +34,8 @@ def fee(a):
 
 def app_table(category):
     # Lowest verified fee first, then unverified figures, then apps with no published fee.
-    rank = lambda a: (0 if a["verified"] else 1 if a["fee_pct"] is not None else 2, a["fee_pct"] or 0, a["name"].lower())
+    rank = lambda a: (0 if a["verified"] else 1 if a["fee_pct"] is not None else 2 if a["fee_type"] == "route-only" else 3,
+                      a["fee_pct"] or 0, a["name"].lower())
     rows = sorted((a for a in active if a["category"] == category), key=rank)
     out = ["| App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |",
            "|---|---|---|---|---|---|---|"]
@@ -61,7 +64,7 @@ def inactive_table():
 
 FAQ = [
     ("Which cross-chain swap app has the lowest fees?",
-     "Ten of the 81 apps compared in October 2026 add no fee of their own on a verified, current page: Backpack, CypherGoat, PancakeSwap, Rango, Superbridge, SwapSpace, Swapzone, Trocador, Uniswap and Unstoppable Wallet. The underlying protocol or exchange still charges its own fee. Among apps that charge, KyberSwap (0.1% on common EVM pairs) and Shieldz Swap (0.15%) are lowest."),
+     "Of the 24 apps compared in October 2026 that state a fixed fee we could verify, the lowest are Coin98 and KyberSwap at 0.1% (Coin98 only on tokens its bridge lists) and Shieldz Swap at 0.15%. Fifteen more, including Uniswap, Backpack and Rango, say they add no fee of their own; their cost is whatever the route charges, so compare quotes."),
     ("How much does MetaMask charge for cross-chain swaps?",
      "0.875% per bridge or cross-chain swap, according to MetaMask's support page. Phantom charges 0.85%, Zerion 0.67% and the Base app up to 1%."),
     ("Are cross-chain swaps safe?",

@@ -83,7 +83,57 @@ def jsonld():
     lst = {"@context": "https://schema.org", "@type": "ItemList", "name": f"{len(items)} cross-chain swap apps compared (October 2026)",
            "numberOfItems": len(items), "itemListOrder": "https://schema.org/ItemListUnordered",
            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": a["name"], "url": a["url"]} for i, a in enumerate(items)]}
-    return "\n".join(f'<script type="application/ld+json">\n{json.dumps(o, indent=2, ensure_ascii=False)}\n</script>' for o in (faq, lst))
+    return "\n".join(f'<script type="application/ld+json">\n{json.dumps(o, indent=2, ensure_ascii=False)}\n</script>' for o in (faq, lst, dataset_ld()))
+
+
+REPO = "https://github.com/ShieldZCash/cross-chain-swap-dataset"
+SITE = "https://shieldz.cash"
+
+
+def dataset_ld():
+    """Schema.org Dataset, for Google Dataset Search: the canonical home of the dataset is this post."""
+    c, sm = d["counts"], d["summary"]
+    org = {"@type": "Organization", "name": d["publisher"], "url": d["publisher_url"]}
+    description = (
+        f"Open dataset of {c['active']} active cross-chain swap apps (wallets, aggregators, THORChain/Maya/Chainflip "
+        f"front-ends, instant exchanges and exchange comparison sites), with {c['protocols']} underlying protocols listed "
+        f"separately. Each app is classified by custody during the swap, user KYC, the app's own fee, routing, native Bitcoin "
+        f"and Solana support. Only {c['verified']} of {c['active']} ({sm['pct_fee_verified']}%) state a fixed fee verifiable "
+        f"on a current official page; {sm['fee_route_only']} claim no fee of their own. {d['methodology']}")
+    return {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": f"{d['dataset']}: cross-chain swap apps compared",
+        "alternateName": "Cross-Chain Swap Apps Dataset",
+        "description": description[:4900],
+        "url": d["canonical"],
+        "sameAs": REPO,
+        "identifier": f"{REPO}/releases/tag/v{d['version']}",
+        "version": d["version"],
+        "datePublished": d["published"],
+        "dateModified": d["updated"],
+        "temporalCoverage": f"{d['published']}/{d['updated']}",
+        "license": d["license_url"],
+        "isAccessibleForFree": True,
+        "inLanguage": "en",
+        "creator": [org, {"@type": "Person", "name": "Deniz Yanbollu", "url": f"{SITE}/blog/"}],
+        "publisher": org,
+        "keywords": ["cross-chain swap", "crypto swap", "DEX aggregator", "bridge", "crypto wallet", "instant exchange",
+                     "custody", "KYC", "swap fees", "open data"],
+        "measurementTechnique": "Manual review of each app's official pricing pages, help center, docs and terms; "
+                                "liveness checked by HTTP and in a real browser",
+        "variableMeasured": [{"@type": "PropertyValue", "name": k, "description": v} for k, v in d["field_dictionary"].items()],
+        "distribution": [
+            {"@type": "DataDownload", "encodingFormat": "application/json", "name": "Apps and protocols (JSON)",
+             "contentUrl": f"{SITE}/blog/data/cross-chain-swaps-2026.json"},
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "name": "Apps (CSV)",
+             "contentUrl": f"{SITE}/blog/data/cross-chain-swaps-2026.csv"},
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "name": "Protocols (CSV)",
+             "contentUrl": "https://raw.githubusercontent.com/ShieldZCash/cross-chain-swap-dataset/main/data/cross-chain-protocols.csv"},
+        ],
+        "isBasedOn": [a["source_url"] for a in active if a["verified"] and a["source_url"]],
+        "citation": "Shieldz (2026). Cross-Chain Swap Apps Dataset. " + REPO,
+    }
 
 
 s = POST.read_text()

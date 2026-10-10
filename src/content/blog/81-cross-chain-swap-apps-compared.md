@@ -932,4 +932,197 @@ We collect and process this dataset independently. Every classification comes fr
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Cross-Chain Swaps 2026: cross-chain swap apps compared",
+  "alternateName": "Cross-Chain Swap Apps Dataset",
+  "description": "Open dataset of 81 active cross-chain swap apps (wallets, aggregators, THORChain/Maya/Chainflip front-ends, instant exchanges and exchange comparison sites), with 32 underlying protocols listed separately. Each app is classified by custody during the swap, user KYC, the app's own fee, routing, native Bitcoin and Solana support. Only 24 of 81 (30%) state a fixed fee verifiable on a current official page; 15 claim no fee of their own. Every user-facing app that swaps an asset on one chain for an asset on another: aggregators, independent front-ends, wallets with built-in cross-chain swaps and instant exchanges. The protocols those apps route through (THORChain, Chainflip, NEAR Intents, Relay, Across and others) are listed separately under `protocols` for reference and are not part of the comparison, since most apps sit on top of them; a protocol's own first-party front-end counts as the protocol. Classified by category, custody model during the swap, user KYC, the app's own fee, routing, native Bitcoin and Solana support and chain coverage. Liveness checked by HTTP and, behind bot protection, in a real browser. Fees and coverage come only from official pages and docs (verified=true, with source_url); null means not yet checked.",
+  "url": "https://shieldz.cash/blog/81-cross-chain-swap-apps-compared",
+  "sameAs": "https://github.com/ShieldZCash/cross-chain-swap-dataset",
+  "identifier": "https://github.com/ShieldZCash/cross-chain-swap-dataset/releases/tag/v1.0.1",
+  "version": "1.0.1",
+  "datePublished": "2026-10-10",
+  "dateModified": "2026-10-10",
+  "temporalCoverage": "2026-10-10/2026-10-10",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "creator": [
+    {
+      "@type": "Organization",
+      "name": "Shieldz",
+      "url": "https://shieldz.cash"
+    },
+    {
+      "@type": "Person",
+      "name": "Deniz Yanbollu",
+      "url": "https://shieldz.cash/blog/"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shieldz",
+    "url": "https://shieldz.cash"
+  },
+  "keywords": [
+    "cross-chain swap",
+    "crypto swap",
+    "DEX aggregator",
+    "bridge",
+    "crypto wallet",
+    "instant exchange",
+    "custody",
+    "KYC",
+    "swap fees",
+    "open data"
+  ],
+  "measurementTechnique": "Manual review of each app's official pricing pages, help center, docs and terms; liveness checked by HTTP and in a real browser",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "name",
+      "description": "App or protocol name"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "url",
+      "description": "Official website"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "category",
+      "description": "aggregator = routes each swap across several protocols | frontend = independent interface on THORChain/Maya/Chainflip | wallet = cross-chain swap built into a wallet | instant-exchange = custodial no-account exchange | exchange-aggregator = compares instant exchanges. Protocols use native-dex | intent-network | bridge"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "custody",
+      "description": "non-custodial = funds stay in contracts, vaults or the user's wallet throughout | custodial = an operator's wallet receives the funds first | hybrid = depends on the route chosen"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "kyc",
+      "description": "none | risk-based = no account, but flagged transactions can be held for KYC | required"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fee_pct",
+      "description": "The fixed percentage the app itself adds on a standard cross-chain swap (fee_type=stated); null when the cost is route-only or unpublished. Protocol fees, liquidity costs and gas come on top in every case and are described in fee_note"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fee_note",
+      "description": "Fee detail as published"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "routes_via",
+      "description": "What the swap is executed through"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "native_btc",
+      "description": "Swaps native Bitcoin (not a wrapped token) in or out; null = not yet verified"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "solana",
+      "description": "Supports Solana; null = not yet verified"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "chains",
+      "description": "Approximate number of chains supported; null = not yet verified"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "founded",
+      "description": "Year the product launched"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "status",
+      "description": "active | inactive | unchecked, as of `checked`"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "status_note",
+      "description": "Why a row is inactive or unchecked, or what changed"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "notable",
+      "description": "Short editorial note"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "verified",
+      "description": "true = a stated fee confirmed on a current (within ~18 months), non-contradictory official page"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "source_url",
+      "description": "Page the verified figures were read from"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "checked",
+      "description": "Date of the last liveness and verification pass"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fee_type",
+      "description": "stated = the app adds a fixed percentage | route-only = the app claims no fee of its own, so the whole cost is set by the route or partner exchange (which can include a commission paid back to the app) and is not certain until quoted | unpublished = no rate found"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "name": "Apps and protocols (JSON)",
+      "contentUrl": "https://shieldz.cash/blog/data/cross-chain-swaps-2026.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Apps (CSV)",
+      "contentUrl": "https://shieldz.cash/blog/data/cross-chain-swaps-2026.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Protocols (CSV)",
+      "contentUrl": "https://raw.githubusercontent.com/ShieldZCash/cross-chain-swap-dataset/main/data/cross-chain-protocols.csv"
+    }
+  ],
+  "isBasedOn": [
+    "https://github.com/asgardex/asgardex-desktop",
+    "https://help.coinbase.com/en/wallet/getting-started/dex-swap",
+    "https://support.bitbox.swiss/en_US/swap/swapkit-crypto-swap-bitboxapp",
+    "https://support.bitcoin.com/en/articles/9172611-how-to-swap-across-chains-on-verse-dex",
+    "https://changehero.io/blog/crypto-exchange-with-lowest-fees/",
+    "https://changelly.com/faq/changelly/fees/",
+    "https://docs.coin98.com/products/coin98-super-wallet/mobile/swapx/faqs/faqs",
+    "https://ff.io/en/faq",
+    "https://guarda.com/support/getting-started/what-fees-am-i-paying-for/",
+    "https://docs.li.fi/faqs/fees-monetization",
+    "https://docs.kyberswap.com/kyberswap-solutions/fee-schedule",
+    "https://leodex.io",
+    "https://help.magiceden.io/en/articles/9673665-how-to-swap-tokens-in-the-magic-eden-app",
+    "https://help.matcha.xyz/articles/1222339831-are-there-any-fees-to-make-a-trade",
+    "https://support.metamask.io/manage-crypto/move-crypto/bridge/how-are-bridge-fees-calculated/",
+    "https://help.phantom.com/hc/en-us/articles/27085326202515-Swap-settings-in-Phantom",
+    "https://quickex.io/exchange-btc-runerune",
+    "https://www.rocketx.exchange/",
+    "https://swap.shieldz.cash/terms",
+    "https://www.sushi.com/cross-chain-swap",
+    "https://docs.thorswap.finance/thorswap/thorswap/fees",
+    "https://www.thorwallet.org/titn",
+    "https://vultisig.com/vult",
+    "https://help.zerion.io/en/articles/4813752-understanding-fees-on-zerion"
+  ],
+  "citation": "Shieldz (2026). Cross-Chain Swap Apps Dataset. https://github.com/ShieldZCash/cross-chain-swap-dataset"
+}
+</script>
 <!-- /jsonld -->

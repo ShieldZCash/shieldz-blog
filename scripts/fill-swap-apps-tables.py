@@ -31,7 +31,9 @@ def fee(a):
 
 
 def app_table(category):
-    rows = sorted((a for a in active if a["category"] == category), key=lambda a: a["name"].lower())
+    # Lowest verified fee first, then unverified figures, then apps with no published fee.
+    rank = lambda a: (0 if a["verified"] else 1 if a["fee_pct"] is not None else 2, a["fee_pct"] or 0, a["name"].lower())
+    rows = sorted((a for a in active if a["category"] == category), key=rank)
     out = ["| App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |",
            "|---|---|---|---|---|---|---|"]
     for a in rows:

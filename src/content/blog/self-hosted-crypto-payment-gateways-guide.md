@@ -92,7 +92,7 @@ Lightning makes Bitcoin payments instant and cheap, which is great at a checkout
 
 ## The self-hosted options in one paragraph
 
-Four products cover essentially the entire self-hosted market. **BTCPay Server** is the reference: Bitcoin-first, Lightning built in, the biggest plugin ecosystem and community. **Bitcart** covers around 50 coins, including Monero, without plugin hunting. **PayRam** and **DV.net** are newer multi-chain stacks that lean into stablecoins and avoid BTCPay's full-node footprint. All four are open-source, non-custodial and charge a $0 platform fee. Features, coin lists and trade-offs are laid out in the [four-way self-hosted comparison](/blog/self-hosted-crypto-payment-gateway), and BTCPay gets a head-to-head against a hosted, regulated processor in [BTCPay Server vs CoinGate](/blog/btcpay-server-vs-coingate).
+Four products cover essentially the entire self-hosted market. **BTCPay Server** is the reference: Bitcoin-first, Lightning built in, the biggest plugin ecosystem and community. **Bitcart** covers around 50 coins, including Monero, without plugin hunting. **PayRam** and **DV.net** are newer multi-chain stacks that lean into stablecoins and avoid BTCPay's full-node footprint. All four are non-custodial and charge a $0 platform fee; all but PayRam are open-source (see [PayRam vs BTCPay Server vs Shieldz](/blog/payram-alternatives)). Features, coin lists and trade-offs are laid out in the [four-way self-hosted comparison](/blog/self-hosted-crypto-payment-gateway), and BTCPay gets a head-to-head against a hosted, regulated processor in [BTCPay Server vs CoinGate](/blog/btcpay-server-vs-coingate).
 
 ## What a self-hosted gateway really costs
 

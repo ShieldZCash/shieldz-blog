@@ -34,7 +34,7 @@ Self-hosting gets you all three, but so does a [non-custodial](/blog/non-custodi
 
 ## The self-hosted options, compared
 
-Only **4 of the 86 crypto payment gateways** in [our open dataset](/blog/custody-gap-crypto-payment-gateways) are genuinely self-hosted software you run yourself. All four are open-source, non-custodial, and charge a **$0 platform fee**; they differ mostly in coin coverage and how much you have to operate.
+Only **4 of the 86 crypto payment gateways** in [our open dataset](/blog/custody-gap-crypto-payment-gateways) are genuinely self-hosted software you run yourself. All four are non-custodial and charge a **$0 platform fee**, and three of them are open-source (PayRam ships as a closed Docker image); they differ mostly in coin coverage and how much you have to operate.
 
 | Gateway | Fee | Coins | Lightning | Since | Known for |
 |---|---|---|---|---|---|
@@ -51,7 +51,7 @@ Only **4 of the 86 crypto payment gateways** in [our open dataset](/blog/custody
 
 **Bitcart** is the pragmatic multi-coin alternative. It is open-source, Docker-deployed, and supports around 50 assets including Monero straight away, without hunting for plugins. It carries Lightning too. If your customers pay in more than Bitcoin and you would rather not assemble a plugin stack, Bitcart covers more ground with less assembly.
 
-**PayRam** is a newer self-hosted gateway aimed at merchants who want a lean stack without running a Bitcoin full node. It leans toward EVM chains and stablecoins, adds orchestration and sweeping features, and is popular in higher-risk verticals like iGaming. It trades BTCPay's maturity for a lighter multi-chain footprint.
+**PayRam** is a newer self-hosted gateway aimed at merchants who want a lean stack without running a Bitcoin full node. It leans toward EVM chains and stablecoins, gives each customer a permanent deposit address that sweeps to your cold wallet, and is popular in higher-risk verticals like iGaming. Unlike the other three it is not open-source. It trades BTCPay's maturity for a lighter multi-chain footprint. We compare it head to head in [PayRam alternatives: PayRam vs BTCPay Server vs Shieldz](/blog/payram-alternatives).
 
 **DV.net** is open-source self-hosted software where the merchant explicitly owns the wallets and the seed. It is multi-coin (around 50 assets), stablecoin-friendly, and built for teams that want the code on their own servers with no third party anywhere in the flow. Like the others, it charges nothing but network fees.
 
@@ -144,7 +144,7 @@ The main self-hosted alternatives are Bitcart (open-source, 50+ coins including 
 Among the self-hosted options, Bitcart and DV.net support roughly 50 coins each, more than BTCPay's Bitcoin-first default (which adds altcoins via plugins). All are $0-fee and non-custodial.
 
 **Is a self-hosted crypto payment gateway free?**
-The software is free and open-source (BTCPay, Bitcart, PayRam, DV.net all charge a $0 platform fee), but self-hosting is not zero-cost: you pay for the server, and you spend time on setup, updates and uptime. "Free" means no license and no processor cut, not no operating cost.
+The software is free (BTCPay, Bitcart, PayRam, DV.net all charge a $0 platform fee, and all but PayRam are open-source), but self-hosting is not zero-cost: you pay for the server, and you spend time on setup, updates and uptime. "Free" means no license and no processor cut, not no operating cost.
 
 **Can I run a crypto payment gateway without a full node?**
 Often yes. Some self-hosted setups connect to an external node instead of syncing their own, and lighter open-source options like the GoUrl or MyCryptoCheckout plugins avoid a node entirely. A hosted non-custodial gateway needs no node or server at all, just a wallet address.
@@ -171,7 +171,7 @@ You do not have to run infrastructure to keep custody of your money. Create a no
     { "@type": "Question", "name": "Do either charge a platform fee?", "acceptedAnswer": { "@type": "Answer", "text": "Neither BTCPay nor Shieldz charges a platform fee. You pay only the blockchain network fee." } },
     { "@type": "Question", "name": "What are the alternatives to BTCPay Server?", "acceptedAnswer": { "@type": "Answer", "text": "The main self-hosted alternatives are Bitcart (open-source, 50+ coins incl. Monero, Lightning), PayRam and DV.net (newer, multi-coin, self-hosted). Lighter no-server options include the GoUrl and MyCryptoCheckout WordPress plugins." } },
     { "@type": "Question", "name": "Which self-hosted crypto payment gateway supports the most coins?", "acceptedAnswer": { "@type": "Answer", "text": "Among self-hosted options, Bitcart and DV.net support roughly 50 coins each, more than BTCPay's Bitcoin-first default. All are $0-fee and non-custodial." } },
-    { "@type": "Question", "name": "Is a self-hosted crypto payment gateway free?", "acceptedAnswer": { "@type": "Answer", "text": "The software is free and open-source and charges no platform fee, but self-hosting still costs a server plus your time on setup, updates and uptime. Free means no license and no processor cut, not no operating cost." } },
+    { "@type": "Question", "name": "Is a self-hosted crypto payment gateway free?", "acceptedAnswer": { "@type": "Answer", "text": "The software is free and charges no platform fee, but self-hosting still costs a server plus your time on setup, updates and uptime. Free means no license and no processor cut, not no operating cost." } },
     { "@type": "Question", "name": "Can I run a crypto payment gateway without a full node?", "acceptedAnswer": { "@type": "Answer", "text": "Often yes. Some self-hosted setups connect to an external node, and lighter options like the GoUrl or MyCryptoCheckout plugins avoid a node entirely. A hosted non-custodial gateway needs no node or server at all." } },
     { "@type": "Question", "name": "Is self-hosted the same as non-custodial?", "acceptedAnswer": { "@type": "Answer", "text": "Self-hosted is almost always non-custodial because funds settle to a wallet you control, but a hosted gateway can also be non-custodial. Custody is about who holds the keys, not where the software runs." } }
   ]

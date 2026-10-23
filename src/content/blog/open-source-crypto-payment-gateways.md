@@ -27,17 +27,17 @@ We only include a project if the code that actually processes payments is public
   <figcaption style="font-size:13px;color:#949494;margin-top:8px">BTCPay Server has more stars than the next four combined. Stars measure attention, not quality: DV.net is young and small on GitHub but actively developed.</figcaption>
 </figure>
 
-| Project | License | What it is | Needs a server | Coins | Fee | Last push |
-|---|---|---|---|---|---|---|
-| [BTCPay Server](https://github.com/btcpayserver/btcpayserver) | MIT | Full gateway | Yes | Bitcoin + Lightning, altcoins via plugins | 0% | Oct 2026 |
-| [Bitcart](https://github.com/bitcart/bitcart) | MIT | Full gateway | Yes | BTC, LTC, BCH, XMR, ETH, TRX, USDT and more | 0% | Oct 2026 |
-| [SHKeeper](https://github.com/vsys-host/shkeeper.io) | GPL-3.0 | Full gateway | Yes (k3s + Helm) | BTC incl. Lightning, ETH, XMR, SOL, TRX, USDT/USDC on several chains, more | 0% | Sep 2026 |
-| [DV.net](https://github.com/dv-net/dv-merchant) | MIT | Full gateway | Yes | ~50 | 0% | Oct 2026 |
-| [LNbits](https://github.com/lnbits/lnbits) | MIT | Lightning accounts + extensions | Yes, plus a Lightning funding source | Lightning | 0% | Oct 2026 |
-| [MyCryptoCheckout](https://github.com/MyCryptoCheckout/wordpress) | GPL (WordPress plugin) | WooCommerce plugin | No, runs in WordPress | ~100 | 0%, $49/year unlimited plan | Aug 2026 |
-| [GoUrl](https://github.com/cryptoapi/Payment-Gateway) | MIT | PHP class + WordPress plugin | No | BTC, BCH, DASH, DOGE, LTC and other older coins | 1.5% | May 2024 |
-| [Solana Pay](https://docs.solanapay.com) | MIT | Payment protocol and SDK | No | SOL and SPL tokens | Network fees only | Oct 2026 |
-| [DePay widgets](https://github.com/DePayFi/widgets) | MIT | Payment widgets | No | Tokens on its supported chains, converted on the fly | 0% self-hosted, 1.5% hosted | Mar 2026 |
+| Project | License | Server | Coins | Fee | Last push |
+|---|---|---|---|---|---|
+| [BTCPay Server](https://github.com/btcpayserver/btcpayserver) | MIT | Yes | BTC, Lightning, plugins | 0% | Oct 2026 |
+| [Bitcart](https://github.com/bitcart/bitcart) | MIT | Yes | BTC, XMR, ETH, USDT, more | 0% | Oct 2026 |
+| [SHKeeper](https://github.com/vsys-host/shkeeper.io) | GPL-3.0 | Yes (k3s) | BTC, XMR, SOL, USDT, more | 0% | Sep 2026 |
+| [DV.net](https://github.com/dv-net/dv-merchant) | MIT | Yes | ~50 | 0% | Oct 2026 |
+| [LNbits](https://github.com/lnbits/lnbits) | MIT | Yes + LN source | Lightning | 0% | Oct 2026 |
+| [MyCryptoCheckout](https://github.com/MyCryptoCheckout/wordpress) | GPL | WordPress | ~100 | 0% ($49/yr plan) | Aug 2026 |
+| [GoUrl](https://github.com/cryptoapi/Payment-Gateway) | MIT | No | BTC, LTC, DOGE, older coins | 1.5% | May 2024 |
+| [Solana Pay](https://docs.solanapay.com) | MIT | No (protocol) | SOL, SPL tokens | Gas only | Oct 2026 |
+| [DePay widgets](https://github.com/DePayFi/widgets) | MIT | No (widgets) | Many tokens | 0% / 1.5% hosted | Mar 2026 |
 
 Fees and coin counts come from our [open dataset](/blog/custody-gap-crypto-payment-gateways) and each project's README. Stars and last push come from the GitHub API on October 23, 2026.
 

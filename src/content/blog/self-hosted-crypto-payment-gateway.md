@@ -59,7 +59,7 @@ All four share the same core promise: your keys, your server, $0 platform fee. T
 
 ## The middle ground: open-source, but no server
 
-Not every "run it yourself" option is a full server. Some are open-source plugins or protocols that keep funds non-custodial without a VPS: [GoUrl](https://gourl.io) and MyCryptoCheckout are WordPress plugins that pay direct to your wallet, and [Solana Pay](/blog/50-crypto-payment-gateways-compared) is an open protocol for direct merchant payments. They are lighter than a self-hosted node but still put the software, and the responsibility, on you.
+Not every "run it yourself" option is a full server. Some are open-source plugins or protocols that keep funds non-custodial without a VPS: [GoUrl](https://gourl.io) and MyCryptoCheckout are WordPress plugins that pay direct to your wallet, and [Solana Pay](/blog/50-crypto-payment-gateways-compared) is an open protocol for direct merchant payments. They are lighter than a self-hosted node but still put the software, and the responsibility, on you. For licenses, GitHub activity and coin lists of every open-source option, see [open-source crypto payment gateways compared](/blog/open-source-crypto-payment-gateways).
 
 ## What self-hosting actually costs you
 

@@ -57,7 +57,7 @@ The trade-offs are the usual self-hosting ones, plus a few specific to how PayRa
 - **A server you maintain.** 6 to 8 GB of RAM is a mid-sized VPS, not the cheapest tier. Updates, backups, monitoring and uptime are your job, and a down server means a checkout that doesn't work.
 - **Gas for sweeping.** Deploying the sweep contract costs gas on each network, paid from your master wallet, and every sweep after that is paid from your hot wallet. These are small amounts but they are real, and someone has to keep the hot wallet topped up.
 - **Several wallets to manage.** A master wallet (PayRam's docs say to keep it on a hardware wallet), a separate cold wallet, and a hot wallet per network family. For Bitcoin you enter a 12-word phrase that PayRam says it uses to derive addresses and then discards.
-- **Closed source.** PayRam's GitHub holds the install scripts, plugins and an MCP server, but the gateway itself is a prebuilt Docker image. You can host it, but you cannot read or audit the code the way you can with BTCPay or Bitcart. If "open source" is one of the reasons you wanted self-hosting, PayRam doesn't meet it.
+- **Closed source.** PayRam's GitHub holds the install scripts, plugins and an MCP server, but the gateway itself is a prebuilt Docker image. You can host it, but you cannot read or audit the code the way you can with BTCPay or Bitcart. If "open source" is one of the reasons you wanted self-hosting, PayRam doesn't meet it. Our [open-source crypto payment gateways](/blog/open-source-crypto-payment-gateways) roundup covers the ones that do.
 
 ## BTCPay Server: the open-source default
 

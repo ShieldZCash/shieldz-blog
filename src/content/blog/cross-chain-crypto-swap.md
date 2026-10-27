@@ -32,7 +32,7 @@ What it is not: an exchange, a broker, a custodian or an investment adviser. It 
 
 ## Why routing matters more than the fee
 
-Most people compare swap apps by their fee. The fee matters (we will get to it), but on a cross-chain swap the bigger number is usually the **route**. Different protocols are different machines: Chainflip runs its own cross-chain liquidity pools with native Bitcoin, NEAR Intents settles through a solver auction, and Relay fills from market-maker inventory. (THORChain, which swaps through its own continuous liquidity pools, is switched off for now.) On any given pair, at any given minute, any of them can be the best.
+Most people compare swap apps by their fee. The fee matters (we will get to it), but on a cross-chain swap the bigger number is usually the **route**. Different protocols are different machines: Chainflip runs its own cross-chain liquidity pools with native Bitcoin (Shieldz Swaps is [listed in its ecosystem](/blog/shieldz-swaps-chainflip-ecosystem)), NEAR Intents settles through a solver auction, and Relay fills from market-maker inventory. (THORChain, which swaps through its own continuous liquidity pools, is switched off for now.) On any given pair, at any given minute, any of them can be the best.
 
 Here is a real example from the live router, all three protocols asked for the same swap at the same second:
 

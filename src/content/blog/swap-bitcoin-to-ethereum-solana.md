@@ -41,7 +41,7 @@ The same 0.1 BTC, quoted into other coins at the same time:
 | USDC on Arbitrum | Chainflip | 8,344.68 USDC | about 7 min |
 | USDT on Tron | NEAR Intents | 8,339.23 USDT | about 14 min |
 
-On these sizes Chainflip usually wins for bitcoin: it runs its own pools with native BTC, and it tends to be both cheaper and faster. NEAR Intents covers destinations Chainflip does not, such as Tron, and sometimes beats it, which is why the router asks both every time. Relay, the third protocol Shieldz uses, does not accept native BTC.
+On these sizes Chainflip usually wins for bitcoin: it runs its own pools with native BTC, and it tends to be both cheaper and faster. NEAR Intents covers destinations Chainflip does not, such as Tron, and sometimes beats it, which is why the router asks both every time. Relay, the third protocol Shieldz uses, does not accept native BTC. Shieldz Swaps is [listed in the Chainflip ecosystem](/blog/shieldz-swaps-chainflip-ecosystem) as a router, with live listing-day quotes and a line-by-line fee breakdown.
 
 ## Why a bitcoin swap takes minutes, not seconds
 

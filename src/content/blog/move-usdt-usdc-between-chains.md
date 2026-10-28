@@ -53,7 +53,7 @@ Three things stand out:
 
 - **The cheapest moves are between EVM chains.** USDC from Ethereum to Arbitrum cost $1.84 through Relay, almost all of it the Shieldz fee, and settled in about a second. Chainflip and NEAR Intents also quoted it, at $2.96 and $3.11; the router showed all three.
 - **Tron routes cost about $3 to $5.** Tron USDT is only routed through NEAR Intents today, so those quotes have no competitor. They are still far cheaper than the common exchange route of depositing, converting and paying a withdrawal fee.
-- **Solana routes are quick.** USDC from Arbitrum to Solana, and from Solana to Base, each cost a little over $3 and took about 22 seconds.
+- **Solana routes are quick.** USDC from Arbitrum to Solana, and from Solana to Base, each cost a little over $3 and took about 22 seconds. Turning Solana USDC into ETH instead? See [how to swap USDC on Solana to ETH](/blog/swap-usdc-solana-to-eth), with quotes at three sizes.
 
 Prices move, so treat these as a snapshot. The [USDT](https://swap.shieldz.cash/usdt) and [USDC](https://swap.shieldz.cash/usdc) pages on Shieldz show the live cost of moving $1,000 to every network they support, 20 networks for USDT and 25 for USDC, updated while the page is open.
 

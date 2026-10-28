@@ -1,0 +1,183 @@
+{
+ "t": "2026-10-28T16:30:33Z",
+ "px": {
+  "ethereum": {
+   "usd": 2330.75
+  },
+  "solana": {
+   "usd": 100.94
+  },
+  "usd-coin": {
+   "usd": 0.99935
+  }
+ },
+ "res": [
+  {
+   "o": "SOL.USDC",
+   "d": "ETH.ETH",
+   "a": 100,
+   "routes": [
+    {
+     "p": "near",
+     "out": 0.04268373221775865,
+     "sec": 27
+    },
+    {
+     "p": "chainflip",
+     "out": 0.042559306364059885,
+     "sec": 175
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "near"
+  },
+  {
+   "o": "SOL.USDC",
+   "d": "ETH.ETH",
+   "a": 1000,
+   "routes": [
+    {
+     "p": "chainflip",
+     "out": 0.42796224363191776,
+     "sec": 175
+    },
+    {
+     "p": "near",
+     "out": 0.4271523234777667,
+     "sec": 27
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "chainflip"
+  },
+  {
+   "o": "SOL.USDC",
+   "d": "ETH.ETH",
+   "a": 10000,
+   "routes": [
+    {
+     "p": "near",
+     "out": 4.2691593131096175,
+     "sec": 29
+    },
+    {
+     "p": "chainflip",
+     "out": 4.280234883394151,
+     "sec": 175
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "chainflip"
+  },
+  {
+   "o": "SOL.USDC",
+   "d": "BASE.ETH",
+   "a": 1000,
+   "routes": [
+    {
+     "p": "near",
+     "out": 0.4268815583441117,
+     "sec": 24
+    }
+   ],
+   "errs": [
+    [
+     "chainflip",
+     "unsupported_asset"
+    ],
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "near"
+  },
+  {
+   "o": "SOL.USDC",
+   "d": "ARB.ETH",
+   "a": 1000,
+   "routes": [
+    {
+     "p": "near",
+     "out": 0.4269173768287433,
+     "sec": 21
+    },
+    {
+     "p": "chainflip",
+     "out": 0.4274191560389119,
+     "sec": 169
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "near"
+  },
+  {
+   "o": "SOL.USDC",
+   "d": "ETH.USDC",
+   "a": 1000,
+   "routes": [
+    {
+     "p": "near",
+     "out": 996.697009,
+     "sec": 27
+    },
+    {
+     "p": "chainflip",
+     "out": 997.316854,
+     "sec": 175
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "near"
+  },
+  {
+   "o": "SOL.SOL",
+   "d": "ETH.ETH",
+   "a": 5,
+   "routes": [
+    {
+     "p": "near",
+     "out": 0.21569545551610442,
+     "sec": 27
+    },
+    {
+     "p": "chainflip",
+     "out": 0.2163056345008157,
+     "sec": 175
+    }
+   ],
+   "errs": [
+    [
+     "relay",
+     "unsupported_asset"
+    ]
+   ],
+   "sel": "chainflip"
+  }
+ ]
+}

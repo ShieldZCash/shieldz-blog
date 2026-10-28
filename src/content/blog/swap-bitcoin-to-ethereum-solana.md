@@ -97,7 +97,7 @@ Ledger, Trezor, Keystone, MetaMask and OKX Wallet. You can receive BTC at any Bi
 
 ## Try it
 
-Open [swap.shieldz.cash](https://swap.shieldz.cash), set BTC to ETH or SOL, and compare the routes before you connect anything. The [Bitcoin page](https://swap.shieldz.cash/chains/bitcoin) lists everything bitcoin can be swapped into. If you want to accept bitcoin as a business, read [how to accept Bitcoin payments](/blog/how-to-accept-bitcoin-payments).
+Open [swap.shieldz.cash](https://swap.shieldz.cash), set BTC to ETH or SOL, and compare the routes before you connect anything. The [Bitcoin page](https://swap.shieldz.cash/chains/bitcoin) lists everything bitcoin can be swapped into. If you want to accept bitcoin as a business, read [how to accept Bitcoin payments](/blog/how-to-accept-bitcoin-payments). Coming from Solana instead, read [how to swap USDC on Solana to ETH](/blog/swap-usdc-solana-to-eth).
 
 <script type="application/ld+json">
 {

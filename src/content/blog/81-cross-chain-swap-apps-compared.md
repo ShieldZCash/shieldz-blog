@@ -185,7 +185,7 @@ Apps that compare several protocols and route each swap to the best one.
 <!-- table:aggregator -->
 | App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |
 |---|---|---|---|---|---|---|
-| [KyberSwap](https://kyberswap.com/cross-chain) | [0.1%](https://docs.kyberswap.com/kyberswap-solutions/fee-schedule) | Cross-chain platform fee 0.05-0.25% by route and token volatility (EVM-EVM: 0.05% stables, 0.10% common, 0.15% exotic, 0.25% volatile); provider fee on top | non-custodial | none | yes | NEAR Intents, Across, Relay, XY, deBridge, LI.FI, Mayan |
+| [KyberSwap](https://kyberswap.com/cross-chain) | [0.1%](https://docs.kyberswap.com/getting-started/fee-schedule) | Cross-chain platform fee 0.05-0.25% by route and token volatility (EVM-EVM: 0.05% stables, 0.10% common, 0.15% exotic, 0.25% volatile); provider fee on top | non-custodial | none | yes | NEAR Intents, Across, Relay, XY, deBridge, LI.FI, Mayan |
 | [Shieldz Swap](https://swap.shieldz.cash) | [0.15%](https://swap.shieldz.cash/terms) | 0.15% service fee shown on every quote; 0.05% on swaps of $500k or more (Chainflip routes stay 0.15%) | non-custodial | none | yes | NEAR Intents, Chainflip, Relay (raced per quote) |
 | [RocketX](https://www.rocketx.exchange) | [0.2%](https://www.rocketx.exchange/) | Dynamic fee from $1 or 0.2% up to 0.4%, higher on some exchange routes (FAQ); RocketX blog posts also claim zero fee under $100 | hybrid | risk-based | yes | DEXes, bridges and CEX liquidity |
 | [Jumper (LI.FI)](https://jumper.xyz) | [0.25%](https://docs.li.fi/faqs/fees-monetization) | LI.FI charges a 0.25% service fee on each transaction (taken from the sending token); one Jumper page says Jumper adds nothing on top of bridge fees | non-custodial | none | ? | LI.FI: bridges, DEXes and intent networks |
@@ -1107,7 +1107,7 @@ We collect and process this dataset independently. Every classification comes fr
     "https://ff.io/en/faq",
     "https://guarda.com/support/getting-started/what-fees-am-i-paying-for/",
     "https://docs.li.fi/faqs/fees-monetization",
-    "https://docs.kyberswap.com/kyberswap-solutions/fee-schedule",
+    "https://docs.kyberswap.com/getting-started/fee-schedule",
     "https://leodex.io",
     "https://help.magiceden.io/en/articles/9673665-how-to-swap-tokens-in-the-magic-eden-app",
     "https://help.matcha.xyz/articles/1222339831-are-there-any-fees-to-make-a-trade",

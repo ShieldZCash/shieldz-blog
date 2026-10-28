@@ -66,7 +66,7 @@ The reason a stablecoin payment can be final, instant, and free is that no middl
 
 **Do I need KYC or an account to start?** No KYC to start. Because Shieldz never holds funds, there is no balance to verify. You can create a keyless [payment link](/tools/payment-link) with just a wallet address.
 
-**Where does the money go?** Straight to the wallet address you set. Shieldz is [non-custodial](/what-is-a-crypto-payment-gateway), so funds never pass through its hands.
+**Where does the money go?** Straight to the wallet address you set. Shieldz is [non-custodial](/blog/what-is-a-crypto-payment-gateway), so funds never pass through its hands.
 
 ## Start accepting stablecoins
 

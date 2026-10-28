@@ -157,7 +157,7 @@ Sorted by advertised fee, then alphabetically. An asterisk marks fees we could n
 | [Bitpace](https://www.bitpace.com) | 1%\* | Custodial | Required | 70 | Yes | EU/UK-licensed gateway popular in iGaming |
 | [BlockBee](https://blockbee.io) | [1%](https://blockbee.io/fees/) | Non-custodial | None | 70 | No | Formerly CryptAPI; payment forwarding to your wallet |
 | [Blockonomics](https://www.blockonomics.co) | [1%](https://www.blockonomics.co) | Non-custodial | None | 3 | No | Direct-to-wallet Bitcoin payments with no KYC |
-| [BoomFi](https://www.boomfi.xyz) | [1%](https://docs.boomfi.xyz/docs/pricing-and-fees) | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
+| [BoomFi](https://www.boomfi.xyz) | [1%](https://docs.boomfi.xyz/pricing/fees-and-pricing) | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
 | [Coinbase Commerce](https://www.coinbase.com/commerce) | [1%](https://www.coinbase.com/commerce) | Hybrid | Required | 10 | Yes | Shut down March 2026; successor Coinbase Business is custodial, US/SG only |
 | [CoinGate](https://coingate.com) | [1%](https://www.coingate.com/pricing) | Custodial | Required | 70 | Yes | EU-based gateway; Lightning enabled by default |
 | [Flexa](https://flexa.co) | [1%](https://flexa.co/payments) | Custodial | Required | 99 | Yes | In-store crypto acceptance network across 13 chains |

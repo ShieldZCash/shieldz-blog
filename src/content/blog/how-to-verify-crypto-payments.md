@@ -18,6 +18,8 @@ The oldest one. The "buyer" sends a screenshot of a wallet showing a completed t
 
 **The fix:** a screenshot proves nothing; only the chain does. Never fulfil manually off a picture. With a gateway, fulfilment should key off the payment confirming on-chain to your invoice's address for the exact amount. Shieldz creates a unique address and exact amount per invoice and fires a webhook only when the chain confirms, so "proof" arrives from your own endpoint, not from the customer.
 
+If you sell through chat apps, this is the scam you will see most. A payment link removes the screenshot step entirely: see [how to sell on Telegram and Instagram for crypto](/blog/sell-on-telegram-instagram-for-crypto).
+
 ## 2. The underpayment nudge
 
 The buyer "accidentally" pays $87 on a $100 invoice, then insists the rest is "network fees" or promises to settle later, counting on you shipping now and eating the gap. At scale, sellers who eyeball amounts lose a few percent of revenue to this without ever calling it fraud.

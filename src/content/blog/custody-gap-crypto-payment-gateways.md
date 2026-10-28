@@ -5,6 +5,7 @@ pubDate: 2026-08-20
 author: "Deniz Yanbollu"
 tags: ["crypto payment gateways","custody","non-custodial","research","data"]
 eyebrow: "Report"
+dataset: "crypto-payment-gateways-2026"
 image: "https://shieldz.cash/blog/og/custody-gap-crypto-payment-gateways.png"
 ---
 

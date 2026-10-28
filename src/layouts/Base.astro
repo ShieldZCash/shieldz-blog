@@ -8,6 +8,7 @@ const {
   author = "Deniz Yanbollu",
   image,
   lang = "en",
+  datasetLd,
 } = Astro.props;
 
 // Canonicalize to the no-trailing-slash form (what the main site, sitemap, and
@@ -38,7 +39,7 @@ const articleLd =
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang}><!--email_off-->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,6 +63,7 @@ const articleLd =
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
+    {datasetLd && <script type="application/ld+json" set:html={JSON.stringify(datasetLd)} />}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PV99TH7BG"></script>
     <script is:inline>
@@ -101,4 +103,4 @@ const articleLd =
     <script is:inline data-collect-dnt="true" async src="/proxy.js"></script>
     <noscript><img src="/simple/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
-</html>
+<!--/email_off--></html>

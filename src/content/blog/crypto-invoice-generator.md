@@ -72,7 +72,7 @@ Yes. `POST /api/v1/links` with an amount and a wallet returns a hosted pay link,
 
 ## Create your first crypto invoice
 
-Generating a crypto invoice should take seconds, not an onboarding call. Open the [payment link generator](https://shieldz.cash/tools/payment-link) to mint one now, read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) for the wider setup, or see [how to accept Zcash payments](/blog/how-to-accept-zcash-payments) if you want a shielded, private option. Selling a single file instead of billing a client? Use a [pay-to-unlock file link](/blog/pay-to-unlock-file-link). If you build with agents, start on the [agent page](https://shieldz.cash/agent).
+Generating a crypto invoice should take seconds, not an onboarding call. Open the [payment link generator](https://shieldz.cash/tools/payment-link) to mint one now, read [how to accept crypto payments](/blog/how-to-accept-crypto-payments) for the wider setup, or see [how to accept Zcash payments](/blog/how-to-accept-zcash-payments) if you want a shielded, private option. Selling the same item again and again, with quantity and shipping? See [how to create a crypto payment link](/blog/how-to-create-a-crypto-payment-link) for product links. Selling a single file instead of billing a client? Use a [pay-to-unlock file link](/blog/pay-to-unlock-file-link). If you build with agents, start on the [agent page](https://shieldz.cash/agent).
 
 <script type="application/ld+json">
 {

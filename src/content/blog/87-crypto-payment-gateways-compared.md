@@ -118,7 +118,7 @@ Sorted alphabetically, not by fee or any other ranking. An asterisk marks fees w
 | [BitPay](https://bitpay.com) | [2%](https://bitpay.com/pricing) | Custodial | Required | 20 | Yes | Oldest major crypto processor; daily fiat bank settlements |
 | [BlockBee](https://blockbee.io) | [1%](https://blockbee.io/fees/) | Non-custodial | None | 70 | No | Formerly CryptAPI; payment forwarding to your wallet |
 | [Blockonomics](https://www.blockonomics.co) | [1%](https://www.blockonomics.co) | Non-custodial | None | 3 | No | Direct-to-wallet Bitcoin payments with no KYC |
-| [BoomFi](https://www.boomfi.xyz) | [1%](https://docs.boomfi.xyz/docs/pricing-and-fees) | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
+| [BoomFi](https://www.boomfi.xyz) | [1%](https://docs.boomfi.xyz/pricing/fees-and-pricing) | Non-custodial | Required | 10 | Yes | Non-custodial gateway with subscriptions and off-ramp |
 | [BTCPay Server](https://btcpayserver.org) | [0%](https://btcpayserver.org/) | Self-hosted | None | 1 | No | Free open-source self-hosted processor; altcoins via plugins |
 | [BVNK](https://www.bvnk.com/payments) | [1%](https://docs.bvnk.com/bvnk/get-started/charge-customer-fees/) | Custodial | Required | 10 | Yes | Stablecoin acceptance infra, acquired by Mastercard 2026 |
 | [Bybit Pay](https://www.bybit.com/en/bybitpay/) | [0%](https://www.bybit.com/en/help-center/article/FAQ-Bybit-Pay) | Custodial | Required | 100 | Yes | Exchange-backed merchant payments, zero base fee |

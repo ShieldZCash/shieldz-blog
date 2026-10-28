@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import SwapBanner from "../components/SwapBanner.astro";
 import { getCollection, render } from "astro:content";
+import { readFileSync } from "node:fs";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -14,6 +15,35 @@ const { Content } = await render(post);
 // Every post gets an auto-generated OG card at /blog/og/<slug>.png (built by
 // scripts/gen-og.mjs in the prebuild step). Frontmatter `ogImage` can override.
 const ogImage = post.data.ogImage ?? new URL(`/blog/og/${post.id}.png`, Astro.site).href;
+
+// Schema.org Dataset markup for the post that is a dataset's canonical home,
+// built from the same JSON served at /blog/data/<name>.json.
+let datasetLd;
+if (post.data.dataset) {
+  const name = post.data.dataset;
+  const d = JSON.parse(readFileSync(`public/data/${name}.json`, "utf8"));
+  const dataUrl = (ext) => new URL(`/blog/data/${name}.${ext}`, Astro.site).href;
+  datasetLd = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: d.dataset,
+    description: `${d.methodology} ${d.counts.total} gateways as of ${d.updated}.`,
+    url: d.canonical,
+    sameAs: "https://github.com/ShieldZCash/crypto-payment-gateways-dataset",
+    version: d.version,
+    datePublished: d.published,
+    dateModified: d.updated,
+    license: d.license_url,
+    isAccessibleForFree: true,
+    creator: { "@type": "Organization", name: d.publisher, url: d.publisher_url },
+    keywords: post.data.tags,
+    variableMeasured: Object.keys(d.field_dictionary),
+    distribution: [
+      { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: dataUrl("json") },
+      { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: dataUrl("csv") },
+    ],
+  };
+}
 ---
 
 <Base
@@ -24,6 +54,7 @@ const ogImage = post.data.ogImage ?? new URL(`/blog/og/${post.id}.png`, Astro.si
   author={post.data.author}
   image={ogImage}
   lang={post.data.lang}
+  datasetLd={datasetLd}
 >
   <article>
     <h1>{post.data.title}</h1>

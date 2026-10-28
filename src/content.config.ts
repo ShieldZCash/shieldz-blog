@@ -14,6 +14,9 @@ const blog = defineCollection({
     lang: z.string().default("en"),
     // Show the "Swap now" banner (src/components/SwapBanner.astro). On by default.
     swapBanner: z.boolean().default(true),
+    // Name of a dataset in public/data/<name>.json this post is the canonical
+    // home of; emits Schema.org Dataset markup for Google Dataset Search.
+    dataset: z.string().optional(),
   }),
 });
 

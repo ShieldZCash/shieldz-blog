@@ -35,6 +35,8 @@ A self-hosted crypto payment gateway is payment software you install and run on 
 
 Three pieces make it work: **the software** (an admin panel, a checkout, and a webhook or API layer), **a wallet** you own (a seed or an extended public key the software derives addresses from), and **a way to read the chain** (a full node, a pruned node, or a connection to one). Because the money settles to an address only you control, a properly self-hosted gateway is non-custodial by construction: there is no company wallet in the middle to freeze, delay, or surveil.
 
+Crypto is the one payment rail you can self-host end to end. Card payments always need a licensed processor underneath, which is why self-hosted card projects like Hyperswitch and Kill Bill are orchestration and billing layers; we cover those in [self-hosted payment gateways for cards and crypto](/blog/self-hosted-payment-gateway).
+
 This is the opposite end of the spectrum from a custodial processor like BitPay or Coinbase, where the provider receives first and pays you out later. It is also different from a hosted non-custodial gateway, which settles to your wallet like self-hosting but runs the software for you. The rest of this guide compares all three so you pick the one that matches what you actually want.
 
 ### Self-hosted, open-source, non-custodial: not synonyms

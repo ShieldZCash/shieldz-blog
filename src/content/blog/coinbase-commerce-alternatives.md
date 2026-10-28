@@ -65,6 +65,12 @@ If your business already runs on Stripe, its crypto option accepts USDC and sett
 
 **Choose it if:** your vertical gets rejected elsewhere and you accept the custody trade-off.
 
+## Coinbase Commerce vs BitPay: which is better?
+
+This is still one of the most asked questions, but in 2026 the honest answer is that it is no longer a fair fight: Coinbase Commerce no longer exists. Before the shutdown it charged 1% and settled to a wallet you controlled in its self-managed mode, while BitPay charges 2% + $0.25 (1% + $0.25 above $1 million a month), holds funds before paying out, and requires business verification.
+
+So the real comparison today is **Coinbase Business vs BitPay**, and both are custodial with full KYB. Pick BitPay if you need daily fiat bank settlement in many countries and a long compliance track record. Coinbase Business only serves the United States and Singapore. If what you liked about Coinbase Commerce was the 1% fee and settling to your own wallet, neither replaces it; a non-custodial gateway like Shieldz ($0 platform fee) or self-hosted BTCPay Server is the closer match.
+
 ## Side by side
 
 | Gateway | Fee | Custody | KYC to start | Coins | Fiat payout |
@@ -93,6 +99,9 @@ Yes, two models: self-hosted software like BTCPay Server (0%, you run it) and no
 **Can I accept crypto without KYC, unlike Coinbase Commerce?**
 Yes. Providers that never hold your funds have nothing to gate: Shieldz and BTCPay Server require no verification to start. The trade-offs are covered in [accepting crypto without KYC](/blog/accept-crypto-payments-without-kyc).
 
+**Which is better, Coinbase Commerce or BitPay?**
+Coinbase Commerce shut down on March 31, 2026, so the comparison today is Coinbase Business vs BitPay, both custodial with full KYB. BitPay (2% + $0.25) suits merchants who need daily fiat settlement across many countries; Coinbase Business serves only the US and Singapore. For Commerce's old low-fee, own-wallet model, a non-custodial gateway like Shieldz or self-hosted BTCPay Server is the closer match.
+
 **What happened to Coinbase Commerce?**
 Coinbase shut it down on March 31, 2026. The replacement, Coinbase Business, is custodial, requires full KYB verification, and is available only in the United States and Singapore. Merchants elsewhere need one of the alternatives above.
 
@@ -108,6 +117,7 @@ The fastest way to compare is to feel the difference: create a checkout with the
     { "@type": "Question", "name": "What is the best Coinbase Commerce alternative?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the complaint. For the fee and custody, a non-custodial $0 gateway like Shieldz. For sovereignty, self-hosted BTCPay Server. For coin coverage, NOWPayments. For enterprise compliance, BitPay." } },
     { "@type": "Question", "name": "Is there a free alternative to Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, two models: self-hosted software like BTCPay Server, where you run the gateway yourself for 0%, and non-custodial gateways like Shieldz with a $0 platform fee where the buyer pays only network gas." } },
     { "@type": "Question", "name": "Can I accept crypto without KYC, unlike Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Providers that never hold your funds have nothing to gate: Shieldz and BTCPay Server require no verification to start accepting payments." } },
+    { "@type": "Question", "name": "Which is better, Coinbase Commerce or BitPay?", "acceptedAnswer": { "@type": "Answer", "text": "Coinbase Commerce shut down on March 31, 2026, so the comparison today is Coinbase Business vs BitPay, both custodial with full KYB. BitPay (2% + $0.25) suits merchants who need daily fiat settlement across many countries; Coinbase Business serves only the US and Singapore. For Commerce's old low-fee, own-wallet model, a non-custodial gateway like Shieldz or self-hosted BTCPay Server is the closer match." } },
     { "@type": "Question", "name": "What happened to Coinbase Commerce?", "acceptedAnswer": { "@type": "Answer", "text": "Coinbase shut it down on March 31, 2026. The replacement, Coinbase Business, is custodial, requires full KYB verification, and is available only in the United States and Singapore." } }
   ]
 }

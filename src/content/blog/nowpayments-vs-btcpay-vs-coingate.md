@@ -125,6 +125,8 @@ The fastest way to sanity-check this comparison is to feel the difference yourse
 
 If you are choosing between Shieldz and one of the three above, the direct comparisons are at [shieldz.cash/vs-btcpay](https://shieldz.cash/vs-btcpay) and on the [pricing page](https://shieldz.cash/pricing), and the non-custodial claim is [independently verifiable](https://shieldz.cash/verify).
 
+Weighing NOWPayments against BlockBee for subscription billing instead? See [BlockBee vs NOWPayments](/blog/blockbee-vs-nowpayments).
+
 ## FAQ
 
 **Is NOWPayments really cheaper than CoinGate?**

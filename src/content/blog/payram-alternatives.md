@@ -89,6 +89,8 @@ It works with [WooCommerce](/blog/accept-crypto-payments-woocommerce), [Easy Dig
 
 All three keep custody with you and none takes a percentage. The real question is whether you want to run a server, and that comes down to your business, not to which gateway is "better". For the full field of 93 gateways, see the [crypto payment gateways comparison](/blog/93-crypto-payment-gateways-compared).
 
+For a stablecoin-first, closed-source self-hosted option, see [BitHide vs BTCPay Server](/blog/bithide-vs-btcpay-server).
+
 ## FAQ
 
 **Is PayRam free?**

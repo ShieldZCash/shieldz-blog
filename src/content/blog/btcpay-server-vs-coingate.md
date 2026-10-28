@@ -82,6 +82,8 @@ This is our blog, so judge this section accordingly and [verify the claims yours
 
 A longer ranking with more gateways is in the [free gateways guide](/blog/best-free-crypto-payment-gateways-2026), and the three-way breakdown against NOWPayments is [here](/blog/nowpayments-vs-btcpay-vs-coingate).
 
+Comparing BTCPay against another self-hosted product? See [BitHide vs BTCPay Server](/blog/bithide-vs-btcpay-server).
+
 ## FAQ
 
 **Is BTCPay Server really free?**

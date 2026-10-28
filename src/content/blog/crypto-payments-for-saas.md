@@ -80,6 +80,8 @@ Agents and keyless flows are a separate cluster: [crypto payments for AI agents]
 - Gas is paid by the buyer (and by the swap route when they pay a non-settlement asset). Do not market "free on-chain transfers".
 - NEAR and SOL are not live source chains for swap-settle right now. Do not list them as pay-in options.
 
+Choosing a gateway with built-in subscription plans? We compare the two most common ones in [BlockBee vs NOWPayments](/blog/blockbee-vs-nowpayments).
+
 ## FAQ
 
 **Can I take crypto for monthly SaaS plans?**

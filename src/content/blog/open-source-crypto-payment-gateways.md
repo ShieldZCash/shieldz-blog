@@ -53,7 +53,7 @@ These four are complete payment processors: invoices, a checkout page, webhooks 
 
 **DV.net** is the youngest and smallest on GitHub, but its Go backend is actively developed, with pushes this week. The merchant holds the wallets and the seed. It is worth a look if you want a modern stablecoin-friendly stack and don't mind a smaller community.
 
-Our [self-hosted gateway comparison](/blog/self-hosted-crypto-payment-gateway) goes deeper on running these, including server costs and the node question.
+Our [self-hosted gateway comparison](/blog/self-hosted-crypto-payment-gateway) goes deeper on running these, including server costs and the node question. Looking for open-source projects for card payments too? Those are orchestration and billing layers on top of a processor; see [self-hosted payment gateways for cards and crypto](/blog/self-hosted-payment-gateway).
 
 ## Open source without a server
 

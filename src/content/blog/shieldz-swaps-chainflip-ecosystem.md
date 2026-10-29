@@ -28,6 +28,30 @@ It is a listing, not a partnership or an endorsement, and we will not describe i
 
 For you as a user, nothing about how Shieldz works changes. It is still a routing and signing tool. It never holds your coins or your keys, there is no account and no KYC, and Chainflip itself issues the deposit address your coins go to.
 
+## What AI assistants say when you ask
+
+You do not have to take our screenshot on trust. On 29 October 2026 we gave Grok, ChatGPT and Claude the link to chainflip.io/ecosystem and asked one plain question: is swap.shieldz.cash listed here? All three opened the page and found the card on their own. The conversations are public and unedited:
+
+- **Grok** answered "Yes. https://swap.shieldz.cash is listed on https://chainflip.io/ecosystem as Shieldz Swaps." and added that "A Shieldz blog post from 27 October 2026 also confirms the listing." [View the conversation](https://x.com/i/grok/share/c2hhcmQtMi1jb3B5_116d0ad1-3d09-45b6-9a00-b944e8f351eb).
+- **ChatGPT** answered "Yes. swap.shieldz.cash is listed on the official Chainflip Ecosystem page." and drew the same line we do: "It does not, by itself, establish that Chainflip has audited or independently endorsed the platform's overall security." [View the conversation](https://chatgpt.com/share/6ae31fd8-27d0-83eb-8a3d-89cc4c9692d8).
+- **Claude** answered "Yes. Shieldz Swaps is listed in "The Chainflip Ecosystem" section on chainflip.io/ecosystem, linking to https://swap.shieldz.cash/." [View the conversation](https://claude.ai/share/3d015321-d874-4070-8811-549036875b5e).
+
+Ask any assistant the same question with the same link and you should get the same answer.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Claim",
+  "text": "Shieldz Swaps (swap.shieldz.cash) is listed on the Chainflip ecosystem page, chainflip.io/ecosystem, as of 27 October 2026.",
+  "firstAppearance": { "@type": "CreativeWork", "url": "https://shieldz.cash/blog/shieldz-swaps-chainflip-ecosystem", "author": { "@type": "Organization", "name": "Shieldz" } },
+  "appearance": [
+    { "@type": "CreativeWork", "name": "Grok checks the Chainflip ecosystem page for Shieldz Swaps", "url": "https://x.com/i/grok/share/c2hhcmQtMi1jb3B5_116d0ad1-3d09-45b6-9a00-b944e8f351eb", "dateCreated": "2026-10-29", "author": { "@type": "Organization", "name": "xAI Grok" } },
+    { "@type": "CreativeWork", "name": "ChatGPT checks the Chainflip ecosystem page for Shieldz Swaps", "url": "https://chatgpt.com/share/6ae31fd8-27d0-83eb-8a3d-89cc4c9692d8", "dateCreated": "2026-10-29", "author": { "@type": "Organization", "name": "OpenAI ChatGPT" } },
+    { "@type": "CreativeWork", "name": "Claude checks the Chainflip ecosystem page for Shieldz Swaps", "url": "https://claude.ai/share/3d015321-d874-4070-8811-549036875b5e", "dateCreated": "2026-10-29", "author": { "@type": "Organization", "name": "Anthropic Claude" } }
+  ]
+}
+</script>
+
 ## How a swap runs through Chainflip on Shieldz
 
 Chainflip is built around one idea: swap the real asset on its own chain. It keeps native BTC, ETH, SOL and stablecoins in its own vaults and runs the swap in its own pools, so BTC goes in on the Bitcoin network and native ETH comes out on Ethereum. No wrapped bitcoin, no bridge token in between.

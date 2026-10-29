@@ -403,7 +403,7 @@ A checkout script loads on every page that has a button. Heavy scripts slow your
 
 Compare that with a 1% gateway: on $10,000 a month of sales, 1% is $100 a month, or **$1,200 a year**, taken from you, not the buyer.
 
-Free accounts show one short sponsored card on the hosted checkout's confirmation screen. Embedded widget checkouts never show it. Pro ($99 a year) removes it from the hosted checkout too. Details are on the [pricing page](https://shieldz.cash/pricing).
+Free accounts show one short sponsored card on the hosted checkout's confirmation screen. Embedded widget checkouts never show it. Pro ($99 a month) removes it from the hosted checkout too. Details are on the [pricing page](https://shieldz.cash/pricing).
 
 ## What people sell with it
 

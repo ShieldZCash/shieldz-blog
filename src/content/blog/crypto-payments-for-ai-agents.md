@@ -102,7 +102,7 @@ We did not edit these and we are not hiding the caveats the models raised, such 
 
 Crypto payments for AI agents are not free of decisions. You settle in crypto, so if you need fiat you handle the off-ramp yourself. Keyless mode is deliberately simple: it covers stablecoins and direct settlement, and if you want a full account with signed webhooks and every asset, that is the API-key path. And accepting any coin has its own tradeoff between direct settlement and swap routing, which I wrote up in [the pay-any-coin trust tradeoff](/blog/pay-any-coin-trust-tradeoff).
 
-On fees: it is $0 on your payments. Free accounts show one small sponsored card on the payment-confirmed screen while funds settle, which pays for the servers and nodes. Pro is $99 a year and removes it. There is [no KYC to start](https://shieldz.cash/no-kyc), and the [FAQ](https://shieldz.cash/faq) covers the rest.
+On fees: it is $0 on your payments. Free accounts show one small sponsored card on the payment-confirmed screen while funds settle, which pays for the servers and nodes. Pro is $99 a month and removes it. There is [no KYC to start](https://shieldz.cash/no-kyc), and the [FAQ](https://shieldz.cash/faq) covers the rest.
 
 ## Start here
 

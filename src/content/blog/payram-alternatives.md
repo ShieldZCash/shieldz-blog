@@ -22,7 +22,7 @@ PayRam runs as a single Docker container (`payramapp/payram`) that its installer
 |---|---|---|---|
 | **Model** | Self-hosted | Self-hosted | Hosted, non-custodial |
 | **Platform fee** | 0% | 0% | 0% |
-| **Running cost** | Your VPS (~$20 to $150/mo, PayRam's estimate) | Your VPS, plus a node or a connection to one | $0 (optional $99/year Pro) |
+| **Running cost** | Your VPS (~$20 to $150/mo, PayRam's estimate) | Your VPS, plus a node or a connection to one | $0 (optional $99/month Pro) |
 | **Custody** | You (sweeps to your cold wallet) | You | You (settles straight to your wallet) |
 | **KYC to start** | None | None | None |
 | **Source code** | Closed (ships as a Docker image) | Open source (MIT) | Hosted service; SDKs and plugins are MIT |

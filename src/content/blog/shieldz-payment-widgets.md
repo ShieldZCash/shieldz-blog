@@ -104,7 +104,7 @@ Shieldz.on("paid", (e) => {
 - **Paying in a different coin through the widget costs the buyer 0.15%.** That swap fee is added to the buyer's total, so you still receive the full price. The swap protocols' own spread and network fees apply to any swap.
 - **Checkout totals run from $1 to $100,000.**
 
-Free accounts show one short sponsored card on the hosted checkout's confirmation screen. Pro ($99 a year) removes it. Details are on the [pricing page](https://shieldz.cash/pricing).
+Free accounts show one short sponsored card on the hosted checkout's confirmation screen. Pro ($99 a month) removes it. Details are on the [pricing page](https://shieldz.cash/pricing).
 
 ## Get started
 

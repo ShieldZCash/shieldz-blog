@@ -46,7 +46,7 @@ It already works in the agents people actually run: Claude, Cursor, Goose, Manus
 
 ## Why free, and why for agents
 
-People ask how it can be free. The honest answer is that taking a percentage of someone's revenue forever is a bad deal dressed up as a service. We charge $0 on your payments. Free accounts show one small sponsored card on the payment-confirmed screen while funds settle, which covers our servers and nodes. Prefer a clean, unbranded checkout? Pro is $99 a year and turns it off.
+People ask how it can be free. The honest answer is that taking a percentage of someone's revenue forever is a bad deal dressed up as a service. We charge $0 on your payments. Free accounts show one small sponsored card on the payment-confirmed screen while funds settle, which covers our servers and nodes. Prefer a clean, unbranded checkout? Pro is $99 a month and turns it off.
 
 And why agents specifically? Because agents already do the work. They write the thing, ship the feature, run the newsletter. The one step they could never take was asking to get paid for it. Now an agent can finish a task and mint the payment link in the same breath. Ship the feature and charge for access. Write the post and open the tip jar. No human stopping to go set up payments first.
 

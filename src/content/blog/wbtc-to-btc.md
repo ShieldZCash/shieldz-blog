@@ -69,7 +69,7 @@ If you already keep funds on an exchange and trade there anyway, compare the two
 
 ## cbBTC works the same way
 
-Coinbase's cbBTC, on Ethereum or Base, converts to native BTC the same way, through NEAR Intents. On 14 October, 1 cbBTC on Base returned 0.99529721 BTC (0.47%), and 1 cbBTC on Ethereum returned 0.99540770 BTC (0.46%). Choose cbBTC as *You pay* instead of WBTC.
+Coinbase's cbBTC, on Ethereum or Base, converts to native BTC the same way, through NEAR Intents. On 14 October, 1 cbBTC on Base returned 0.99529721 BTC (0.47%), and 1 cbBTC on Ethereum returned 0.99540770 BTC (0.46%). Choose cbBTC as *You pay* instead of WBTC. The opposite direction, native BTC into cbBTC, WBTC or USDC on Base, now has two more routes, Garden and BOB Gateway: see [how to swap BTC to USDC on Base](/blog/swap-btc-to-usdc-base).
 
 ## Going the other way: BTC to WBTC
 

@@ -38,7 +38,7 @@ Add your email in the form and you also get a backup of your manage link plus a 
 - **Media**: images (PNG/JPG/WebP/GIF), audio (MP3/WAV), video (MP4/MOV)
 - **Text secrets** up to 100,000 characters: license keys, download links, full articles, private instructions; alone or alongside a file
 
-Executable and web-page formats are deliberately not accepted, and downloads are always served as attachments, so a purchased file can never run as a page in the buyer's browser. Every unlock requires the acceptable-use confirmation (no adult, illegal, or non-consensual content) and settlement addresses are OFAC-screened.
+Executable and web-page formats are deliberately not accepted, and downloads are always served as attachments, so a purchased file can never run as a page in the buyer's browser. Every unlock requires the acceptable-use confirmation (no adult, illegal, or non-consensual content) and settlement addresses are OFAC-screened. Running a store instead of a single link? See every way to [sell digital downloads for crypto](https://shieldz.cash/for-digital-downloads), including the WordPress plugin and the API.
 
 ## The delivery is trustless in both directions
 

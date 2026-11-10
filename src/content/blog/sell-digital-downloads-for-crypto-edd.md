@@ -10,7 +10,7 @@ image: "https://shieldz.cash/blog/og/sell-digital-downloads-for-crypto-edd.png"
 
 Selling digital products, software licenses, ebooks, presets, courses, has one payment problem that physical goods do not: chargebacks. A buyer downloads the file, then disputes the charge, and you lose both the product and a dispute fee. Crypto settlements are final, so that whole category of loss goes away. If you run [Easy Digital Downloads](https://easydigitaldownloads.com/), you can accept Bitcoin, USDC, ETH and more with the free [Shieldz](https://shieldz.cash) plugin, non-custodial, $0 platform fee.
 
-This is the digital-goods guide in a set of three for the same plugin, alongside [WooCommerce payments](/blog/accept-crypto-payments-woocommerce) and [GiveWP donations](/blog/accept-crypto-donations-givewp). One install covers all three.
+This is the digital-goods guide in a set of three for the same plugin, alongside [WooCommerce payments](/blog/accept-crypto-payments-woocommerce) and [GiveWP donations](/blog/accept-crypto-donations-givewp). One install covers all three. Not on WordPress? The [digital downloads overview](https://shieldz.cash/for-digital-downloads) covers no-code unlock links and the API as well.
 
 ## Why crypto fits digital goods
 

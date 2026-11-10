@@ -25,7 +25,7 @@ Tether issues USDT separately on each blockchain, and Circle does the same for U
 | Solana | SPL | base58 | SOL |
 | Arbitrum, Base, Optimism | ERC-20 | `0x…` | ETH |
 
-They are all worth a dollar, but **a plain transfer can never cross from one network to another.** Sending USDT on Tron to an Ethereum address is not possible at all, and sending ERC-20 USDT to a BNB Chain address (both start with `0x`) "works" in the sense that the transaction goes through, but the coins land on a chain the recipient was not watching, and getting them back depends entirely on who controls that address.
+They are all worth a dollar, but **a plain transfer can never cross from one network to another.** Sending USDT on Tron to an Ethereum address is not possible at all, and sending ERC-20 USDT to a BNB Chain address (both start with `0x`) "works" in the sense that the transaction goes through, but the coins land on a chain the recipient was not watching, and getting them back depends entirely on who controls that address. For the most common case, ERC-20 to TRC-20 and back, see [how to move USDT from Ethereum to Tron](/blog/move-usdt-ethereum-to-tron).
 
 To move a stablecoin from one chain to another, you need something that takes it on the first chain and pays out on the second. That is a cross-chain swap.
 

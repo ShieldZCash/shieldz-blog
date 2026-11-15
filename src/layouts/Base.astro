@@ -9,6 +9,7 @@ const {
   image,
   lang = "en",
   datasetLd,
+  extraLd = [],
 } = Astro.props;
 
 // Canonicalize to the no-trailing-slash form (what the main site, sitemap, and
@@ -32,6 +33,7 @@ const articleLd =
         datePublished: pubDate ? new Date(pubDate).toISOString() : undefined,
         author: { "@type": "Person", name: author },
         publisher: { "@type": "Organization", name: "Shieldz", url: "https://shieldz.cash" },
+        dateModified: pubDate ? new Date(pubDate).toISOString() : undefined,
         mainEntityOfPage: canonical,
         image: ogImage,
       }
@@ -64,6 +66,7 @@ const articleLd =
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     {articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
     {datasetLd && <script type="application/ld+json" set:html={JSON.stringify(datasetLd)} />}
+    {extraLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PV99TH7BG"></script>
     <script is:inline>

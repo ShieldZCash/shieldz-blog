@@ -1,8 +1,8 @@
 ---
-title: "10 Best Free Crypto Payment Gateways (2026)"
-description: "The 10 best free crypto payment gateways in 2026, ranked by how free they really are: Shieldz, BTCPay, NOWPayments, Cryptomus, Plisio and more."
+title: "10 Free Crypto Payment Gateways (2026): Only 2 Are Really $0"
+description: "Most \"free\" crypto payment gateways still take 0.4-1% of every sale. 10 compared on platform fee, custody and KYC: only Shieldz (hosted) and BTCPay Server (self-hosted) charge $0."
 pubDate: 2026-07-07
-updatedDate: "2026-08-27"
+updatedDate: "2026-11-18"
 author: "Deniz Yanbollu"
 tags: ["comparison", "payment-gateway", "crypto", "free", "guide"]
 eyebrow: "Comparison"
@@ -27,7 +27,7 @@ Most "free" gateways still take a cut of every sale. Here is the platform fee ac
 
 <figure style="margin:24px 0">
   <a href="/blog/img/free-gateway-fees.svg"><img src="/blog/img/free-gateway-fees.svg" alt="Bar chart of platform fees for ten crypto payment gateways in 2026: Shieldz and BTCPay Server at 0%, Cryptomus 0.4%, NOWPayments, Plisio and CoinPayments about 0.5%, Coinbase Commerce, OpenNode, BlockBee and CryptAPI about 1%." loading="lazy" style="width:100%;height:auto;border-radius:16px" /></a>
-  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Platform fee by gateway (approximate). Only Shieldz and BTCPay Server are genuinely $0.</figcaption>
+  <figcaption style="font-size:13px;color:#949494;margin-top:8px">Platform fee by gateway (approximate; Coinbase Commerce shows its last rate before its March 2026 shutdown). Only Shieldz and BTCPay Server are genuinely $0.</figcaption>
 </figure>
 
 ## The comparison
@@ -40,7 +40,7 @@ Most "free" gateways still take a cut of every sale. Here is the platform fee ac
 | Cryptomus | ~0.4% | Yes | Processor-held | No |
 | Plisio | ~0.5% | Yes | Processor-held | No |
 | CoinPayments | ~0.5% | KYC for higher limits | Custodial | No |
-| Coinbase Commerce | ~1% | Business verification | Custodial flows | No |
+| Coinbase Commerce | Shut down March 31, 2026 | n/a | n/a | No |
 | OpenNode | ~1% | Business verification | Custodial | No |
 | BlockBee | ~1% per forward | Yes | Non-custodial | No |
 | CryptAPI | ~1% per tx | Yes | Non-custodial | Partial |
@@ -80,9 +80,9 @@ Both models also repeated the caveat this guide opens with: a $0 platform fee is
 
 [CoinPayments](https://www.coinpayments.net) has been around for years, supports many coins, and charges about **0.5%**. It is custodial and asks for KYC at higher limits. **Truly free? No.**
 
-### 7. Coinbase Commerce, brand-name, ~1%
+### 7. Coinbase Commerce, shut down in March 2026
 
-[Coinbase Commerce](https://www.coinbase.com/commerce) is easy to trust and integrates quickly, at roughly **1%** with business verification and custodial flows. **Truly free? No.**
+Coinbase Commerce charged about **1%** until Coinbase shut it down on **March 31, 2026**. Its replacement, Coinbase Business, is custodial, requires full business verification and serves only the United States and Singapore. If you were on Commerce, see [Coinbase Commerce alternatives](/blog/coinbase-commerce-alternatives). **Truly free? No longer available.**
 
 ### 8. OpenNode, Bitcoin and Lightning
 

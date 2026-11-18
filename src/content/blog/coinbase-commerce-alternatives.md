@@ -1,6 +1,6 @@
 ---
-title: "Coinbase Commerce Alternatives: 7 Gateways Compared (2026)"
-description: "Coinbase Commerce shut down March 31, 2026. The 7 best alternatives compared on fees, custody and KYC, from $0 non-custodial to self-hosted options."
+title: "Coinbase Commerce Shut Down: 7 Alternatives Compared (2026)"
+description: "Coinbase Commerce closed on March 31, 2026, and Coinbase Business is custodial, KYB-only and limited to the US and Singapore. 7 alternatives compared on fees, custody and KYC, from $0 non-custodial to self-hosted."
 pubDate: 2026-08-13
 author: "Deniz Yanbollu"
 tags: ["coinbase commerce alternatives", "comparison", "crypto", "payments", "gateways"]

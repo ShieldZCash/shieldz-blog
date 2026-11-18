@@ -11,7 +11,7 @@ A cross-chain swap is the simplest thing to ask for and the hardest thing to sho
 
 So we built the list we wanted to read. This is **81 cross-chain swap apps**, every one checked live on 10 October 2026, compared on what they charge, who holds your coins while the swap is in flight, and whether they can stop you for identity checks. Every fee links to the official page it was read from. Where an app publishes no fee, or publishes three different ones, we say so rather than guess.
 
-It is also an open dataset: [JSON](/blog/data/cross-chain-swaps-2026.json), [CSV](/blog/data/cross-chain-swaps-2026.csv) and the [GitHub repository](https://github.com/ShieldZCash/cross-chain-swap-dataset), CC BY 4.0, updated monthly. It is the sister study to our [93 crypto payment gateways comparison](/blog/93-crypto-payment-gateways-compared).
+It is also an open dataset: [JSON](/blog/data/cross-chain-swaps-2026.json), [CSV](/blog/data/cross-chain-swaps-2026.csv) and the [GitHub repository](https://github.com/ShieldZCash/cross-chain-swap-dataset), CC BY 4.0, updated monthly (latest re-check: v1.1.0, 18 November 2026; all 24 verified fees still match, ChangeHero's fixed-rate fee is now 0.7-0.9%). It is the sister study to our [93 crypto payment gateways comparison](/blog/93-crypto-payment-gateways-compared).
 
 ## Key findings at a glance
 
@@ -275,7 +275,7 @@ No-account custodial exchanges: you send to a deposit address, they send the oth
 | App | Fee | What the fee page says | Custody | KYC | Native BTC | Routes via |
 |---|---|---|---|---|---|---|
 | [Changelly](https://changelly.com) | [0.25%](https://changelly.com/faq/changelly/fees/) | 0.25% on floating-rate swaps (default), plus network fees; fixed-rate swaps carry a dynamic fee; flagged swaps need KYC | custodial | risk-based | yes | Exchange partners |
-| [ChangeHero](https://changehero.io) | [0.5%](https://changehero.io/blog/crypto-exchange-with-lowest-fees/) | Up to 0.5% on best-rate swaps, up to 0.7% fixed-rate, spread and network fees on top (a ChangeHero test came to 1.3% all-in) | custodial | risk-based | yes | Exchange partners |
+| [ChangeHero](https://changehero.io) | [0.5%](https://changehero.io/blog/crypto-exchange-with-lowest-fees/) | 0.5% on best-rate swaps, 0.7-0.9% fixed-rate, spread and network fees on top (a ChangeHero test came to 1.3% all-in) | custodial | risk-based | yes | Exchange partners |
 | [FixedFloat](https://ff.io) | [0.5%](https://ff.io/en/faq) | 0.5% on floating-rate orders, 1% on fixed-rate, plus network fees, all built into the final rate | custodial | risk-based | yes | Own liquidity |
 | [Quickex](https://quickex.io) | [0.5%](https://quickex.io/exchange-btc-runerune) | 0.5% on floating-rate swaps, 1% fixed-rate, plus network fees | custodial | risk-based | yes | Exchange partners |
 | [Exolix](https://exolix.com) | not certain | No fee of its own claimed; the full cost is set by the route or partner, which can include a commission paid back to the app. Terms say Exolix charges no fees because rates are fixed; the margin is in the quoted rate | custodial | risk-based | yes | Exchange partners |
@@ -380,7 +380,7 @@ The cross-chain swap market has two problems, and neither is technology. Most ap
 
 So compare anyway. Get the same quote from your wallet and from two aggregators, look at the amount you receive and the name of the provider, and pick the route you would trust with the money for the minutes it takes to arrive.
 
-Download the full open dataset (CC BY 4.0, v1.0.0): [JSON](/blog/data/cross-chain-swaps-2026.json), [CSV](/blog/data/cross-chain-swaps-2026.csv), or the [GitHub repository](https://github.com/ShieldZCash/cross-chain-swap-dataset), which also has the full table as markdown and the 32 protocols underneath.
+Download the full open dataset (CC BY 4.0, v1.1.0): [JSON](/blog/data/cross-chain-swaps-2026.json), [CSV](/blog/data/cross-chain-swaps-2026.csv), or the [GitHub repository](https://github.com/ShieldZCash/cross-chain-swap-dataset), which also has the full table as markdown and the 32 protocols underneath.
 
 ## Independence statement
 
@@ -941,11 +941,11 @@ We collect and process this dataset independently. Every classification comes fr
   "description": "Open dataset of 81 active cross-chain swap apps (wallets, aggregators, THORChain/Maya/Chainflip front-ends, instant exchanges and exchange comparison sites), with 32 underlying protocols listed separately. Each app is classified by custody during the swap, user KYC, the app's own fee, routing, native Bitcoin and Solana support. Only 24 of 81 (30%) state a fixed fee verifiable on a current official page; 15 claim no fee of their own. Every user-facing app that swaps an asset on one chain for an asset on another: aggregators, independent front-ends, wallets with built-in cross-chain swaps and instant exchanges. The protocols those apps route through (THORChain, Chainflip, NEAR Intents, Relay, Across and others) are listed separately under `protocols` for reference and are not part of the comparison, since most apps sit on top of them; a protocol's own first-party front-end counts as the protocol. Classified by category, custody model during the swap, user KYC, the app's own fee, routing, native Bitcoin and Solana support and chain coverage. Liveness checked by HTTP and, behind bot protection, in a real browser. Fees and coverage come only from official pages and docs (verified=true, with source_url); null means not yet checked.",
   "url": "https://shieldz.cash/blog/81-cross-chain-swap-apps-compared",
   "sameAs": "https://github.com/ShieldZCash/cross-chain-swap-dataset",
-  "identifier": "https://github.com/ShieldZCash/cross-chain-swap-dataset/releases/tag/v1.0.1",
-  "version": "1.0.1",
+  "identifier": "https://github.com/ShieldZCash/cross-chain-swap-dataset/releases/tag/v1.1.0",
+  "version": "1.1.0",
   "datePublished": "2026-10-10",
-  "dateModified": "2026-10-10",
-  "temporalCoverage": "2026-10-10/2026-10-10",
+  "dateModified": "2026-11-18",
+  "temporalCoverage": "2026-10-10/2026-11-18",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "inLanguage": "en",

@@ -10,6 +10,8 @@ image: "https://shieldz.cash/blog/og/93-crypto-payment-gateways-compared.png"
 
 This is the October 2026 edition of our monthly crypto payment gateway comparison. The living dataset now covers **93 crypto payment gateways**, up from 87 in September. Every existing row was checked again: each site and pricing page was loaded, and status changes were confirmed against news and provider announcements. Same methodology, a fresh table, six regenerated charts, and the month's changes listed in one place.
 
+**Update:** the [November 2026 edition](/blog/93-crypto-payment-gateways-compared-november-2026) is out. This October snapshot stays as published.
+
 Earlier editions stay live and unchanged: the [original August 2026 study of 50 gateways](/blog/50-crypto-payment-gateways-compared) and the [September 2026 edition with 87](/blog/87-crypto-payment-gateways-compared). If you want curated shortlists instead of the whole market, see the [best crypto payment gateways of 2026](/blog/best-crypto-payment-gateways-2026) and the [best free crypto payment gateways](/blog/best-free-crypto-payment-gateways-2026).
 
 **Disclosure up front:** Shieldz is our product, and it appears in the data like everyone else. Every number in this post comes from published pricing pages or provider docs, and where we could not verify a figure we say so with an asterisk.

@@ -76,7 +76,7 @@ You never need ETH for gas on the receiving side, and nothing gets wrapped: what
 
 ## Swapping SOL to ETH instead
 
-The same swap works from native SOL. At the same moment, 5 SOL (about $505) quoted **0.2163 ETH** through Chainflip and **0.2157 ETH** through NEAR Intents, both delivered as native ETH on Ethereum. The steps are identical. Pick SOL instead of USDC in step 1, or use the [SOL to ETH page](https://swap.shieldz.cash/swap/sol-to-eth). Keep enough SOL behind to pay the network fee on future transactions.
+The same swap works from native SOL. At the same moment, 5 SOL (about $505) quoted **0.2163 ETH** through Chainflip and **0.2157 ETH** through NEAR Intents, both delivered as native ETH on Ethereum. The steps are identical. Pick SOL instead of USDC in step 1, or use the [SOL to ETH page](https://swap.shieldz.cash/swap/sol-to-eth). Keep enough SOL behind to pay the network fee on future transactions. For SOL to ETH and ETH to SOL at sizes up to $50,000, with every route compared, see [how to swap ETH to SOL and back](/blog/swap-eth-to-sol).
 
 ## Things to watch
 

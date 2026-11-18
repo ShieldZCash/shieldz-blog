@@ -26,7 +26,7 @@ rsync -az --delete -e "$RSH" dist/ "$HOST:/var/www/shieldz-blog/blog/"
 # feed ChatGPT/Copilot search). Enumerates the built post slugs from dist/.
 echo "==> IndexNow ping (blog)"
 URLS='"https://shieldz.cash/blog/",'
-for d in dist/*/; do s=$(basename "$d"); [ "$s" = "assets" ] && continue; URLS="${URLS}\"https://shieldz.cash/blog/${s}/\","; done
+for d in dist/*/; do s=$(basename "$d"); [ "$s" = "assets" ] && continue; URLS="${URLS}\"https://shieldz.cash/blog/${s}\","; done
 URLS="${URLS%,}"
 curl -s -m 15 -X POST "https://api.indexnow.org/indexnow" \
   -H "Content-Type: application/json" \

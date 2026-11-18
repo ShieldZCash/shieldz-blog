@@ -1,7 +1,8 @@
 ---
 title: "Best crypto payment gateways in 2026 (non-custodial vs custodial)"
-description: "A 2026 comparison of crypto payment gateways (Shieldz, Coinbase Commerce, BitPay, NOWPayments, BTCPay, CryptAPI), ranked by custody, fees and KYC."
+description: "Crypto payment gateways in 2026 ranked by custody, fees and KYC: Shieldz, BTCPay Server, BitPay, NOWPayments and CryptAPI, from $0 non-custodial to 2% custodial. Coinbase Commerce shut down in March."
 pubDate: 2026-07-01
+updatedDate: "2026-11-18"
 author: "Deniz Yanbollu"
 tags: ["guide", "payment-gateway", "crypto", "comparison"]
 ---
@@ -21,8 +22,8 @@ Sort the 2026 field by that first, then look at fees.
 | --- | --- | --- | --- | --- |
 | **Shieldz** | **Non-custodial** | **$0** (network gas only) | **No** | BTC, shielded Zcash, USDC/USDT on 5 chains |
 | BTCPay Server | Non-custodial (self-hosted) | $0 (you host it) | No | BTC, Lightning, some altcoins |
-| Coinbase Commerce | Custodial flows | ~1% | Business verification | Major coins |
-| BitPay | Custodial | ~1% + settlement | Yes | Major coins |
+| Coinbase Commerce | Shut down March 31, 2026 ([alternatives](/blog/coinbase-commerce-alternatives)) | n/a | n/a | n/a |
+| BitPay | Custodial | 2% + $0.25 (1% + $0.25 above $1M a month) | Yes | Major coins |
 | NOWPayments | Processor-custody | ~0.5%+ | Varies | 300+ coins |
 | CryptAPI | Non-custodial router | ~1% per tx | No | Many |
 

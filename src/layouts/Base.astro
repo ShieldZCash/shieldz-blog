@@ -2,6 +2,10 @@
 import "../styles/global.css";
 const {
   title,
+  // The page headline for og:title, twitter:title and JSON-LD; defaults to the <title>.
+  headline = title,
+  // A superseding page's URL, when this page is an older edition of it.
+  canonicalUrl,
   description,
   type = "website",
   pubDate,
@@ -18,7 +22,7 @@ const {
 // 301-redirects to it, so keep the trailing slash there or the canonical would
 // point at a redirect.
 const stripped = Astro.url.pathname.replace(/(.+)\/$/, "$1");
-const canonical = new URL(stripped === "/blog" ? "/blog/" : stripped, Astro.site).href;
+const canonical = canonicalUrl || new URL(stripped === "/blog" ? "/blog/" : stripped, Astro.site).href;
 // Per-post OG image when set in frontmatter, else the site default card.
 const ogImage = image || "https://shieldz.cash/assets/brand/og-card.png";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -28,7 +32,7 @@ const articleLd =
     ? {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: title,
+        headline,
         description,
         datePublished: pubDate ? new Date(pubDate).toISOString() : undefined,
         author: { "@type": "Person", name: author },
@@ -49,7 +53,7 @@ const articleLd =
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content={type} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={headline} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Shieldz" />
@@ -57,7 +61,7 @@ const articleLd =
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@shieldzcash" />
     <meta name="twitter:creator" content="@dnzynbl" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={headline} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" type="image/png" href="https://shieldz.cash/assets/brand/favicon.png" />

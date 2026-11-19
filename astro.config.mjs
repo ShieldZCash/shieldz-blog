@@ -6,9 +6,12 @@ import { readdirSync, readFileSync } from "node:fs";
 // present, else pubDate) so the sitemap carries a real freshness signal.
 const blogDir = new URL("./src/content/blog/", import.meta.url);
 const lastmodBySlug = {};
+// Older editions whose canonical points at a newer post stay out of the sitemap.
+const superseded = new Set();
 for (const file of readdirSync(blogDir)) {
   if (!file.endsWith(".md") && !file.endsWith(".mdx")) continue;
   const src = readFileSync(new URL(file, blogDir), "utf8");
+  if (/^canonical:\s*\S/m.test(src)) superseded.add(file.replace(/\.mdx?$/, ""));
   const pub = src.match(/^pubDate:\s*"?([0-9][0-9-]+)"?/m)?.[1];
   const upd = src.match(/^updatedDate:\s*"?([0-9][0-9-]+)"?/m)?.[1];
   const date = upd || pub;
@@ -26,6 +29,7 @@ export default defineConfig({
   trailingSlash: "never",
   integrations: [
     sitemap({
+      filter: (page) => !superseded.has(page.match(/\/blog\/([a-z0-9-]+)\/?$/)?.[1]),
       serialize(item) {
         const m = item.url.match(/\/blog\/([a-z0-9-]+)\/?$/);
         if (m && lastmodBySlug[m[1]]) {

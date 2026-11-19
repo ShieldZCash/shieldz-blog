@@ -90,10 +90,19 @@ const crumbsLd = {
     { "@type": "ListItem", position: 3, name: post.data.title, item: `https://shieldz.cash/blog/${post.id}` },
   ],
 };
+
+// Google shows about 60 characters of a title. The brand suffix goes on only
+// when it still fits; otherwise the headline (or a hand-written seoTitle) alone.
+const SUFFIX = " | Shieldz Blog";
+const docTitle =
+  post.data.seoTitle ??
+  (post.data.title.length + SUFFIX.length <= 60 ? post.data.title + SUFFIX : post.data.title);
 ---
 
 <Base
-  title={`${post.data.title} | Shieldz Blog`}
+  title={docTitle}
+  headline={post.data.title}
+  canonicalUrl={post.data.canonical}
   description={post.data.description}
   type="article"
   pubDate={post.data.pubDate}

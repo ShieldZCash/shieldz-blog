@@ -17,6 +17,12 @@ const blog = defineCollection({
     // Name of a dataset in public/data/<name>.json this post is the canonical
     // home of; emits Schema.org Dataset markup for Google Dataset Search.
     dataset: z.string().optional(),
+    // Shorter <title> for search results when the headline is long. The page
+    // headline (h1, og:title) keeps `title`.
+    seoTitle: z.string().optional(),
+    // Absolute URL of the page that supersedes this one (an older edition of
+    // a series). Sets rel=canonical there and leaves this post out of the sitemap.
+    canonical: z.string().url().optional(),
   }),
 });
 

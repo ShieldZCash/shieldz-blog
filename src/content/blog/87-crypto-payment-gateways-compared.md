@@ -6,7 +6,10 @@ author: "Deniz Yanbollu"
 tags: ["crypto payment gateways", "comparison", "fees", "crypto", "payments"]
 eyebrow: "Comparison"
 image: "https://shieldz.cash/blog/og/87-crypto-payment-gateways-compared.png"
+canonical: "https://shieldz.cash/blog/93-crypto-payment-gateways-compared-november-2026"
 ---
+
+> **This is the September 2026 edition, kept as a changelog.** The current comparison, re-verified in November 2026, is [93 Crypto Payment Gateways Compared (November 2026)](/blog/93-crypto-payment-gateways-compared-november-2026).
 
 In August 2026 we published a study of 50 crypto payment gateways. The underlying dataset kept growing as a living resource, and the September 2026 re-verification pass now covers 87 crypto payment gateways, every fee checked again against the provider's own pricing page. This post is that update: the same methodology, a fresh table, six new charts, and an honest look at what changed in a month.
 
